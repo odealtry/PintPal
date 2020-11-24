@@ -24,6 +24,11 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import flatpickr from "flatpickr";
+
+//Flatpickr
+import "flatpickr/dist/flatpickr.min.css"
+require("flatpickr/dist/themes/dark.css");
 
 
 // Internal imports, e.g:
@@ -32,5 +37,6 @@ import { initMapbox } from '../plugins/init_mapbox';
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
+  flatpickr("#user_date_of_birth");
 });
 
