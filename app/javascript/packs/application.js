@@ -25,12 +25,24 @@ require("channels")
 // External imports
 import "bootstrap";
 
-
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { initMapbox } from '../plugins/init_mapbox';
+import { initSweetalert } from '../plugins/init_sweetalert';
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
+
+  const el = document.createElement('div')
+  const venue_address = "E2 8DY"
+  const current_address = "Camden"
+  const maps = `https://www.google.com/maps/dir/?api=1&origin=${current_address}&destination=${venue_address}&travelmode=transit`
+
+  el.innerHTML = `<a href='http://google.com' style="color: black; font-size: 50px;"><i class='fab fa-uber'></i><br><a href='${maps}' style="color: black; font-size: 50px;"><i class="fas fa-walking"></i></a>`
+  initSweetalert({
+    title: "How are you getting there?",
+    button: false,
+    content: el
+  });
 });
 
