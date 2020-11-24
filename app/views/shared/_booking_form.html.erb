@@ -1,0 +1,6 @@
+<%= simple_form_for [@venue, @booking] do |f| %>
+    <%= f.input :start %>
+    <%= f.input :length, label: "Duration" %>
+    <%= f.input :party_size %>
+    <%= f.submit class: "btn" %>
+  <% end %>
