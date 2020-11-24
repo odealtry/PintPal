@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
-  before_action :set_venue, only: [:new, :create, :edit, :update, :show]
-  before_action :set_booking, only: [:show, :edit, :update]
+  before_action :set_venue, only: [:new, :create, :edit, :update, :show, :destroy]
+  before_action :set_booking, only: [:show, :edit, :update, :destroy]
   def new
     @booking = Booking.new
   end
@@ -19,7 +19,7 @@ class BookingsController < ApplicationController
   def show
   end
 
-  def edit
+  def edit    
   end
 
   def update
@@ -31,6 +31,8 @@ class BookingsController < ApplicationController
   end
 
   def destroy
+    @booking.delete
+    redirect_to venue_path(@venue)
   end
 
   private
