@@ -4,5 +4,6 @@
   starting at <%= @booking.start.strftime("%H:%M %d/%m/%y") %> for <%= @booking.length %> hours.</p>
   <p>This booking is not yet confirmed</p>
   <%= link_to "Edit booking", edit_venue_booking_path(@venue, @booking), class: "btn" %>
-  <%= link_to "Cancel booking", venue_booking_path(@venue, @booking), method: :delete, class: "btn" %>
+  <%= link_to "Cancel booking", venue_booking_path(@venue, @booking), 
+              method: :delete, data: { confirm: "Are you sure?" },class: "btn" %>
 </div>
