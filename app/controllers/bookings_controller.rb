@@ -35,9 +35,11 @@ class BookingsController < ApplicationController
     redirect_to venue_path(@venue)
   end
 
-  def user_bookings
+  def index
     bookings = Booking.all
-    @confirmed_bookings = bookings.select { |booking| booking.user_id == current_user.id && booking.confirmed == true }
+    @user_bookings = bookings.select { |booking| booking.user_id == current_user.id && booking.confirmed == true }
+    @venue = Venue.where(user_id: current_user.id)
+    @venue_bookings = bookings.select { |booking| booking.venue == @venue.first }
   end
 
   private
