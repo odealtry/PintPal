@@ -35,6 +35,11 @@ class BookingsController < ApplicationController
     redirect_to venue_path(@venue)
   end
 
+  def user_bookings
+    bookings = Booking.all
+    @confirmed_bookings = bookings.select { |booking| booking.user_id == current_user.id && booking.confirmed == true }
+  end
+
   private
 
   def booking_params

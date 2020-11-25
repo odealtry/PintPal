@@ -1,0 +1,8 @@
+<div class="container">
+  <h1 class="text-center m-3"><%= current_user.first_name %>'s Bookings</h1>
+  <div class="shortlist-container">
+    <% @confirmed_bookings.each do |booking| %>
+      <%= render partial: "/shared/list_card", locals: { booking: booking } %>
+    <% end %>
+  </div>  
+</div>
