@@ -46,7 +46,6 @@ document.addEventListener('turbolinks:load', () => {
 
     // Sweet alert for getting there
     if (document.getElementById('venue-address') !== null) {
-
       const current_address = `${lat} ${lon}`;
       const venue_address = document.getElementById('venue-address').innerText;
       const uber = `https://m.uber.com/ul`;
