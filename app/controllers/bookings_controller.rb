@@ -10,7 +10,7 @@ class BookingsController < ApplicationController
     @booking.venue = @venue
     @booking.user = current_user
     if @booking.save
-      redirect_to venue_booking_path(@venue, @booking)
+      redirect_to shortlist_path(@booking.user)
     else
       render :new
     end
@@ -33,6 +33,13 @@ class BookingsController < ApplicationController
   def destroy
     @booking.delete
     redirect_to venue_path(@venue)
+  end
+
+  def index
+    bookings = Booking.all
+    @user_bookings = bookings.select { |booking| booking.user_id == current_user.id && booking.confirmed == true }
+    @venue = Venue.where(user_id: current_user.id)
+    @venue_bookings = bookings.select { |booking| booking.venue == @venue.first }
   end
 
   private

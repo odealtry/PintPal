@@ -11,6 +11,11 @@ class PagesController < ApplicationController
       }
     end
   end
+
+  def shortlist    
+    @user = User.find(params[:id])
+    @shortlist = Booking.all.where(user_id: current_user)
+  end
 end
 
         # case venue.name

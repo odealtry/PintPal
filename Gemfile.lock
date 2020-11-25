@@ -262,6 +262,7 @@ DEPENDENCIES
   cloudinary
   devise
   dotenv-rails
+  faker
   font-awesome-sass
   geocoder
   jbuilder (~> 2.7)
