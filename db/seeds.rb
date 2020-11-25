@@ -5,11 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-
+require "open-uri"
+Booking.destroy_all
 Venue.destroy_all
 User.destroy_all
-Booking.destroy_all
+
+
 
 
 puts "creating admin"
@@ -29,6 +30,14 @@ thecourt.name = "The Court"
 thecourt.user = admin
 thecourt.category = "Pub"
 thecourt.save!
+file = URI.open('https://img01.beerintheevening.com/d6/d6d386f22140222bc6c6dfec33126162.jpg')
+thecourt.photos.attach(io: file, filename: 'image-4.jpg', content_type: 'image/jpg')
+file = URI.open('https://img01.beerintheevening.com/9a/9a245f51bf7a15f39bcd35b3b1aefdf5.jpg')
+thecourt.photos.attach(io: file, filename: 'image-5.jpg', content_type: 'image/jpg')
+file = URI.open('https://www.thediningoutgiftcard.co.uk/specific/images/heroes/premises/oak/mc/court.jpg')
+thecourt.photos.attach(io: file, filename: 'image-6.jpg', content_type: 'image/jpg')
+
+
 
 puts "creating venue 2"
 thephene = Venue.new
@@ -37,6 +46,12 @@ thephene.name = "The Phene"
 thephene.user = admin
 thephene.category = "Pub"
 thephene.save!
+file = URI.open('https://upload.wikimedia.org/wikipedia/commons/4/41/Phene_Arms_May_2012.JPG')
+thephene.photos.attach(io: file, filename: 'image-1.jpg', content_type: 'image/jpg')
+file = URI.open('https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1400,h_862/https://www.thephene.com/wp-content/uploads/sites/54/2019/06/Garden.jpg')
+thephene.photos.attach(io: file, filename: 'image-2.jpg', content_type: 'image/jpg')
+file = URI.open('https://www.hot-dinners.com/media/reviews/photos/original/80/48/da/632_phene_128127746499.jpg')
+thephene.photos.attach(io: file, filename: 'image-3.jpg', content_type: 'image/jpg')
 
 puts "creating venue 3"
 edi = Venue.new
@@ -45,3 +60,15 @@ edi.name = "The Duke of Edinburgh"
 edi.user = admin
 edi.category = "Pub"
 edi.save!
+file = URI.open('https://pbs.twimg.com/media/EcA9gAlWkAI81IO.jpg')
+edi.photos.attach(io: file, filename: 'image-7', content_type: 'image/jpg')
+file = URI.open('https://pbs.twimg.com/media/ElaQMrUXIAA4bhA.jpg')
+edi.photos.attach(io: file, filename: 'image-8', content_type: 'image/jpg')
+file = URI.open('https://proemergencyplumbernearme.co.uk/wp-content/uploads/2018/09/The-Duke-Of-Edinburgh-Brixton.jpg')
+edi.photos.attach(io: file, filename: 'image-9', content_type: 'image/jpg')
+
+
+
+
+
+

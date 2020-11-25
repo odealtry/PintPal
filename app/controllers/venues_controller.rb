@@ -5,4 +5,8 @@ class VenuesController < ApplicationController
     @venue = Venue.find(params[:id])
   end
 
+  private
+  def strong_params
+    params.require(:venue).permit(:name, :address, :photos)
+  end
 end
