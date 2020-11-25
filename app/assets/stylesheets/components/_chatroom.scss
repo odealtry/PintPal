@@ -17,7 +17,7 @@
   padding: 0 1rem;
   padding-top: 1rem;
   overflow: scroll;
-  max-height: calc(95vh - 70px - 65px - 71px);
+  max-height: calc(100vh - 70px - 65px - 71px);
 }
 
 #new_message {
@@ -31,7 +31,7 @@
 
 .my-button {
   position: fixed;
-  bottom: 20px;
+  bottom: 40px;
   right: 20px;
   width: 40px;
   border: none;
