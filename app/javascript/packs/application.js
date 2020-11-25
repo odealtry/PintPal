@@ -34,6 +34,7 @@ require("flatpickr/dist/themes/dark.css");
 // import { initSelect2 } from '../components/init_select2';
 import { initMapbox } from '../plugins/init_mapbox';
 import { initSweetalert } from '../plugins/init_sweetalert';
+import { initChatroomCable } from '../channels/chatroom_channel';
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
@@ -42,8 +43,6 @@ document.addEventListener('turbolinks:load', () => {
   navigator.geolocation.getCurrentPosition((data) => {
     const lat = data.coords.latitude;
     const lon = data.coords.longitude;
-    console.log(lat);
-    console.log(lon);
 
     // Sweet alert for getting there
     if (document.getElementById('venue-address') !== null) {
@@ -62,5 +61,7 @@ document.addEventListener('turbolinks:load', () => {
   });
 
   flatpickr("#user_date_of_birth");
+
+  initChatroomCable();
 });
 
