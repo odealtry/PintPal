@@ -1,2 +1,33 @@
 <h2><%= link_to venue.name, venue_path(venue) %> </h2>
 <p><%= venue.address %> </p>
+<% if venue.photos.attached? %>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= cl_image_tag venue.photos[0].key, crop: :fill, class:"d-block w-100" %>
+        </div>
+        <div class="carousel-item">
+          <%= cl_image_tag venue.photos[1].key, crop: :fill, class:"d-block w-100" %>
+        </div>
+        <div class="carousel-item">
+          <%= cl_image_tag venue.photos[2].key, crop: :fill, class:"d-block w-100" %>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+<% end %>
+
+
+<!-- take a look at the google API and see where the images are coming from -->
+<!-- firstly, hard-code the images in so that you can see if the functionality works -->
+<!-- then go to bootstrap stick a carousel with dummy images in to see if they work -->
+<!-- test the google api and see how & what we get the images for  -->
+
+

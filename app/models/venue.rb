@@ -6,5 +6,6 @@ class Venue < ApplicationRecord
   has_many :bookings, dependent: :destroy
   validates :address, :name, presence: true
   validates :category, inclusion: { in: %w[Pub Bar Restaurant Club] }
+  has_many_attached :photos
   has_many :chatrooms
 end
