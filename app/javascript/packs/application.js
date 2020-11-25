@@ -37,16 +37,30 @@ import { initSweetalert } from '../plugins/init_sweetalert';
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
-  const el = document.createElement('div')
-  const venue_address = "E2 8DY"
-  const current_address = "Camden"
-  const maps = `https://www.google.com/maps/dir/?api=1&origin=${current_address}&destination=${venue_address}&travelmode=transit`
-  el.innerHTML = `<a href='http://google.com' style="color: black; font-size: 50px;"><i class='fab fa-uber'></i><br><a href='${maps}' style="color: black; font-size: 50px;"><i class="fas fa-walking"></i></a>`
-  initSweetalert({
-    title: "How are you getting there?",
-    button: false,
-    content: el
+
+  // Finding current_address for getting there sweet alert
+  navigator.geolocation.getCurrentPosition((data) => {
+    const lat = data.coords.latitude;
+    const lon = data.coords.longitude;
+    console.log(lat);
+    console.log(lon);
+
+    // Sweet alert for getting there
+    if (document.getElementById('venue-address') !== null) {
+      const current_address = `${lat} ${lon}`;
+      const venue_address = document.getElementById('venue-address').innerText;
+      const uber = `https://m.uber.com/ul`;
+      const maps = `https://www.google.com/maps/dir/?api=1&origin=${current_address}&destination=${venue_address}&travelmode=transit`;
+      const el = document.createElement('div');
+      el.innerHTML = `<a href='${uber}' style="color: black; font-size: 50px;"><i class='fab fa-uber'></i></br></a><a href='${maps}' style="color: black; font-size: 50px;"><i class="fas fa-subway"></i></a>`;
+      initSweetalert({
+        title: "How are you getting there?",
+        button: false,
+        content: el
+      });
+    }
   });
+
   flatpickr("#user_date_of_birth");
 });
 
