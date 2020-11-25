@@ -11,4 +11,8 @@ class PagesController < ApplicationController
       }
     end
   end
+
+  def shortlist    
+    @user = User.find(params[:id])
+  end
 end

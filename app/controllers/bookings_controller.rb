@@ -10,7 +10,7 @@ class BookingsController < ApplicationController
     @booking.venue = @venue
     @booking.user = current_user
     if @booking.save
-      redirect_to venue_booking_path(@venue, @booking)
+      redirect_to shortlist_path(@booking.user)
     else
       render :new
     end
