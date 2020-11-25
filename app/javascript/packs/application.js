@@ -24,6 +24,11 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import flatpickr from "flatpickr";
+
+//Flatpickr
+import "flatpickr/dist/flatpickr.min.css"
+require("flatpickr/dist/themes/dark.css");
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -32,17 +37,16 @@ import { initSweetalert } from '../plugins/init_sweetalert';
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
-
   const el = document.createElement('div')
   const venue_address = "E2 8DY"
   const current_address = "Camden"
   const maps = `https://www.google.com/maps/dir/?api=1&origin=${current_address}&destination=${venue_address}&travelmode=transit`
-
   el.innerHTML = `<a href='http://google.com' style="color: black; font-size: 50px;"><i class='fab fa-uber'></i><br><a href='${maps}' style="color: black; font-size: 50px;"><i class="fas fa-walking"></i></a>`
   initSweetalert({
     title: "How are you getting there?",
     button: false,
     content: el
   });
+  flatpickr("#user_date_of_birth");
 });
 
