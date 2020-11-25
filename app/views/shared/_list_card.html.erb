@@ -1,7 +1,13 @@
-<div class="shortlist-card">
-  <img class="shortlist-card-img" src="https://picsum.photos/200/300" alt="">
+<div class="shortlist-card">  
   <div class="shortlist-card-text-container">
-    <h5 class="text-center"><%= booking.venue.name %></h5>
-    <p class="p3">Unconfirmed</p>
+    <% if booking.venue.user == current_user %>
+      <%= booking.start.strftime("%H:%M %d/%m/%y") %>
+      <%= booking.length %> hour(s)
+      <button class="btn btn-primary">Accept</button>
+    <% else %>
+    <img class="shortlist-card-img" src="https://picsum.photos/200/300" alt="">
+    <h5 class="text-center"><%= booking.venue.name %></h5>    
+      <p class="p3">Unconfirmed</p>
+    <% end %>
   </div>
 </div>
