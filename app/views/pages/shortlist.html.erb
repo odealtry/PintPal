@@ -1,10 +1,14 @@
 <div class="container">
   <h1 class="text-center m-3"><%= @user.first_name %>'s shortlist</h1>
   <div class="shortlist-container">
-    <div class="shortlist-card">
+    <% @shortlist.each do |item| %>
+      <div class="shortlist-card">
       <img class="shortlist-card-img" src="https://picsum.photos/200/300" alt="">
-      <h5>Hello</h5>
-      <p class="p3">Unconfirmed</p>
+      <div class="shortlist-card-text-container">
+        <h5 class="text-center"><%= item.venue.name %></h5>
+        <p class="p3">Unconfirmed</p>
+      </div>
     </div>    
+    <% end %>
   </div>  
 </div>
