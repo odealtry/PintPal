@@ -3,7 +3,6 @@
   <div class="shortlist-container">
     <% @shortlist.each do |booking| %>
       <%= render partial: "shared/list_card", locals: { booking: booking } %>
-      <div><%#= link_to "Open chat", venue_booking_chatroom_path(booking.venue, booking, ) %></div>
     <% end %>
   </div>
 </div>

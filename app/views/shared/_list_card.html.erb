@@ -1,10 +1,11 @@
-<div class="shortlist-card">  
+<div class="shortlist-card">
     <img class="shortlist-card-img" src="https://picsum.photos/200/300" alt="">
       <div class="shortlist-card-text-container">
         <h5 class="text-center"><%= booking.venue.name %></h5>
         <%= booking.start.strftime("%H:%M %d/%m/%y") %>
         <%= booking.length %> hour(s)
-        <p class="p3">Unconfirmed</p>
-      </div>    
+        <span class="p3">Unconfirmed</span>
+        <div><%= link_to "Open chat", venue_booking_chatroom_path(booking.venue, booking, booking.chatroom) %></div>
+      </div>
   </div>
 </div>
