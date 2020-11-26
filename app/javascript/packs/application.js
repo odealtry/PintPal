@@ -35,6 +35,7 @@ require("flatpickr/dist/themes/dark.css");
 import { initMapbox } from '../plugins/init_mapbox';
 import { initSweetalert } from '../plugins/init_sweetalert';
 import { initChatroomCable } from '../channels/chatroom_channel';
+import { addBackgroundToNavbar } from '../components/navbar';
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
@@ -64,5 +65,6 @@ document.addEventListener('turbolinks:load', () => {
   document.querySelector(".mapboxgl-ctrl-top-right").style.bottom = "70px"
   // flatpickr("#user_date_of_birth");
   initChatroomCable();
+  addBackgroundToNavbar();
 });
 
