@@ -8,8 +8,9 @@
         <p><%= link_to "Your bookings", bookings_path, class: "btn btn-primary" %></p>
     <% else %>
       <% @shortlist.each do |booking| %>        
-          <%= render partial: "shared/list_card", locals: { booking: booking } %>        
+        <%= render partial: "shared/list_card", locals: { booking: booking } %>        
+        <div><%#= link_to "Open chat", venue_booking_chatroom_path(booking.venue, booking, ) %></div>
       <% end %>
     <% end %>
-  </div>  
+  </div>
 </div>
