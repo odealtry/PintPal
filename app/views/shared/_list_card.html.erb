@@ -4,6 +4,8 @@
     <h6 class="text-center"><%= booking.venue.name %></h6>
     <%= booking.start.strftime("%H:%M %d/%m/%y") %>
     <%= booking.length %> hour(s)        
-    <%= link_to "Cancel", venue_booking_path(booking.venue, booking), method: :delete, data: { confirm: "Are you sure?" } %>        
+    <%= link_to "Cancel", venue_booking_path(booking.venue, booking), method: :delete, data: { confirm: "Are you sure?" } %>
+    <div><%= link_to "Open chat", venue_booking_chatroom_path(booking.venue, booking, booking.chatroom) %></div>
   </div>   
 </div>
+

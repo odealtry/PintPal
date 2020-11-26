@@ -12,6 +12,7 @@ class BookingsController < ApplicationController
     @booking.venue = @venue
     @booking.user = current_user
     if @booking.save
+      Chatroom.create(booking: @booking)
       redirect_to shortlist_path(@booking.user)
     else
       render :new
