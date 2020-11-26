@@ -1,5 +1,5 @@
 .chatroom {
-  background: white;
+  // background: white;
   height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
@@ -12,6 +12,7 @@
     margin-bottom: 0;
     font-size: 25px;
     width: 100%;
+    color: $grey;
   }
 }
 
@@ -44,4 +45,9 @@
   border: none;
   background: white;
   font-size: 20px;
+  color: $navy;
+}
+
+.author {
+  color: $grey;
 }
