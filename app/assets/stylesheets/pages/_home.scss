@@ -10,6 +10,11 @@
   padding-top: 0 !important;
 }
 
+.fa-bars {
+  color: white;
+  font-size: 34px;
+}
+
 .navbar-brand {
   margin-right: 0;
 }
@@ -21,6 +26,25 @@
 .navbar-toggler {
   font-size: 1.5rem;
   border: none;
+  line-height: 2.5;
+  padding-left: 3px;
+  padding-top: 7px;
+}
+
+.nav-item {
+  margin-left: 0px;
+  padding-top: 0px;
+  width: 65px;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.navbar-collapse {
+  // background-color: black;
+  width: 65px;
+  margin-right: 0 !important;
 }
 
 .mapboxgl-control-container {
