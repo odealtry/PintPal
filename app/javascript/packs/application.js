@@ -48,5 +48,6 @@ document.addEventListener('turbolinks:load', () => {
     content: el
   });
   flatpickr("#user_date_of_birth");
+  document.querySelector(".mapboxgl-ctrl-top-right").style.bottom = "70px"
 });
 
