@@ -60,7 +60,7 @@ document.addEventListener('turbolinks:load', () => {
     }
   });
 
-  flatpickr("#user_date_of_birth");
+  // flatpickr("#user_date_of_birth");
 
   initChatroomCable();
 });

@@ -37,7 +37,7 @@ class BookingsController < ApplicationController
 
   def index
     bookings = Booking.all
-    @user_bookings = bookings.select { |booking| booking.user_id == current_user.id && booking.confirmed == true }
+    @user_bookings = bookings.select { |booking| booking.user_id == current_user.id && booking.confirmed }
     @venue = Venue.where(user_id: current_user.id)
     @venue_bookings = bookings.select { |booking| booking.venue == @venue.first }
   end
