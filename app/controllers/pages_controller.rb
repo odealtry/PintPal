@@ -12,9 +12,12 @@ class PagesController < ApplicationController
     end
   end
 
-  def shortlist    
+  def shortlist
     @user = User.find(params[:id])
     @shortlist = Booking.all.where(user_id: current_user)
+    # @shortlist.each do |booking|
+    #   Chatroom.create(user: booking.user, venue: booking.venue)
+    # end
   end
 end
 
