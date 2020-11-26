@@ -2,6 +2,10 @@
     <%= f.input :start, html5: true %>
     <%= f.input :length, collection: 1..4, label: "Duration (hours)" %>
     <%= f.input :party_size, collection: 1..6 %>
-    <%= f.submit class: "btn btn-primary" %>
+    <% if @booking.new_record? %>
+      <%= f.submit "Request booking", class: "btn btn-primary" %>
+    <% else %>
+      <%= f.submit "Update booking", class: "btn btn-primary" %>
+    <% end %>
   <% end %>
 

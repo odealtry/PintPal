@@ -38,7 +38,7 @@ class BookingsController < ApplicationController
 
   def destroy
     @booking.delete
-    redirect_to venue_path(@venue)
+    redirect_to shortlist_path
   end
 
   def index
