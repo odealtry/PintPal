@@ -7,4 +7,6 @@ class User < ApplicationRecord
   has_many :venues
   has_many :bookings, dependent: :destroy
   validates :first_name, :last_name, :date_of_birth, :address, presence: true
+  has_many :chatrooms
+  has_many :messages
 end
