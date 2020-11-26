@@ -3,6 +3,8 @@ class BookingsController < ApplicationController
   before_action :set_booking, only: [:show, :edit, :update, :destroy]
   def new
     @booking = Booking.new
+    @bookings = Booking.all
+    @shortlist = @bookings.select { |booking| booking.user == current_user && booking.confirmed == false }.count
   end
 
   def create
