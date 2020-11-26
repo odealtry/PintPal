@@ -5,7 +5,7 @@
     <%= booking.start.strftime("%H:%M %d/%m/%y") %>
     <%= booking.length %> hour(s)        
     <%= link_to "Cancel", venue_booking_path(booking.venue, booking), method: :delete, data: { confirm: "Are you sure?" } %>
-    <div><%= link_to "Open chat", venue_booking_chatroom_path(booking.venue, booking, booking.chatroom) %></div>
+    <%# <div><%= link_to "Open chat", venue_booking_chatroom_path(booking.venue, booking, booking.chatroom) %></div> %>
   </div>   
 </div>
 
