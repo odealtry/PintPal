@@ -13,7 +13,7 @@ class PagesController < ApplicationController
   end
 
   def shortlist
-    @user = User.find(params[:id])
+    @user = current_user
     @user_bookings = Booking.all.where(user_id: current_user)
     @shortlist = @user_bookings.select { |booking| booking.confirmed == false }
     # @shortlist.each do |booking|
