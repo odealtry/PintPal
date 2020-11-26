@@ -9,7 +9,16 @@ h1 {
   text-align:center;
 }
 
-.d-block {
-  width: 220px;
+.carousel-picture-home {
+  margin: auto;
+  width: 200px;
   height: 160.97px;
+}
+
+.carousel-picture-show {
+  margin: auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 3px;
+  box-shadow: 0 2px 14px rgba(126,87,88,.1), 0 3px 6px rgba(0,0,0,.08);
 }

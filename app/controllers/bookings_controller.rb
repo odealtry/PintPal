@@ -3,6 +3,8 @@ class BookingsController < ApplicationController
   before_action :set_booking, only: [:show, :edit, :update, :destroy]
   def new
     @booking = Booking.new
+    @bookings = Booking.all
+    @shortlist = @bookings.select { |booking| booking.user == current_user && booking.confirmed == false }.count
   end
 
   def create
@@ -38,7 +40,7 @@ class BookingsController < ApplicationController
 
   def index
     bookings = Booking.all
-    @user_bookings = bookings.select { |booking| booking.user_id == current_user.id && booking.confirmed == true }
+    @user_bookings = bookings.select { |booking| booking.user_id == current_user.id && booking.confirmed }
     @venue = Venue.where(user_id: current_user.id)
     @venue_bookings = bookings.select { |booking| booking.venue == @venue.first }
   end

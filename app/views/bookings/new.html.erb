@@ -1,5 +1,11 @@
-<h1 class="text-center mt-3">New Booking</h1>
-<h2 class="text-center mt-3"><%= @venue.name %></h2>
 <div class="container">
-  <%= render "shared/booking_form" %>
+  <% if @shortlist >= 5 %>
+    <h3 class="m-5">Too many bookings</h3>
+    <p>Sorry, but you already have 5 items on your shortlist</p>
+    <%= link_to "View shortlist", shortlist_path, class: "btn btn-primary" %>
+  <% else %>
+  <h1 class="text-center mt-3">New Booking</h1>
+    <h2 class="text-center mt-3"><%= @venue.name %></h2>
+    <%= render "shared/booking_form" %>
+  <% end %>
 </div>

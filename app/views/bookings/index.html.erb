@@ -1,24 +1,27 @@
 <div class="container">
   <%# If current_user has a venue, assume they are a venue owner %>
-  <% if @venue %>
+  <% unless @venue.empty? %>
     <h1 class="text-center m-3"><%= @venue.first.name %>'s Bookings</h1>
   <% else %>
     <h1 class="text-center m-3"><%= current_user.first_name %>'s Bookings</h1>
   <% end %>
+
   <div class="shortlist-container">
     <%# If current_user has a venue, show pending bookings for that venue %>
-    <% if @venue %>
+    <% unless @venue.empty? %>
        <% @venue_bookings.each do |booking| %>
         <%= render partial: "/shared/owner_list_card", locals: { booking: booking } %>
       <% end %>
     <% else %>
       <%# Otherwise, show a list of accepted bookings for the user %>
-      <% @user_bookings.each do |booking| %>
-        <%= render partial: "/shared/list_card", locals: { booking: booking } %>
+      <% if @user_bookings.empty? %>
+        <h5 class="m-5">Nothing confirmed bookings</h5>
+        <p><%= link_to "Find a venue", root_path, class: "btn btn-primary" %></p>
+      <% else %>
+        <% @user_bookings.each do |booking| %>
+          <%= render partial: "/shared/list_card", locals: { booking: booking } %>
+        <% end %>
       <% end %>
     <% end %>
   </div>
 </div>
-
-
-
