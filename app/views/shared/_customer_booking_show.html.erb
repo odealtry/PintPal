@@ -9,6 +9,7 @@
       <p class="white-p">This booking is not yet confirmed</p>
    <% end %>
    <%= link_to "Edit booking", edit_venue_booking_path(@venue, @booking), class: "btn m-2" %>
-   <%= link_to "Cancel booking", venue_booking_path(@venue, @booking), 
+   <%= link_to "Cancel booking", venue_booking_path(@venue, @booking),
               method: :delete, data: { confirm: "Are you sure?" },class: "btn m-2" %>
    <%= link_to "My bookings", bookings_path, class: "btn m-2" %>
+   <%= link_to "My shortlist", shortlist_path, class: "btn m-2" %>
