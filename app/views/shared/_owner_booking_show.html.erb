@@ -1,16 +1,19 @@
 <p>Customer <%= @booking.user.first_name %> <%= @booking.user.first_name %> has requested a booking at
-   <p><%= @booking.venue.name %></p>
-   <p><%= @booking.venue.address %></p>
+   <p class="white-p"><%= @booking.venue.name %></p>
+   <p class="white-p"><%= @booking.venue.address %></p>
   Start time <%= @booking.start.strftime("%H:%M")%> on <%= @booking.start.strftime("%d/%m/%y") %>,
    for <%= @booking.length %> hours.</p>
    <% if @booking.confirmed %>
      <p class="white-p">You have confirmed this booking</p>
-  <% else %>
-  <p class="white-p">This booking is not yet confirmed</p>
-  <% end %>
-  <p>You have not yet confirmed this booking</p>
-  <button class="btn">Accept</button>
-  <%#= link_to "Edit booking", edit_venue_booking_path(@venue, @booking), class: "btn" %>
-  <%= link_to "Cancel booking", venue_booking_path(@venue, @booking), 
-              method: :delete, data: { confirm: "Are you sure?" },class: "btn" %>
-  <button class="btn">Chat with customer</button>
+   <% else %>
+      <p class="white-p">This booking is not yet confirmed</p>
+   <% end %>
+   <p>You have not yet confirmed this booking</p>
+
+   <% unless @booking.confirmed %>
+      <button class="btn m-2">Accept</button>
+   <% end %>
+   <%= link_to "Cancel booking", venue_booking_path(@venue, @booking), 
+              method: :delete, data: { confirm: "Are you sure?" },class: "btn m-2" %>
+   <button class="btn m-2">Chat with customer</button>
+    <%= link_to "All bookings", bookings_path, class: "btn m-2" %>
