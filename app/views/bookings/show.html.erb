@@ -1,9 +1,8 @@
 <div class="container">
   <h1 class="text-center m3">Booking info</h1>
-  <p><%= @booking.user.first_name %> <%= @booking.user.last_name %>, you have a booking at <%= @booking.venue.name %>
-  starting at <%= @booking.start.strftime("%H:%M %d/%m/%y") %> for <%= @booking.length %> hours.</p>
-  <p>This booking is not yet confirmed</p>
-  <%= link_to "Edit booking", edit_venue_booking_path(@venue, @booking), class: "btn btn-primary" %>
-  <%= link_to "Cancel booking", venue_booking_path(@venue, @booking), 
-              method: :delete, data: { confirm: "Are you sure?" },class: "btn btn-primary" %>
+  <% if current_user.venues.any? %>
+    <%= render "shared/owner_booking_show" %>
+  <% else %>
+      <%= render "shared/customer_booking_show" %>
+  <% end %>     
 </div>

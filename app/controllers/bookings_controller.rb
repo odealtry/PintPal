@@ -37,15 +37,18 @@ class BookingsController < ApplicationController
   end
 
   def destroy
+    @booking.chatroom.messages.destroy_all
+    @booking.chatroom.destroy
     @booking.delete
-    redirect_to venue_path(@venue)
+    redirect_to shortlist_path
   end
 
   def index
     bookings = Booking.all
     @user_bookings = bookings.select { |booking| booking.user_id == current_user.id && booking.confirmed }
     @venue = Venue.where(user_id: current_user.id)
-    @venue_bookings = bookings.select { |booking| booking.venue == @venue.first }
+    # @venue_bookings = bookings.select { |booking| booking.venue == @venue.first }
+    @venue_bookings = Booking.all
   end
 
   private

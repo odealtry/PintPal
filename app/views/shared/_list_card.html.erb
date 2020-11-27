@@ -1,13 +1,21 @@
-<div class="shortlist-card">
+<div class="shortlist-card">  
+  <%#= cl_image_tag booking.venue.photo.key, height: 300, width: 400, crop: :fill %>
   <img class="shortlist-card-img" src="https://picsum.photos/200/300" alt="">
   <div class="shortlist-card-text-container">
-    <h6 class="text-center"><%= booking.venue.name %></h6>
-    <%= booking.start.strftime("%H:%M %d/%m/%y") %>
-    <%= booking.length %> hour(s)
-    <%= link_to "Cancel", venue_booking_path(booking.venue, booking), method: :delete, data: { confirm: "Are you sure?" } %>
-    <div><%= link_to "Open chat", venue_booking_chatroom_path(booking.venue, booking, booking.chatroom) %></div>
-    <div class="chat-button" data-booking-id="<%= booking.id %>" data-venue-id="<%= booking.venue.id %>" data-chatroom-id="<%= booking.chatroom.id %>"><button>>>> Pop up <<<</button></div>
-  </div>
+    <p><%= booking.venue.name %></p>
+    <p><%= booking.start.strftime("%H:%M %d/%m/%y") %>
+    <%= booking.length %> hour(s)</p>
+    <%#= icon("fas", "fa-comments") %>
+    <%#= icon("fas", "fa-window-close") %>
+    <div class="shortlist-card-button-container">
+      <%= link_to "View", venue_booking_path(booking.venue, booking), class: "btn w-50" %>    
+      <% if booking.confirmed %>
+        <div class="shortlist-card-status shortlist-card-accepted"></div>
+      <% else %>
+        <div class="shortlist-card-status shortlist-card-pending"></div>
+      <% end %>
+    </div>
+  </div>   
 </div>
 
 
