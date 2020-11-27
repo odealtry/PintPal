@@ -1,5 +1,5 @@
 <div class="shortlist-card">
   <%= booking.start.strftime("%H:%M %d/%m/%y") %>
   <%= booking.length %> hour(s)
-  <button class="btn">Accept</button>  
+  <%= link_to "View", venue_booking_path(booking.venue, booking), class: "btn" %>
 </div>
