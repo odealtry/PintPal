@@ -1,6 +1,8 @@
 <div class="shortlist-card">  
   <div class="shortlist-card-image-box">
-    <%= cl_image_tag booking.venue.photos[1].key, height: 90, width: 90, crop: :fill %>
+    <% if booking.venue.photos.any? %>
+      <%= cl_image_tag booking.venue.photos[1].key, height: 90, width: 90, crop: :fill %>
+    <% end %>
   </div>
   <div class="shortlist-card-text-container">
     <p><%= booking.venue.name %></p>
