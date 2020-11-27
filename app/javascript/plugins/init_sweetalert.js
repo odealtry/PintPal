@@ -6,7 +6,6 @@ const initSweetalert = (options = {}) => {
   const swalButton = document.getElementById('sweet-alert');
 
   if (swalButton) { // protect other pages
-    console.log('here');
     swalButton.addEventListener('click', (event) => {
       event.preventDefault();
       swal(options);
