@@ -1,4 +1,8 @@
-<div class="message-container" id="message-<%= message.id %>">
+<% if message.user.id != message.chatroom.booking.venue.user.id %>
+  <div class="message-container text-right" id="message-<%= message.id %>">
+<% else %>
+  <div class="message-container" id="message-<%= message.id %>">
+<% end %>
   <i class="author">
     <span><%= message.user.first_name %></span>
     <small><%= message.created_at.strftime("%a %b %e at %l:%M%p") %></small>

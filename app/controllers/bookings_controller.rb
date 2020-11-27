@@ -14,7 +14,7 @@ class BookingsController < ApplicationController
     chatroom = Chatroom.new(booking: @booking)
     @booking.chatroom = chatroom
     if @booking.save
-      chatroom.save    
+      chatroom.save
       # Chatroom.create(booking: @booking)
       redirect_to shortlist_path(@booking.user)
     else
