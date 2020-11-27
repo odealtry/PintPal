@@ -18,12 +18,3 @@ class PagesController < ApplicationController
     # @shortlist = @user_bookings.select { |booking| booking.confirmed == false }
   end
 end
-
-        # case venue.name
-        # when "the court"
-        #   images_array = ["the_court_1.png", "the_court_2.png", "the_court_3.png"]
-        # when "the phene"
-        #   images_array = ["the_phene_1.png", "the_phene_2.png", "the_phene_3.png"]
-        # when "the duke of edinburgh"
-        #   images_array = ["d_of_e_1.png", "d_of_e_2.png", "d_of_e_3.png"]
-        # end,
