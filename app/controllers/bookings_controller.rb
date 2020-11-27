@@ -48,6 +48,7 @@ class BookingsController < ApplicationController
     bookings = Booking.all
     @user_bookings = bookings.select { |booking| booking.user_id == current_user.id && booking.confirmed }
     @venue = Venue.where(user_id: current_user.id)
+    # For now our admin user is linked to all the bookings
     # @venue_bookings = bookings.select { |booking| booking.venue == @venue.first }
     @venue_bookings = Booking.all
   end
