@@ -6,9 +6,8 @@
    <% if @booking.confirmed %>
      <p class="white-p">You have confirmed this booking</p>
    <% else %>
-      <p class="white-p">This booking is not yet confirmed</p>
+      <p>You have not yet confirmed this booking</p>
    <% end %>
-   <p>You have not yet confirmed this booking</p>
 
    <% unless @booking.confirmed %>
       <button class="btn m-2">Accept</button>
