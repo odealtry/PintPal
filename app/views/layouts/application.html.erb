@@ -14,6 +14,9 @@
 
   <body>
     <%= render 'shared/navbar' %>
+    <% unless params[:controller] == 'pages' && params[:action] == 'home' %>
+    <div style="height: 70px;"></div>
+    <% end %>
     <%= render 'shared/flashes' %>
 
     <%= yield %>
