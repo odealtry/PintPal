@@ -1,6 +1,9 @@
 <div class="shortlist-card">  
-  <%#= cl_image_tag booking.venue.photo.key, height: 300, width: 400, crop: :fill %>
-  <img class="shortlist-card-img" src="https://picsum.photos/200/300" alt="">
+  <div class="shortlist-card-image-box">
+    <% if booking.venue.photos.any? %>
+      <%= cl_image_tag booking.venue.photos[1].key, height: 90, width: 90, crop: :fill %>
+    <% end %>
+  </div>
   <div class="shortlist-card-text-container">
     <p><%= booking.venue.name %></p>
     <p><%= booking.start.strftime("%H:%M %d/%m/%y") %>
