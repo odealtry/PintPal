@@ -11,8 +11,11 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.venue = @venue
     @booking.user = current_user
+    chatroom = Chatroom.new(booking: @booking)
+    @booking.chatroom = chatroom
     if @booking.save
-      Chatroom.create(booking: @booking)
+      chatroom.save    
+      # Chatroom.create(booking: @booking)
       redirect_to shortlist_path(@booking.user)
     else
       render :new
@@ -35,7 +38,7 @@ class BookingsController < ApplicationController
 
   def destroy
     @booking.delete
-    redirect_to venue_path(@venue)
+    redirect_to shortlist_path
   end
 
   def index

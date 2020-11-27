@@ -3,9 +3,9 @@
   <div class="shortlist-container">    
     <% if @shortlist.empty? %>
       <h5 class="m-5">Nothing here</h5>
-        <p><%= link_to "Find a venue", root_path, class: "btn btn-primary" %></p>
+        <p><%= link_to "Find a venue", root_path, class: "btn" %></p>
         <p>or</p>
-        <p><%= link_to "Your bookings", bookings_path, class: "btn btn-primary" %></p>
+        <p><%= link_to "Your bookings", bookings_path, class: "btn" %></p>
     <% else %>
       <% @shortlist.each do |booking| %>        
         <%= render partial: "shared/list_card", locals: { booking: booking } %>

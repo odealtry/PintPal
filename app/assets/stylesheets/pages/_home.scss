@@ -10,6 +10,27 @@
   padding-top: 0 !important;
 }
 
+.navbar {
+  padding: 0;
+  transition: 0.35s;
+}
+
+.with-background {
+  background-color: black;
+}
+
+.navbar-nav {
+  max-width: 110px;
+  background-color: black;
+  border-radius: 5px;
+  padding-left: 15px;
+  margin-top: -5px;
+}
+
+.logo {
+  padding-right: 18px;
+}
+
 .fa-bars {
   color: white;
   font-size: 34px;
@@ -27,7 +48,7 @@
   font-size: 1.5rem;
   border: none;
   line-height: 2.5;
-  padding-left: 3px;
+  padding-left: 18px;
   padding-top: 7px;
 }
 

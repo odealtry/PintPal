@@ -5,7 +5,9 @@
   margin: 10px;
   padding: 5px;
   box-shadow: 1px 1px 3px lightgrey;
-  background-color:white;
+  background-color:#ffffff;
+  color: black;
+  border-radius: 3px;
 }
 
 .shortlist-card-img {
@@ -21,4 +23,9 @@
   height: 100%;
   align-items: center;
   justify-content: center;
+}
+
+.shortlist-card-text-container p {
+  margin: 0;
+  padding: 0;
 }
