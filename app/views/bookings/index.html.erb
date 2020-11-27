@@ -11,7 +11,7 @@
     <% unless @venue.empty? %>
        <% @venue_bookings.each do |booking| %>
         <%= render partial: "/shared/owner_list_card", locals: { booking: booking } %>
-      <% end %>
+      <% end %>      
     <% else %>
       <%# Otherwise, show a list of accepted bookings for the user %>
       <% if @user_bookings.empty? %>

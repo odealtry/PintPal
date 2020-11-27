@@ -29,3 +29,23 @@
   margin: 0;
   padding: 0;
 }
+
+.shortlist-card-button-container {
+  display: flex;
+  width: 100%;
+}
+
+.shortlist-card-status {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-left: 25px;
+}
+
+.shortlist-card-pending {
+  background-color: orange;
+}
+
+.shortlist-card-accepted {
+  background-color: lightgreen;
+}
