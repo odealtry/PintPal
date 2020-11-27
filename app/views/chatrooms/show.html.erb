@@ -1,7 +1,6 @@
 <br>
 <br>
 <br>
-<% recipient = @user.first_name %>
 <% if current_user == @venue_user %>
   <% recipient = @user.first_name %>
 <% else %>
@@ -12,7 +11,6 @@
   <h1><strong><%= "Chatting with #{recipient}" %></strong></h1>
   <div id="messages" data-chatroom-id="<%= @chatroom.id %>">
     <% @chatroom.messages.each do |message| %>
-      <%= "#{current_user.id} & #{message.user.id}"%>
       <% if message.user.id != @venue_user.id %>
         <div class="message-container text-right" id="message-<%= message.id %>">
       <% else %>
