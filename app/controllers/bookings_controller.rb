@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
   before_action :set_venue, only: [:new, :create, :edit, :update, :show, :destroy]
-  before_action :set_booking, only: [:show, :edit, :update, :destroy]
+  before_action :set_booking, only: [:show, :edit, :update, :destroy, :accept_booking]
   def new
     @booking = Booking.new
     @bookings = Booking.all
@@ -49,6 +49,12 @@ class BookingsController < ApplicationController
     @venue = Venue.where(user_id: current_user.id)
     # @venue_bookings = bookings.select { |booking| booking.venue == @venue.first }
     @venue_bookings = Booking.all
+  end
+
+  def accept_booking   
+    @booking.confirmed = true
+    @booking.save!
+    redirect_to venue_booking_path(@booking.venue, @booking)
   end
 
   private
