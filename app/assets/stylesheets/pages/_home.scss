@@ -99,11 +99,17 @@
   width: 100vw !important;
 }
 
-.carousel-picture {
+.carousel-picture-home {
   width: 200px;
   height: 160.97px;
+  border-radius: 3px;
 }
 
-p {
-  color: black;
+.mapboxgl-popup-content {
+background-color: rgba(0, 0, 0, 0.8);
 }
+
+.mapboxgl-popup-content a {
+  color: #fff;
+}
+
