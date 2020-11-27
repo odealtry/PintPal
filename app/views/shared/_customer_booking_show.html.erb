@@ -3,7 +3,11 @@
    <p class="white-p"><%= @booking.venue.address %></p>
   Your booking starts at <%= @booking.start.strftime("%H:%M")%> on <%= @booking.start.strftime("%d/%m/%y") %>,
    and is for <%= @booking.length %> hours.</p>
+  <% if @booking.confirmed %>
+     <p class="white-p">CONFIRMED</p>
+  <% else %>
   <p class="white-p">This booking is not yet confirmed</p>
+  <% end %>
   <%= link_to "Edit booking", edit_venue_booking_path(@venue, @booking), class: "btn m-2" %>
   <%= link_to "Cancel booking", venue_booking_path(@venue, @booking), 
               method: :delete, data: { confirm: "Are you sure?" },class: "btn m-2" %>
