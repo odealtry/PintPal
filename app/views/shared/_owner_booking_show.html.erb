@@ -13,8 +13,9 @@
 
    <% unless @booking.confirmed %>
       <button class="btn m-2">Accept</button>
+      <%= link_to "Accept booking", accept_booking_path(@booking), method: :post %>
    <% end %>
    <%= link_to "Cancel booking", venue_booking_path(@venue, @booking),
               method: :delete, data: { confirm: "Are you sure?" },class: "btn m-2" %>
-   <button class="btn m-2">Chat with customer</button>
+   <%# <button class="btn m-2">Chat with customer</button> %>
     <%= link_to "All bookings", bookings_path, class: "btn m-2" %>
