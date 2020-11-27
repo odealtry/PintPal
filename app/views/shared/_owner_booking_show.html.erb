@@ -11,9 +11,8 @@
       <p>You have not confirmed this booking yet.</p>
    <% end %>
 
-   <% unless @booking.confirmed %>
-      <button class="btn m-2">Accept</button>
-      <%= link_to "Accept booking", accept_booking_path(@booking), method: :post %>
+   <% unless @booking.confirmed %>      
+      <%= link_to "Accept booking", accept_booking_path(@booking), method: :post, class: "btn m-2" %>
    <% end %>
    <%= link_to "Cancel booking", venue_booking_path(@venue, @booking),
               method: :delete, data: { confirm: "Are you sure?" },class: "btn m-2" %>

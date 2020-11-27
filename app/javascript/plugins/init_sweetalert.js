@@ -1,9 +1,12 @@
 import swal from 'sweetalert';
 
+
 const initSweetalert = (options = {}) => {
-  const swalButton = document.querySelector('#sweet-alert');
+  console.log("here");
+  const swalButton = document.getElementById('sweet-alert');
 
   if (swalButton) { // protect other pages
+    console.log('here');
     swalButton.addEventListener('click', (event) => {
       event.preventDefault();
       swal(options);

@@ -5,6 +5,11 @@
 }
 
 .btn:hover {
+  border:none;
   color: #14213dff;
   background-color: white;
+}
+
+.btn:active {
+  border:none;
 }
