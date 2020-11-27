@@ -1,0 +1,11 @@
+<p>Customer <%= @booking.user.first_name %> <%= @booking.user.first_name %> has requested a booking at
+   <p><%= @booking.venue.name %></p>
+   <p><%= @booking.venue.address %></p>
+  Start time <%= @booking.start.strftime("%H:%M")%> on <%= @booking.start.strftime("%d/%m/%y") %>,
+   for <%= @booking.length %> hours.</p>
+  <p>You have not yet confirmed this booking</p>
+  <button class="btn">Accept</button>
+  <%#= link_to "Edit booking", edit_venue_booking_path(@venue, @booking), class: "btn" %>
+  <%= link_to "Cancel booking", venue_booking_path(@venue, @booking), 
+              method: :delete, data: { confirm: "Are you sure?" },class: "btn" %>
+  <button class="btn">Chat with customer</button>

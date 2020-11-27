@@ -1,9 +1,9 @@
 <div class="container">
   <%# If current_user has a venue, assume they are a venue owner %>
-  <% unless @venue.empty? %>
-    <h1 class="text-center m-3"><%= @venue.first.name %>'s Bookings</h1>
-  <% else %>
+  <% if @venue.empty? %> 
     <h1 class="text-center m-3"><%= current_user.first_name %>'s Bookings</h1>
+  <% else %>
+    <h1 class="text-center m-3">Bookings</h1>    
   <% end %>
 
   <div class="shortlist-container">
@@ -15,7 +15,7 @@
     <% else %>
       <%# Otherwise, show a list of accepted bookings for the user %>
       <% if @user_bookings.empty? %>
-        <h5 class="m-5">Nothing confirmed bookings</h5>
+        <h5 class="m-5">No bookings</h5>
         <p><%= link_to "Find a venue", root_path, class: "btn" %></p>
       <% else %>
         <% @user_bookings.each do |booking| %>
