@@ -29,6 +29,7 @@ thecourt.address = "The Court, 108a Tottenham Court Road, London, Greater London
 thecourt.name = "The Court"
 thecourt.user = admin
 thecourt.category = "Pub"
+thecourt.description = "Large contemporary pub with weekly pub quiz, big screen sports and seasonal menus of real cask ales."
 thecourt.save!
 file = URI.open('https://img01.beerintheevening.com/d6/d6d386f22140222bc6c6dfec33126162.jpg')
 thecourt.photos.attach(io: file, filename: 'image-4.jpg', content_type: 'image/jpg')
@@ -45,6 +46,7 @@ thephene.address = "9 Phene St, Chelsea, London SW3 5NY"
 thephene.name = "The Phene"
 thephene.user = admin
 thephene.category = "Pub"
+thephene.description = "Converted pub with purple-velvet lounge bar, library-themed dining room and beach bar-style terrace."
 thephene.save!
 file = URI.open('https://upload.wikimedia.org/wikipedia/commons/4/41/Phene_Arms_May_2012.JPG')
 thephene.photos.attach(io: file, filename: 'image-1.jpg', content_type: 'image/jpg')
@@ -59,6 +61,7 @@ edi.address = "204 Ferndale Rd, Ferndale, London SW9 8AG"
 edi.name = "The Duke of Edinburgh"
 edi.user = admin
 edi.category = "Pub"
+edi.description = "Quirky modern pub with feature lighting, purple pool table and an expansive, leafy beer garden."
 edi.save!
 file = URI.open('https://pbs.twimg.com/media/EcA9gAlWkAI81IO.jpg')
 edi.photos.attach(io: file, filename: 'image-7', content_type: 'image/jpg')
