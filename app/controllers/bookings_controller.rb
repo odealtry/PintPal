@@ -37,9 +37,10 @@ class BookingsController < ApplicationController
   end
 
   def destroy
-    @booking.chatroom.messages.destroy_all
-    @booking.chatroom.destroy
-    @booking.delete
+    if @booking.chatroom
+      @booking.chatroom.destroy
+      @booking.delete
+    end
     redirect_to shortlist_path
   end
 
