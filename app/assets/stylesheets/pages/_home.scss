@@ -149,8 +149,17 @@
   animation: fadeIn 4s ease-in forwards;
 }
 
+.fade-in-slower {
+  opacity: 0;
+  animation: fadeIn 6s ease-in forwards;
+}
+
 .splash-logo {
   width: 150px;
+}
+
+.splash-fire {
+  width: 50px;  
 }
 
 .invisible {
