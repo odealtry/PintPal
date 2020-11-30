@@ -43,7 +43,7 @@ document.addEventListener('turbolinks:load', () => {
   initMapbox();
   initChat();
   initChatroomCable();
-
+  splashScreen();
 
   // Finding current_address for getting there sweet alert
   navigator.geolocation.getCurrentPosition((data) => {
@@ -71,3 +71,29 @@ document.addEventListener('turbolinks:load', () => {
   changePlaceholder();
 });
 
+const splashScreen = () => {
+  const splash = document.querySelector('.splash');
+  const navbar = document.querySelector('.navbar');
+  let splashed = false;
+  if (document.cookie !== "") {
+    splashed = document.cookie
+      .split('; ')
+      .find(row => row.startsWith('splashed'))
+      .split('=')[1];      
+  }
+
+  if (splash) {
+    if (splashed) {
+      splash.classList.add('invisible');      
+    } else {
+      navbar.classList.toggle("invisible");
+      setTimeout(() => {
+        splash.classList.add('display-none');
+      }, 6000);
+      setTimeout(() => {
+        navbar.classList.toggle("invisible");
+      }, 6200);
+    }
+  }
+  document.cookie = "splashed=true";
+};
