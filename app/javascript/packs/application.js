@@ -37,6 +37,7 @@ import { initSweetalert } from '../plugins/init_sweetalert';
 import { initChatroomCable } from '../channels/chatroom_channel';
 import { initChat } from '../components/init_chat';
 import { addBackgroundToNavbar } from '../components/navbar';
+import { changePlaceholder } from '../components/navbar';
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
@@ -67,5 +68,6 @@ document.addEventListener('turbolinks:load', () => {
 
   initChatroomCable();
   addBackgroundToNavbar();
+  changePlaceholder();
 });
 
