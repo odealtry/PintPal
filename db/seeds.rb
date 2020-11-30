@@ -17,11 +17,6 @@ admin.date_of_birth = Date.today - 10000
 admin.address = "180 Ashley Gardens, Emery Hill Street, SW1P 1PD"
 admin.save!
 
-ConvertApi.config.api_secret = 'AeeFlFsOwN3UHTzO'
-def convert_to_jpg(url)
-   return ConvertApi.convert('jpg', { Url: url }, from_format = 'web')
-end
-
 venue_array = [
   thecourt = {
     address: "The Court, 108a Tottenham Court Road, London, Greater London, W1T 5AA",
@@ -62,6 +57,288 @@ venue_array = [
             'https://lh5.googleusercontent.com/p/AF1QipNyMNnToxqQ2uMn3hjtkWcPSn0t5NC1JYworbRw=s1920-k-no'
     ]
   },
+  holly_bush = {
+    address: "22 Holly Mount, Hampstead, London NW3 6SG, United Kingdom",
+    name: "The Holly Bush",
+    category: "Pub",
+    description: "Traditional 18th-century wood-panelled pub serving cask ales, with fireplace and outdoor space.",
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipOfjjMbB1brjNLP7jN1Ulsda1l3qTaniRIIERti=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPCLAsIuXPKYnpXhe8E6WC1nBx2dNoF3LSRzSHn=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMAS5woK-oQXC2_wHuU58dlH18Li7Ift-gTEyEH=s1920-k-no'
+    ]
+  },
+  garden_gate = {
+    address: "14 S End Rd, Hampstead, London NW3 2QE",
+    name: "The Garden Gate",
+    category: "Pub",
+    description: "Wood-panelled 19th-century pub with tasseled lampshades and a large, heated garden.",
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipNfeXfsjVxgRlLPrJyZvh21bZ4fYUckqZkXbnhB=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPXdG5c1LIrThrqJOVEoHhpJBxJJeHmDGnEWSfi=s1920-k-no-pi0-ya77.99999-ro0-fo100',
+            'https://lh5.googleusercontent.com/p/AF1QipNXxuc6nrh14KJd8EN5sfgGqayCoKZ8_5HjAG9M=s1920-k-no'
+    ]
+  },
+  the_stag = {
+    address: "67 Fleet Rd, Hampstead, London NW3 2QU",
+    name: "The Stag",
+    category: "Pub",
+    description: "High-ceilinged gastropub dating from 1874, with bare brick walls and private cabanas in the garden.",
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipPZZz221nJRuApbWJmmfQbththOwiTBFNI4QycD=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPAHRol5hMPGySF-G6HULxSLZdlOGMMM5w560Wt=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPXFPeCiOooMLJCUJO0eBJUtWSS7JXKm3j5nkyD=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMECw_KsIQKLCMf5UTZqJPz7Op3_inw1IMAay1k=s1920-k-no'
+    ]
+  },
+  the_roebuck = {
+    address: '15 Pond St, Hampstead, London NW3 2PN',
+    name: "The Roebuck",
+    category: "Pub",
+    description: "19th-century pub with arched windows, an open fireplace and leather armchairs, plus heated garden.",
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipPIm2fzzeu6puPykWhVOnazkFWnbNacYQfjuEi-=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPWw0MFAJ23uc84-f5uDXwQua6LqxPOG-05Z2nN=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOpI5WVTJx9Fbt1qcAdgIMDz5ExhUDKS_L5cC24=s1920-k-no'
+    ]
+  },
+  the_bull = {
+    address: "13 North Hill, Highgate, London N6 4AB",
+    name: "The Bull",
+    category: "Pub",
+    description: "Smart, trendy pub with bay windows, British menu and a selection of beers brewed on the premises.",
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipPIm2fzzeu6puPykWhVOnazkFWnbNacYQfjuEi-=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPWw0MFAJ23uc84-f5uDXwQua6LqxPOG-05Z2nN=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOpI5WVTJx9Fbt1qcAdgIMDz5ExhUDKS_L5cC24=s1920-k-no'
+    ]
+  },
+  the_fellow = {
+    address: '24 York Way, Kings Cross, London N1 9AA',
+    name: 'The Fellow',
+    category: 'Pub',
+    description: 'Gastropub for Euro-influenced Modern British food in slick, retro interior big on leather and wood.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipPkSSpQPUXaE1KNBS0mGBsM7D9Plvbrx-0a7rO2=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipM5DP5yjRg4wdVpAc8EtIxfco_5Bqo53SvR0YZH=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipN8ABSGhUjQCVL_2cEru34t53ueHHHs5LrYtjt9=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipN68cYsYSMA-W5pW4igl-ZQ144F3VUO1UWcONjw=s1920-k-no'
+    ]
+  },
+  fawcett = {
+    address: '1 Randolph St, London NW1 0SS',
+    name: 'The Colonel Fawcett',
+    category: 'Pub',
+    description: '19th-century gastropub with 30+ varieties of gin, hosting occasional music, comedy and club nights.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipPYJ0bsTMuLdM76cS81viMqQydkZzjQiwvq3wrk=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOoowKABWHUD-8dD8zZHtRSt05L8JSTWQgj1QvA=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMJIhcGS2f92FbYeXn7XJwBej3NbRELZK3_pTHK=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPOYvFDKeSlvohnXaJyWnhL-mCaFw9n8Memc2oT=s1920-k-no'
+    ]
+  },
+  prince_albert = {
+    address: "163 Royal College St, London NW1 0SG",
+    name: "The Prince Albert",
+    category: "Pub",
+    description: 'Gastropub dining with sustainably sourced ingredients in stripped-back contemporary pub and garden.',
+    photos: ['https://geo1.ggpht.com/cbk?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=IPADd5NOku0HtMrxL79HJA&w=588&h=290&thumb=2&yaw=217.81491&pitch=0'
+    ]
+  },
+  edinboro = {
+    address: '57 Mornington Terrace, London NW1 7RU',
+    name: "The Edinboro Castle",
+    category: "Pub",
+    description: "Comfy, relaxed gastropub with a Modern Euro menu of tapas and British pub fare, plus a beer garden.",
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipOjlF49nhiuJsgZmBHwby7-gswDmslYCIOIR9ET=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipM4pLcXMy2BeyAcsTcGDt7S0klgMjLOW7QfKhzX=s1920-k-no',
+            'http://img.static-bookatable.com/498/332/b9577ba625d609511d53098eb4b0f419.jpg?404=bat2/404-restaurant.jpgmode=crop'
+    ]
+  },
+  old_eagle = {
+    address: '251 Royal College St, London NW1 9LU',
+    name: 'The Old Eagle',
+    category: 'Pub',
+    description: 'Pub with quirky, musical-themed decor.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipMT2YzIZ_ehFghlxUFy8RC2L4mkGDilgBhz5bNq=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipO7uCuBU6ynU21PsxG_D9I3b0iJzwZFtzEOmCzq=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOyo-zsVqw2sXdG28JmR3tvfT_UZEv0BL5ZNk6m=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipN1WvGOgRLdeY3gy_QwY16P4vdlBTAuE3tJwhD7=s1920-k-no'
+    ]
+  },
+  hawley_arms = {
+    address: '2 Castlehaven Rd, Camden Town, London NW1 8QU',
+    name: 'The Hawley Arms',
+    category: 'Pub',
+    description: 'Pub with autographed rock star hall of fame pictures, walled garden, upstairs bar and roof terrace.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipP7PoUZTuyiSn0zLUgDuUrhQFzaocZrTdY-8c8X=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipO8NUL8KDOvrBKoSdz9MMLAEEofbqEANOW_VYSN=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOrz3_X4BQOyKsALWl1kxSr1xkQGobTTV3kHjwx=s1920-k-no'
+    ]
+  },
+  engineer = {
+    address: '65 Gloucester Ave, Chalk Farm, London NW1 8JD',
+    name: 'The Engineer',
+    category: 'Pub',
+    description: 'Stylish gastropub on 2 floors with a carefully prepared seasonal menu of dishes for all appetites.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipOQtztVa3s3YXKM0i4tJdt7jzAO25gYfCUquVGt=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipN4YVtqNGBktVn4U7b580mLHSRzJMYQvHEMUNoP=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPJtHWpghfiB-ecFJOKXzPUFmkizGT4H1up3ytv=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOCMEYX2ij8DT9NOigaVnyL0EFaq95oZGyrBJmm=s1920-k-no'
+    ]
+  },
+  faltering_fullback = {
+    address: '19 Perth Rd, Stroud Green, London N4 3HB',
+    name: 'The Faltering Fullback',
+    category: 'Pub',
+    description: 'Rambling pub with bric-a-brac and vintage posters, plus spacious beer garden and menu of Thai food.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipNDFnB7igVzKNfb0TaOGod7YQ9QMYN-R6ES0TDh=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipM2Amu0J5Ca6-8d55_pii09knqnDYVQN7gzvvWQ=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMaCsihhbtwVBSBgy0mnAc9yfV0l8OKA-Lavprc=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOW92188FRzVKPyxB9YXgyCjcAvbl0S8ZyrB0YP=s1920-k-no'
+    ]
+  },
+  vine = {
+    address: '86 Highgate Rd, Kentish Town, London NW5 1PB',
+    name: 'The Vine',
+    category: 'Pub',
+    description: 'Big old pub set back from the road with front garden, numerous interior rooms and a gastropub menu.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipMr7xrLeC07UVHoywSlw9DCEmdCyvK8ZMjxSCLs=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPaqgb27wCDYpaDdKysuygbDbbJDnfGdPIlMcaL=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPQx2ciMqZ0BWJq3nEACOaMxopIC97VxAz7XYr7=s1920-k-no'
+    ]
+  },
+  pineapple = {
+    address: '51 Leverton St, Kentish Town, London NW5 2NX',
+    name: 'The Pineapple',
+    category: 'Pub',
+    description: 'Built in 1868, this pub with traditional decor offers a changing beer list, Thai food & board games.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipNG9B-8midSJduSNTdrIfPqBjXFF4NTQE0XjbFY=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOcsIBQsLbfs0u4sRvEAbMBJeQAF3Hxi0RXfdW0=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNvYcl3ARVgbSuBFb73YGBZjZExXS-pRSkZCqDP=s1920-k-no'
+    ]
+  },
+  gipsy_queen = {
+    address: '166 Malden Rd, London NW5 4BS',
+    name: 'The Gipsy Queen',
+    category: 'Pub',
+    description: 'Renovated Victorian pub now housing a funky craft beer venue serving eclectic cuisine.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipMdX5oW6Ew_6IMDIs-2OsK9HKGy_4D6CCLWE5Zs=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOHeYt-NusoL_U8AhaGxcKXfhO2OoscCplluavU=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOBdogik5uiPEM8ZUFizLDI-QR7MSHYYckKGt1n=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPWrBGzyW_9tzF4SrdE7OUPpPy_cy0ShuqaILLK=s1920-k-no'
+    ]
+  },
+  abbey = {
+    address: '124 Kentish Town Rd, Kentish Town, London NW1 9QB',
+    name: 'The Abbey Tavern',
+    category: 'Pub',
+    description: 'Pub with rooftop garden, regular open mic and comedy nights, plus food from hog roasts to burgers.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipP8E48nTCwLCXW_AqiIzGBYmmRt-nX0m5D9C69m=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipP1b6K96pX55Immj1jRF5NDC3-O52FBR09ALWpU=s1920-k-no-pi-20-ya0.6000177-ro0-fo100',
+            'https://lh5.googleusercontent.com/p/AF1QipPeBICvRC5ydJfWpe1Q_azp9ZW4WRNYfVQqnCmX=s1920-k-no'
+    ]
+  },
+  castle = {
+    address: '54 Pentonville Rd, The Angel, London N1 9HF',
+    name: 'The Castle',
+    category: 'Pub',
+    description: 'Light-filled pub with colourful fabrics and vintage trimmings, plus decked roof terrace.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipMM5crRLgDp5Fx1dDYNcuMyYXDyPD25jog_PsBT=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipP-8uTdWdhTcNfPC7Q9bAC7MEw1bkvehlYRkueW=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNJ-O3Dj8w9iX891g48wFxJW9QVQv6J0oeBVAqJ=s1920-k-no'
+    ]
+  },
+  spaniards_inn = {
+    address: 'Spaniards Rd, Hampstead, London NW3 7JJ',
+    name: 'The Spaniards Inn',
+    category: 'Pub',
+    description: 'Wood-panelled pub with homely fireplace and large garden for outdoor pints and comfort food.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipOa7bFRmavShJwvAAlJbpW4255Dx_28_mIx5cGC=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOBYQSRnzLXGsT9PuQ9aPzKKkMwFz6FfJtj9n4X=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNlSk4hGtmYm_geG93cJkIDFDAAs4JP1cItnfBe=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipN-5lN3x5pehpvRmtkZd5UFXwITLNepEq1dImnz=s1920-k-no'
+    ]
+  },
+  hicce = {
+    address: 'Unit 102, hicce x Wolf & Badger, Stable St, London N1C 4DQ',
+    name: 'Hicce',
+    category: 'Restaurant',
+    description: 'Airy, brick-exposed eatery offering modern, sharable plates cooked over a wood fire.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipMwf9OE7qyyZoHchoRClI3vYlCLahqQBuedW0MF=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPGOykD6ke4Wh-47vvybFbqQEXNs6fp68S0ZvHY=s1920-k-no'
+    ]
+  },
+  swimmer = {
+    address: '13 Eburne Rd, London N7 6AR',
+    name: 'The Swimmer at the Grafton Arms',
+    category: 'Pub',
+    description: 'Lovely local with generous food portions',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipM6yKqPVODqigojZbAQLQuUesFB1uEVlCJpFl9k=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOMLTVWqqWZ_MBArxWl9FYfz6J8gBj2vy61tSeV=s1920-k-no'
+    ]
+  },
+  yeats = {
+    address: '20 Fonthill Rd, Finsbury Park, London N4 3HU',
+    name: 'The WB Yeats',
+    category: 'Pub',
+    description: 'Classic British pub pairing pub grub with craft & cask ales in a comfy setting with music & games.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipM73tKwVCJiRjXYqiKpn1LebbQWG_w8N0zYmkv7=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOb9rfEKP3yzQq61TX-ZA3CXlx8QbX8_iwBCan-=s1920-k-no'
+    ]
+  },
+  landseer = {
+    address: '37 Landseer Rd, London N19 4JU',
+    name: 'The Landseer Arms',
+    category: 'Pub',
+    description: 'Spacious, traditional pub with a family-friendly outdoor area offering modern dishes & pizza.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipOnua46owfiltzPVXba9Vjqz5wrDWTxKFaw44uP=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOoMKebu7WjWiSjum-lx_wU2AGTdPN-KBoBtcZL=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPFZt-AAF0hFsJ30pcfbTwiNynS47T4g32CUUcu=s1920-k-no',
+            'https://lh6.googleusercontent.com/proxy/MAi6T8uwWVptczkfjnSfDsBK6b5GKbqxm6QtJhMS0B71Dla8Hk0ObZ5WZCNnTnSSKeH_3yP-IJU61B_QCK18O6l2iyGN8_UTx1TWWi4z0u1HRSwNP2iRi1r_oLb_AMlg4el6fgdrgRMEDT3UUjn3CNwp_bg=w1920-h1080-k-no'
+    ]
+  },
+  higbury_barn = {
+    address: '26 Highbury Park, Highbury East, London N5 2AB',
+    name: 'The Highbury Barn Tavern',
+    category: 'Pub',
+    description: 'Bright, modern pub with a history going back to 1770, a British menu and Sunday lunches.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipMfaBM6Ae3oBWc2ZBt0nRpFHbqd3zE8k8TOaU3x=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMmtOfI4u5gJs9PxjFLx1wJIybm4CHbnY-EtEOt=s1920-k-no'
+    ]
+  },
+  clissold = {
+    address: '177 Green Lanes, Highbury East, London N16 9DB',
+    name: 'The Clissold Park Tavern',
+    category: 'Pub',
+    description: 'Laid-back watering hole featuring pizza & other Italian eats, plus live music & a beer garden.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipPd7G2EdL1Jh2CRJR74lFPeWtbp3Fq7kYnW7BQS=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMOqqBnBlHJS16I3MGR-By5wmdZwTn53exTUg61=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPIskhQR857hz0MFiMahR16T_v3sVvLhHUD_ZLx=s1920-k-no'
+    ]
+  },
+  finsbury = {
+    address: '336 Green Lanes, Finsbury Park, London N4 1BY',
+    name: 'The Finsbury',
+    category: 'Pub',
+    description: 'Spacious pub & beer garden serving breakfast food & pizza with live music events.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipMovMld5ncJxjBkzJaI_SRqj4SKSb1QpRm-y45r=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNDLbqS83cfdzLxznD-JQjlauzTso65T5IZWuq0=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipP1Zv7coAPlpDaJLxv4VD6mS4PgXSgBVxGbFm2p=s1920-k-no'
+    ]
+  },
+  railway = {
+    address: '23 Crouch End Hill, Crouch End, London N8 8DH',
+    name: 'The Railway Tavern',
+    category: 'Pub',
+    description: '1930s pub with a simple menu, partitioned areas, open fireplaces and an enclosed patio garden.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipNIj6bmv1lzZE0K17Dz2SAV2i5S3b2Cxyh362LS=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPQ7oxd4H_hI0EeCus-jWMleQIPUUwH8ZQmniBa=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMr4hAIeTvXNnKHZ26Y4SOg5nxHaqYOhvUw3wtQ=s1920-k-no'
+    ]
+  },
+  flask = {
+    address: '77 Highgate W Hill, Highgate, London N6 6BU',
+    name: 'The Flask',
+    category: 'Pub',
+    description: 'Snugs, real fires and a beer garden in reputed former haunt of Dick Turpin with a ghostly past.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipMQEENZQgC8Ri4TT_n3ttuptU73JIVCcpycAnrV=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNy7lV9Y6Ds9D7zJRC6h14KcFa6qXusj5DaV00t=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNtSc3gNngZRAWyMhy5lcrZBvFbmgz5MoW2b-JI=s1920-k-no-pi-10-ya51.266457-ro0-fo100'
+=======
   the_prince = {
     address: "14 Lillie Rd, Hammersmith, London SW6 1TT, United Kingdom",
     name: "The Prince",
