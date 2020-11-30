@@ -8,8 +8,6 @@
     <p><%= booking.venue.name %></p>
     <p><%= booking.start.strftime("%H:%M %d/%m/%y") %>
     <%= booking.length %> hour(s)</p>
-    <%#= icon("fas", "fa-comments") %>
-    <%#= icon("fas", "fa-window-close") %>
     <div class="shortlist-card-button-container">
       <%= link_to "View", venue_booking_path(booking.venue, booking), class: "btn w-50" %>
       <% if booking.confirmed %>

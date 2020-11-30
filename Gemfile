@@ -33,6 +33,9 @@ gem 'devise'
 
 gem 'geocoder'
 
+# api for converting image urls to jpg format
+gem 'convert_api'
+
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
