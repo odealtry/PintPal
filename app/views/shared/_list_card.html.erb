@@ -1,4 +1,4 @@
-<div class="shortlist-card">  
+<div class="shortlist-card">
   <div class="shortlist-card-image-box">
     <% if booking.venue.photos.any? %>
       <%= cl_image_tag booking.venue.photos[1].key, height: 90, width: 90, crop: :fill %>
@@ -11,14 +11,19 @@
     <%#= icon("fas", "fa-comments") %>
     <%#= icon("fas", "fa-window-close") %>
     <div class="shortlist-card-button-container">
-      <%= link_to "View", venue_booking_path(booking.venue, booking), class: "btn w-50" %>    
+      <%= link_to "View", venue_booking_path(booking.venue, booking), class: "btn w-50" %>
       <% if booking.confirmed %>
         <div class="shortlist-card-status shortlist-card-accepted"></div>
+        <div class="chat-button">
+          <%= link_to venue_booking_chatroom_path(booking.venue, booking, booking.chatroom) do %>
+              <i class="fas fa-comments"></i>
+          <% end %>
+        </div>
       <% else %>
         <div class="shortlist-card-status shortlist-card-pending"></div>
-      <% end %>
+     <% end %>
     </div>
-  </div>   
+  </div>
 </div>
 
 
