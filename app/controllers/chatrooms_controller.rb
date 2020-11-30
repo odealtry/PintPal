@@ -7,16 +7,10 @@ class ChatroomsController < ApplicationController
     @venue_user = @venue.user
     @message = Message.new
 
-    if params[:popup].present?
-      render json: {
-        content: render_to_string(partial: "chatrooms/show", formats: [:html])
-      }
-    end
-    # respond_to do |format|
-    #   format.html
-    #   format.json do
-
-    #   end
+    # if params[:popup].present?
+    #   render json: {
+    #     content: render_to_string(partial: "chatrooms/show", formats: [:html])
+    #   }
     # end
   end
 end
