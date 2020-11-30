@@ -4,9 +4,8 @@ Review.destroy_all
 Message.destroy_all
 Booking.destroy_all
 Chatroom.destroy_all
-User.destroy_all
 Venue.destroy_all
-
+User.destroy_all
 
 puts "creating admin"
 admin = User.new
