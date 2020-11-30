@@ -72,13 +72,26 @@ document.addEventListener('turbolinks:load', () => {
 const splashScreen = () => {
   const splash = document.querySelector('.splash');
   const navbar = document.querySelector('.navbar');
-  if (splash) {
-    navbar.classList.toggle("invisible");
-    setTimeout(() => {
-      splash.classList.add('display-none');
-    }, 6000);
-    setTimeout(() => {
-      navbar.classList.toggle("invisible");
-    }, 6200);
+  let splashed = false;
+  if (document.cookie !== "") {
+    splashed = document.cookie
+      .split('; ')
+      .find(row => row.startsWith('splashed'))
+      .split('=')[1];      
   }
+
+  if (splash) {
+    if (splashed) {
+      splash.classList.add('invisible');      
+    } else {
+      navbar.classList.toggle("invisible");
+      setTimeout(() => {
+        splash.classList.add('display-none');
+      }, 6000);
+      setTimeout(() => {
+        navbar.classList.toggle("invisible");
+      }, 6200);
+    }
+  }
+  document.cookie = "splashed=true";
 };
