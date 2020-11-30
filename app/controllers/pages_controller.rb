@@ -8,7 +8,7 @@ class PagesController < ApplicationController
         lat: venue.latitude,
         lng: venue.longitude,
         infoWindow: render_to_string(partial: "info_window", locals: { venue: venue }),
-        image_url: helpers.asset_url('Fire.png')
+        image_url: helpers.asset_url('fire.png')
       }
     end
   end
