@@ -1,18 +1,22 @@
 .chatroom {
-  // background: white;
+  width: 90%;
+  margin: 0 auto;
+  // border: 1px solid $white;
   height: calc(100vh - 70px);
+  // height:
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
   border-top: 1px solid $gray-200;
 
   h1 {
     padding: 0.75rem 1rem;
-    border-bottom: 1px solid $gray-200;
+    // border-bottom: 1px solid $gray-200;
+    border: 1px solid $white;
     margin-bottom: 0;
     font-size: 25px;
     width: 100%;
-    color: white;
+    color: $white;
   }
 }
 
@@ -20,30 +24,50 @@
   width: 100%;
 }
 
+.content {
+ display: flex;
+ // align-items: center;
+ // justify-content: center;
+ // align-content: space-between;
+}
+
+.message-container {
+  // padding: 3px 1px;
+}
+
+.text-end {
+  justify-content: flex-end;
+}
+
 #messages {
   padding: 0 1rem;
   padding-top: 1rem;
   overflow: scroll;
-  height: 74vh;
+  height: 70vh;
+  border: 1px solid $white;
   // max-height: calc(100vh - 70px - 65px - 71px);
 }
 
 #new_message {
   padding: 1rem;
-  border-top: 1px solid $gray-200;
+  // border-top: 1px solid $gray-200;
+  // margin-bottom: 10px;
+  // margin: 10px;
+  border: 1px solid $white;
+  height: 70px;
 
   .form-group {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 }
 
 .my-button {
   position: fixed;
-  bottom: 17px;
-  right: 20px;
+  bottom: 42px;
+  right: 42px;
   width: 40px;
   border: none;
-  background: white;
+  background: $white;
   font-size: 20px;
   color: $navy;
 }
@@ -51,3 +75,15 @@
 .author {
   color: $grey;
 }
+
+#close {
+  position: fixed;
+  top: 81px;
+  right: 35px;
+  font-size: 25px;
+  a {
+    color: $white;
+  }
+}
+
+

@@ -1,35 +1,61 @@
-<% if current_user == @venue_user %>
-  <% recipient = @user.first_name %>
-<% else %>
-  <% recipient = @venue_user.first_name %>
-<% end %>
-
-<div class="chatroom">
-  <h1><strong><%= "Chatting with #{recipient}" %></strong></h1>
-  <div id="messages" data-chatroom-id="<%= @chatroom.id %>">
-    <% @chatroom.messages.each do |message| %>
-      <% if message.user.id != @venue_user.id %>
-        <div class="message-container text-right" id="message-<%= message.id %>">
-      <% else %>
-        <div class="message-container" id="message-<%= message.id %>">
-      <% end %>
-        <i class="author">
-          <span><%= message.user.first_name %></span>
-          <small><%= message.created_at.strftime("%a %b %e at %l:%M%p") %></small>
-        </i>
-        <p><%= message.content %></p>
-      </div>
-    <% end %>
-  </div>
-
-  <%= simple_form_for [ @venue, @booking, @booking.chatroom, @message ], remote: true do |f| %>
-    <%= f.input :content, label: false, placeholder: "Message #{recipient}" %>
-    <%= button_tag type: 'submit', class: "my-button", id: "button" do %>
-      <i class="fas fa-paper-plane" aria-hidden="true"></i>
-    <% end %>
+<!-- Only show chat for venue user and booking user -->
+<% if (current_user == @venue_user) || (current_user == @user)  %>
+  <% if current_user == @venue_user %>
+    <% recipient = @user.first_name %>
+  <% else %>
+    <% recipient = @venue_user.first_name %>
   <% end %>
-</div>
 
+
+    <div id="close">
+      <%= link_to shortlist_path do %>
+        <i class="far fa-times-circle"></i>
+      <% end %>
+    </div>
+    <div class="chatroom">
+      <h1><strong><%= "Chatting with #{recipient}" %></strong></h1>
+      <div id="messages" data-chatroom-id="<%= @chatroom.id %>">
+        <% @chatroom.messages.each do |message| %>
+          <% if message.user.id != @venue_user.id %>
+            <div class="message-container" id="message-<%= message.id %>">
+              <div class="content text-end text-right pr-2 pt-2 pb-2">
+                <div class="pr-2">
+                  <i class="author">
+                    <span><%= message.user.first_name %></span><br>
+                    <small><%= message.created_at.strftime("%a %b %e at %l:%M%p") %></small><br>
+                  </i>
+                  <span><%= message.content %></span>
+                </div>
+                <img class="avatar-large-bordered" src="https://cf.ltkcdn.net/socialnetworking/images/orig/168795-400x400-Female-Avatar-2-lg.jpg" height="70px" alt="">
+              </div>
+            </div>
+          <% else %>
+            <div class="message-container" id="message-<%= message.id %>">
+              <div class="content pl-2 pt-2 pb-2">
+                <img class="avatar-large-bordered" src="https://cf.ltkcdn.net/socialnetworking/images/orig/168795-400x400-Female-Avatar-2-lg.jpg" height="70px" alt="">
+                <div class="pl-2">
+                  <i class="author">
+                    <span><%= message.user.first_name %></span><br>
+                    <small><%= message.created_at.strftime("%a %b %e at %l:%M%p") %></small><br>
+                  </i>
+                  <span><%= message.content %></span>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+
+      <%= simple_form_for [ @venue, @booking, @booking.chatroom, @message ], remote: true do |f| %>
+        <%= f.input :content, label: false, placeholder: "Message #{recipient}" %>
+        <%= button_tag type: 'submit', class: "my-button", id: "button" do %>
+          <i class="fas fa-paper-plane" aria-hidden="true"></i>
+        <% end %>
+      <% end %>
+    </div>
+
+
+<% end %>
 
 
 

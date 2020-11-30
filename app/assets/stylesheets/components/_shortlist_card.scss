@@ -33,6 +33,7 @@
 .shortlist-card-button-container {
   display: flex;
   width: 100%;
+  align-items: center;
 }
 
 .shortlist-card-status {
@@ -44,12 +45,28 @@
 
 .shortlist-card-pending {
   background-color: orange;
+  padding: 20px;
 }
 
 .shortlist-card-accepted {
   background-color: lightgreen;
+  padding: 20px
 }
 
 .shortlist-card-image-box {
   margin-right: 10px;
+}
+
+.chat-button {
+
+  padding: 0 10px 0 20px;
+  font-size: 35px;
+}
+
+.chat-button a {
+  color: $navy;
+}
+
+.chat-button a:hover {
+  color: $grey;
 }
