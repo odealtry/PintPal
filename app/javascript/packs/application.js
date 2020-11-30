@@ -72,11 +72,13 @@ document.addEventListener('turbolinks:load', () => {
 const splashScreen = () => {
   const splash = document.querySelector('.splash');
   const navbar = document.querySelector('.navbar');
-  navbar.classList.toggle("invisible");
-  setTimeout(() => {
-    splash.classList.add('display-none');
-  }, 6000);
-  setTimeout(() => {
+  if (splash) {
     navbar.classList.toggle("invisible");
-  }, 6200);
+    setTimeout(() => {
+      splash.classList.add('display-none');
+    }, 6000);
+    setTimeout(() => {
+      navbar.classList.toggle("invisible");
+    }, 6200);
+  }
 };
