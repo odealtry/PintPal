@@ -35,15 +35,16 @@ require("flatpickr/dist/themes/dark.css");
 import { initMapbox } from '../plugins/init_mapbox';
 import { initSweetalert } from '../plugins/init_sweetalert';
 import { initChatroomCable } from '../channels/chatroom_channel';
-import { initChat } from '../components/init_chat';
+// import { initChat } from '../components/init_chat';
 import { addBackgroundToNavbar } from '../components/navbar';
 import { changePlaceholder } from '../components/navbar';
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
-  initChat();
   initChatroomCable();
+  // initChat();
   splashScreen();
+
 
   // Finding current_address for getting there sweet alert
   navigator.geolocation.getCurrentPosition((data) => {
@@ -65,8 +66,6 @@ document.addEventListener('turbolinks:load', () => {
       });
     }
   });
-
-  initChatroomCable();
   addBackgroundToNavbar();
   changePlaceholder();
 });
