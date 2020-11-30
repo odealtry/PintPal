@@ -42,7 +42,6 @@ document.addEventListener('turbolinks:load', () => {
   initMapbox();
   initChat();
   initChatroomCable();
-  splashScreen();
 
   // Finding current_address for getting there sweet alert
   navigator.geolocation.getCurrentPosition((data) => {
@@ -69,11 +68,9 @@ document.addEventListener('turbolinks:load', () => {
   addBackgroundToNavbar();
 });
 
-const splashScreen = () => {
-  if (document.getElementById('map')) {
-    console.log("home page")
-    swal({
-      text: "Hello world!",
-    });
-}
-}
+const splash = document.querySelector('.splash');
+document.addEventListener('DOMContentLoaded', (e) => {
+  setTimeout(() => {
+    splash.classList.add('display-none');
+  }, 6000);
+});

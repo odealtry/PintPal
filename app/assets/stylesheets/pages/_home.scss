@@ -98,3 +98,57 @@
 .mapboxgl-canvas {
   width: 100vw !important;
 }
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: 200;
+  color: white;
+  text-align: center;
+}
+
+.splash.display-none {
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: -10;
+  color: white;
+  text-align: center;
+  transition: all 1s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+.fade-in-slow {
+  opacity: 0;
+  animation: fadeIn 4s ease-in forwards;
+}
+
+.splash-logo {
+  width: 150px;
+}
