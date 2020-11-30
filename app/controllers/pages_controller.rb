@@ -17,4 +17,9 @@ class PagesController < ApplicationController
     @user_bookings = Booking.all.where(user_id: current_user)
     # @shortlist = @user_bookings.select { |booking| booking.confirmed == false }
   end
+
+  def profile
+    @user = current_user
+    @user_profile = User.all.where(user_id: current_user)
+  end
 end

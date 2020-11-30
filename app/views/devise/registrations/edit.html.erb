@@ -1,8 +1,8 @@
 <div class="container">
-<h2 class="text-center m-3">Edit <%= resource_name.to_s.humanize %></h2>
+  <h2 class="text-center m-3">Edit <%= resource_name.to_s.humanize %></h2>
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= f.error_notification %>
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    <%= f.error_notification %>
 
   <%# <div class="form-inputs"> %>
     <%#= f.input :email, required: true, autofocus: true %>
@@ -24,32 +24,33 @@
                 input_html: { autocomplete: "current-password" } %>
   <%# </div> %>
 
-<div class="form-inputs">
-      <%= f.input :email,
+  <div class="form-inputs">
+        <%= f.input :email,
+                    required: true,
+                    autofocus: true,
+                    input_html: { autocomplete: "email" }%>
+        <%= f.input :password,
+                  hint: "leave it blank if you don't want to change it",
+                  required: false,
+                  input_html: { autocomplete: "new-password" } %>
+      <%= f.input :password_confirmation,
+                  required: false,
+                  input_html: { autocomplete: "new-password" } %>
+                  <%= f.input :current_password,
+                  hint: "we need your current password to confirm your changes",
                   required: true,
-                  autofocus: true,
-                  input_html: { autocomplete: "email" }%>
-      <%= f.input :password,
-                hint: "leave it blank if you don't want to change it",
-                required: false,
-                input_html: { autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation,
-                required: false,
-                input_html: { autocomplete: "new-password" } %>
-                <%= f.input :current_password,
-                hint: "we need your current password to confirm your changes",
-                required: true,
-                input_html: { autocomplete: "current-password" } %>
-      <%= f.input :first_name, required: true%>
-      <%= f.input :last_name, required: true%>
-      <%= f.input :date_of_birth, as: :string, required: true%>
-      <%= f.input :address, required: true%>
-    </div>
+                  input_html: { autocomplete: "current-password" } %>
+        <%= f.input :first_name, required: true%>
+        <%= f.input :last_name, required: true%>
+        <%= f.input :date_of_birth, as: :string, required: true%>
+        <%= f.input :address, required: true%>
+        <%= f.input :favourite_beer, required: false%>
+      </div>
 
   <div class="form-actions">
     <%= f.button :submit, "Update" %>
   </div>
-<% end %>
+  <% end %>
 </div>
 
 <%# <h3>Cancel my account</h3>
