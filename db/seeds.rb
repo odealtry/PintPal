@@ -1,20 +1,22 @@
 require "open-uri"
 
-# User.destroy_all
+Review.destroy_all
+Message.destroy_all
+Booking.destroy_all
+Chatroom.destroy_all
+User.destroy_all
 Venue.destroy_all
-# Chatroom.destroy_all
-# Booking.destroy_all
 
 
-# puts "creating admin"
-# admin = User.new
-# admin.email = "admin@email.com"
-# admin.password = "pintpal"
-# admin.first_name = "admin"
-# admin.last_name = "admin"
-# admin.date_of_birth = Date.today - 10000
-# admin.address = "180 Ashley Gardens, Emery Hill Street, SW1P 1PD"
-# admin.save!
+puts "creating admin"
+admin = User.new
+admin.email = "admin@email.com"
+admin.password = "pintpal"
+admin.first_name = "admin"
+admin.last_name = "admin"
+admin.date_of_birth = Date.today - 10000
+admin.address = "180 Ashley Gardens, Emery Hill Street, SW1P 1PD"
+admin.save!
 
 ConvertApi.config.api_secret = 'AeeFlFsOwN3UHTzO'
 def convert_to_jpg(url)
@@ -83,6 +85,6 @@ venue_array.each do | venue |
     new_venue.photos.attach(io: file, filename: "#{title}-image-#{index + 1}.jpg", content_type: 'image/jpg')
   end
   new_venue.user = User.first
-  new_venue.save
+  new_venue.save!
 end
 
