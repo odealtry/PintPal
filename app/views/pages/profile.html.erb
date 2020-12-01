@@ -15,8 +15,14 @@
      <% end %>
     </div>
     <div class="profile-image">
-      <%= image_tag 'https://picsum.photos/200/300', class:"profile-image" %>
+      <% if @user.photo.attached? %>
+        <%= cl_image_tag @user.photo.key, class:"profile-image" %>
+      <% else %>
+        <%= image_tag 'https://picsum.photos/200/300', class:"profile-image" %>
+      <% end %>
     </div>
   </div>
-  <h5 class="link-to-profile"><%= link_to "Edit my profile", "devise/registrations#edit" %></h5>
+  <h5 class="link-to-profile"><%= link_to "Edit my profile", "users/edit" %></h5>
 </div>
+
+
