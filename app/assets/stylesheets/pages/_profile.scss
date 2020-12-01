@@ -1,7 +1,8 @@
 .container {
   padding: 20px;
   width: 350px;
-  height: 87vh;
+  margin-left: 7%;
+  display: inline-block;
   border: 1px solid white;
   border-radius: 4px;
 }
@@ -36,7 +37,6 @@
 }
 
 .profile-image {
-  margin-left: 17px;
   height: 40px;
   width: 40px;
   border-radius: 50%;
