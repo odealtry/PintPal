@@ -12,7 +12,7 @@
    <% end %>
 
    <% unless @booking.confirmed %>      
-      <%= link_to "Accept booking", accept_booking_path(@booking), method: :post, class: "btn m-2" %>
+      <%= link_to "Accept booking", accept_booking_path(@booking), method: :post, class: "btn m-2 accept-booking" %>
    <% end %>
    <%= link_to "Cancel booking", venue_booking_path(@venue, @booking),
               method: :delete, data: { confirm: "Are you sure?" },class: "btn m-2" %>

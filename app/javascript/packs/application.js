@@ -45,7 +45,6 @@ document.addEventListener('turbolinks:load', () => {
   // initChat();
   splashScreen();
 
-
   // Finding current_address for getting there sweet alert
   navigator.geolocation.getCurrentPosition((data) => {
     const lat = data.coords.latitude;

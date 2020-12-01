@@ -1,0 +1,14 @@
+.notifier-toggler, .notifier-menu-item {
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.notifier-menu-item {
+  top: 16px;
+  right: -21px;
+}
