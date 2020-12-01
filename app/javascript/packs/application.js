@@ -44,7 +44,7 @@ document.addEventListener('turbolinks:load', () => {
   initChatroomCable();
   // initChat();
   splashScreen();
-
+  addAlert();
 
   // Finding current_address for getting there sweet alert
   navigator.geolocation.getCurrentPosition((data) => {
@@ -95,4 +95,12 @@ const splashScreen = () => {
     }
   }
   document.cookie = "splashed=true";
+};
+
+// When a venue owner accepts a booking, show an alert icon on the navbar
+const addAlert = () => {
+  const acceptButton = document.querySelector(".accept-booking");
+  acceptButton.addEventListener("click", () => {
+    console.log("button clicked");
+  })
 };

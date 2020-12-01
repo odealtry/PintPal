@@ -55,7 +55,7 @@ class BookingsController < ApplicationController
 
   def accept_booking   
     @booking.confirmed = true
-    @booking.save!
+    @booking.save    
     redirect_to venue_booking_path(@booking.venue, @booking)
   end
 
