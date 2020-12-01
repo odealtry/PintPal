@@ -77,7 +77,7 @@ venue_array = [
               'https://lh5.googleusercontent.com/p/AF1QipMB6EgIJgsc-DNU1im65wSu43l66MGin5bddyCR=s1920-k-no',
               'https://lh5.googleusercontent.com/p/AF1QipMrzeldUQnHW60Ak9E0-t-zEBRDV9W1gX-1Svbd=s1920-k-no'
     ]
-  },  
+  },
   german_gym =  {
     address: 'King\'s Blvd, Kings Cross, London N1C 4BU',
     name: 'German Gymnasium Grand Café',
@@ -112,7 +112,7 @@ venue_array = [
     name: 'Gordon\'s Wine Bar',
     category: 'Bar',
     description: '19th-century wine bar in candlelit, vaulted cellars with original Dickensian-style decor.',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipPdn7PpdVS97Z0g3WZxIpTDs75hd9L9gXEAa1Q-=s1920-k-no',              
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipPdn7PpdVS97Z0g3WZxIpTDs75hd9L9gXEAa1Q-=s1920-k-no',
               'https://lh5.googleusercontent.com/p/AF1QipMY97i16VyDLfMTPKocD4GvL8GzIwl4j17Yo_UI=s1920-k-no'
     ]
   },
@@ -121,7 +121,7 @@ venue_array = [
     name: 'Atlantic Bar @ J Sheekey',
     category: 'Restaurant',
     description: 'Fish and seafood restaurant with horseshoe-shaped bar, an open kitchen and banquette seating.',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipOIhI0MZ6-WkWjoVqONJLhz4E0zMpe7Qeq8rpYd=s1920-k-no',              
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipOIhI0MZ6-WkWjoVqONJLhz4E0zMpe7Qeq8rpYd=s1920-k-no',
               'https://lh5.googleusercontent.com/p/AF1QipOWgv-VXUIRjrvydAASrZcErpqdhhRKO16JXDhZ=s1920-k-no',
               'https://lh5.googleusercontent.com/p/AF1QipNqJAK0JNFESEfv8cqGWPgAHs6UIJ2-EwQCmgvE=s1920-k-no'
     ]
@@ -131,7 +131,7 @@ venue_array = [
     name: 'Aqua Nueva',
     category: 'Restaurant',
     description: 'A bull guards the entrance to a modern northern Spanish restaurant and roof terrace with city views.',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipPkK_Y1ZOF0rEHgS4t5eUq0bdLk4-zN03AtgXQO=s1920-k-no',              
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipPkK_Y1ZOF0rEHgS4t5eUq0bdLk4-zN03AtgXQO=s1920-k-no',
               'https://lh5.googleusercontent.com/p/AF1QipPuVKH-UwlG7R5tJa89gaS1RTzkkUN62GKE5nsf=s1920-k-no',
               'https://lh5.googleusercontent.com/p/AF1QipOQsjURQ92S0GN63lT5Ne1mwWWR4_FZOSCW8BNL=s1920-k-no'
     ]
@@ -151,50 +151,50 @@ venue_array = [
     name: 'The Marquis Cornwallis',
     category: 'Pub',
     description: 'Traditional pub with large windows, brunch and bar menus and an ornately tiled floor around the bar.',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipOQwVJ3_521GglGGCU4LLbUyxGrvCg1ixjXHXrG=s1920-k-no',              
-              'https://lh5.googleusercontent.com/p/AF1QipOtBg0u1i9OQ6uAQzPndlJIJkEd51UZctMOfLke=s1920-k-no',              
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipOQwVJ3_521GglGGCU4LLbUyxGrvCg1ixjXHXrG=s1920-k-no',
+              'https://lh5.googleusercontent.com/p/AF1QipOtBg0u1i9OQ6uAQzPndlJIJkEd51UZctMOfLke=s1920-k-no',
               'https://lh5.googleusercontent.com/p/AF1QipMj9I-Wl7tNx-r73jZBU0n1lNTWtUhS9wF_PZ2S=s1920-k-no'
     ]
-  },  
+  },
   anchor_bankside =  {
     address: '34 Park St, London SE1 9EF',
     name: 'Anchor Bankside',
     category: 'Pub',
     description: '1615 Thameside pub serving food in bar and restaurant, with real ale and outdoor seating.',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipPiqPdeYtIxMjqJzLfaqe4_8PTt51Oj-RHvzV25=s1920-k-no',              
-              'https://lh5.googleusercontent.com/p/AF1QipOtmuiiwr_3VJocdMrwtw7FlCLNalY8WdNXivcr=s1920-k-no-pi0-ya130.22643-ro0-fo100',              
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipPiqPdeYtIxMjqJzLfaqe4_8PTt51Oj-RHvzV25=s1920-k-no',
+              'https://lh5.googleusercontent.com/p/AF1QipOtmuiiwr_3VJocdMrwtw7FlCLNalY8WdNXivcr=s1920-k-no-pi0-ya130.22643-ro0-fo100',
               'https://lh5.googleusercontent.com/p/AF1QipMsCaXG8qGRIDBCZW1FU_bS2zibMZaI_7kKnJhD=s1920-k-no'
     ]
-  },  
+  },
   duke_of_sussex_waterloo =  {
     address: '23 Baylis Rd, Bishop\'s, London SE1 7AY',
     name: 'The Duke of Sussex',
     category: 'Pub',
     description: 'Spacious gastropub with dark wood tables, decorative skylight, arched window and a beer garden.',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipOmH3UJYO98O2A8Eg3KF9YrSsoU1HMvPqt9ymuh=s1920-k-no',              
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipOmH3UJYO98O2A8Eg3KF9YrSsoU1HMvPqt9ymuh=s1920-k-no',
               'https://lh5.googleusercontent.com/p/AF1QipOEdxOQJ3VFs2iPAo68myWN7f7soD7QrUwvcx_Z=s1920-k-no'
     ]
-  },  
+  },
   cafe_del_marsh =  {
     address: '44 Lower Marsh, Bishop\'s, London SE1 7RG',
     name: 'Cafe del Marsh',
     category: 'Bar',
     description: 'Modern cafe with a small courtyard serving coffee and baked goods, plus cocktails and craft beer.',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipPyB0kkFh42YcAXCwIfrXiGSj1QuADtL7Q3YHCV=s1920-k-no',              
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipPyB0kkFh42YcAXCwIfrXiGSj1QuADtL7Q3YHCV=s1920-k-no',
               'https://lh5.googleusercontent.com/p/AF1QipNTJno9HjTGDirvyyBSwQZepqyc2ejpR9H00OBw=s1920-k-no',
               'https://lh5.googleusercontent.com/p/AF1QipMaNYwyUEo0bsqBTGTFPGfFQh8qMYzUfjg6tVBA=s1920-k-no'
     ]
-  },  
+  },
   granary_square_brass =  {
     address: '1 Granary Square, Kings Cross, London N1C 4AB',
     name: 'Granary Square Brasserie',
     category: 'Restaurant',
     description: 'An extensive menu of bistro fare with vibrant blue interior details, cozy booths, & high ceilings.',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipNVZgy_Ys2st6psvaCXGqBUHlF76sSrRKABHzwm=s1920-k-no',              
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipNVZgy_Ys2st6psvaCXGqBUHlF76sSrRKABHzwm=s1920-k-no',
               'https://lh5.googleusercontent.com/p/AF1QipO0ttom0LSWQwl3HqtB0y6R3Zy4oWcFpsdmLsYR=s1920-k-no',
               'https://lh5.googleusercontent.com/p/AF1QipO6SnJy3AXe_PvaUwApRipTtYal8Er3nhQoPOHe=s1920-k-no'
     ]
-  },  
+  },
   the_lighterman =  {
     address: '3 Granary Square, Kings Cross, London N1C 4BH',
     name: 'The Lighterman',
@@ -233,17 +233,6 @@ venue_array = [
               'https://lh5.googleusercontent.com/p/AF1QipNZQdS1_uS2vJbevZ7pEP5W1WQ52azBHpG1CJBQ=s1920-k-no'
     ]
   },
-]
-
-
-# address:
-# name:
-# category:
-# description:
-# photos: [
-# ]
-
-
   holly_bush = {
     address: "22 Holly Mount, Hampstead, London NW3 6SG, United Kingdom",
     name: "The Holly Bush",
