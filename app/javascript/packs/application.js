@@ -38,11 +38,13 @@ import { initChatroomCable } from '../channels/chatroom_channel';
 // import { initChat } from '../components/init_chat';
 import { addBackgroundToNavbar } from '../components/navbar';
 import { changePlaceholder } from '../components/navbar';
+import { initReviewForm } from '../components/review_form';
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
   initChatroomCable();
   // initChat();
+  initReviewForm();
   splashScreen();
 
   // Finding current_address for getting there sweet alert
@@ -77,12 +79,12 @@ const splashScreen = () => {
     splashed = document.cookie
       .split('; ')
       .find(row => row.startsWith('splashed'))
-      .split('=')[1];      
+      .split('=')[1];
   }
 
   if (splash) {
     if (splashed) {
-      splash.classList.add('invisible');      
+      splash.classList.add('invisible');
     } else {
       navbar.classList.toggle("invisible");
       setTimeout(() => {

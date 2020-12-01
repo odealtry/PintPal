@@ -22,5 +22,6 @@ class PagesController < ApplicationController
   def profile
     @user = current_user
     @user_profile = User.all.where(user_id: current_user)
+    @user_reviews = Review.where(user_id: current_user)
   end
 end
