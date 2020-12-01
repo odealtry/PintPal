@@ -15,7 +15,9 @@ class BookingsController < ApplicationController
     @booking.chatroom = chatroom
     if @booking.save
       chatroom.save
-      # Chatroom.create(booking: @booking)
+      review = Review.where(venue: @venue)
+      review.update(updated: false)
+
       redirect_to shortlist_path(@booking.user)
     else
       render :new
@@ -51,11 +53,10 @@ class BookingsController < ApplicationController
     # For now our admin user is linked to all the bookings
     # @venue_bookings = bookings.select { |booking| booking.venue == @venue.first }
     @venue_bookings = Booking.all
-
     all_seen
   end
 
-  def accept_booking   
+  def accept_booking
     @booking.confirmed = true
     @booking.save    
     redirect_to venue_booking_path(@booking.venue, @booking)
