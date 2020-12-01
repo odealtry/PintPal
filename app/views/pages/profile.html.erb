@@ -24,11 +24,11 @@
             <!-- Finding a previous review for the venue-->
             <% review = @user_reviews.find { |r| r.venue_id == booking.venue_id } %>
             <!-- If reviewed previously, then we update the review -->
-            <% if review %>
+            <% if review && review.updated == false %>
               <p>- <%= booking.venue.name %> | <%= booking.start.strftime("%d/%m/%y") %></p>
               <button class="show-review btn" data-booking_id='<%= booking.id %>'>Update your previous review</button>
             <!-- If not reviewed previously, we create a new review -->
-            <% else %>
+            <% elsif review.nil? %>
               <% review = Review.new %>
               <p>- <%= booking.venue.name %> | <%= booking.start.strftime("%d/%m/%y") %></p>
               <button class="show-review btn" data-booking_id='<%= booking.id %>'>Leave a new review</button>
