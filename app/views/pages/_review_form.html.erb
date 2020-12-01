@@ -1,6 +1,6 @@
 <%= simple_form_for [booking, review] do |f| %>
-    <%= f.input :outdoor_rating %>
-    <%= f.input :heat_rating %>
-    <%= f.input :pricing_rating %>
-    <%= f.submit class:"btn" %>
+    <%= f.input :outdoor_rating, collection: 1..3 %>
+    <%= f.input :heat_rating, collection: 1..3 %>
+    <%= f.input :pricing_rating, collection: 1..3 %>
+    <%= f.submit "Send", class:"btn"  %>
 <% end %>
