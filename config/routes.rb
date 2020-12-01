@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
-  # devise_for :users, :controllers => { :registrations => :registrations }
+  devise_for :users, :controllers => { :registrations => :registrations }
   root to: 'pages#home'
   get '/shortlist', to: 'pages#shortlist', as: :shortlist
   get '/profile', to: 'pages#profile', as: :profile
