@@ -17,6 +17,7 @@
       <% if @user_bookings.empty? %>
         <h5 class="m-5">No bookings</h5>
         <p><%= link_to "Find a venue", root_path, class: "btn" %></p>
+        <p><%= link_to "View shortlist", shortlist_path, class: "btn" %></p>
       <% else %>
         <% @user_bookings.each do |booking| %>
           <%= render partial: "/shared/list_card", locals: { booking: booking } %>

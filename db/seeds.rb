@@ -233,6 +233,7 @@ venue_array = [
               'https://lh5.googleusercontent.com/p/AF1QipNZQdS1_uS2vJbevZ7pEP5W1WQ52azBHpG1CJBQ=s1920-k-no'
     ]
   },
+  #NORTH
   holly_bush = {
     address: "22 Holly Mount, Hampstead, London NW3 6SG, United Kingdom",
     name: "The Holly Bush",
@@ -516,6 +517,7 @@ venue_array = [
             'https://lh5.googleusercontent.com/p/AF1QipNtSc3gNngZRAWyMhy5lcrZBvFbmgz5MoW2b-JI=s1920-k-no-pi-10-ya51.266457-ro0-fo100'
     ]
   },
+  #WEST
   the_prince = {
     address: "14 Lillie Rd, Hammersmith, London SW6 1TT, United Kingdom",
     name: "The Prince",
@@ -643,22 +645,302 @@ venue_array = [
       'https://lh5.googleusercontent.com/p/AF1QipNeJE-eCbCya2-qjG2RSYDRz-WZwmJdWObO8-WV=w512-h480-p-k-no',
       'https://lh5.googleusercontent.com/p/AF1QipOJy5YEp2QkChbG5MEIeDTqP2V7sdUGPBAemMhm=w512-h480-p-k-no'
     ]
+  },
+  # SOUTH
+  theavalon = {
+    address: '16 Balham Hill, Clapham South, London SW12 9EB',
+    name: 'The Avalon',
+    category: 'Pub',
+    description: 'Large gastropub with Victorian fixtures and terraced beer garden, serving classic British dishes.' ,
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipMxp64SzfMtSPiGe1e4ekQ17kMj7tn8na5VTNzi=s1920-k-no',
+        'https://lh5.googleusercontent.com/p/AF1QipPr_nfjGckCJJrus178ZVlQAqv8k5AQWhLwYhnY=s1920-k-no',
+        'https://lh5.googleusercontent.com/p/AF1QipPoYzdHLq8sJL0sl3JzbwJb130q-LUPae_DTze5=s1920-k-no'
+    ]
+  },
+  boro_bistro = {
+    address: '6-10 Borough High St, London SE1 9QQ',
+    name: 'Boro Bistro',
+    category: 'Restaurant',
+    description: 'Cozy French spot with garden terrace serving cheese & meat boards, tapas-style dishes & wines.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipOeuM6qZCjSKnEJg2dUlaQO6SN6FIKPxiuXAz-d=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipPl3TZ8wYVvgMmdt_iQVTQwEcqn3N-K2_wigHJ6=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipPVCEa77WPhpGLRPtkXKaDTLWQ4vQOZPB067RDe=s1920-k-no'
+    ]
+  },
+  tamesis_dock = {
+    address: 'Albert Embankment, Vauxhall, London SE1 7TY',
+    name: 'Tamesis Dock',
+    category: 'Bar',
+    description: 'Brightly painted barge floating on the Thames, with views of Parliament, outdoor space and a bar.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipPRNNOZ5aFYqm7__X9o1WDoCG09YGSxvll7kzC8=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipM1GRJ9prFoErwnBnIpjPgkR9qjebcLBqFYH7Iz=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipPEYKN-iZ8_4S3Ea50IixogmXtMF3BcG4v0oeX-=s1920-k-no'
+    ]
+  },
+  thedevonshire = {
+    address: '39 Balham High Rd, Balham, London SW12 9AN',
+    name: 'The Devonshire',
+    category: 'Pub',
+    description: 'Spacious and stylish, high-ceilinged pub with chandeliers, contemporary sofas and wooden floors.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipM-JAEpjbsApM5y4RhnwwfaW2F77hZ3bIjeQaDp=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipN40VhYOTlDSgGMLLQ3w3fVlfAwAEEVgjgJ5G_t=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipOuB_rPJknC1myAXoS7bXz0gnc6WCocnoZ2SSf0=s1920-k-no'
+    ]
+  },
+  thecyclist = {
+    address: '194 Balham High Rd, Balham, London SW12 9BP',
+    name: 'The Cyclist',
+    category: 'Pub',
+    description: 'Modern gastropub for craft beers, cocktails & a menu that includes weekend brunches & Sunday roasts.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipPMADIKDmDF8fznM7sVUwQphRj_lz83iTOKosjx=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipPVa1x8l82Zme6yFgDk5lBtEf9IQ6lcgC3RRysM=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipMz0brBcGU1PmWE10qmgkjKVv80ISrLoTDX6e-4=s1920-k-no'
+    ]
+  },
+  thebedford = {
+    address: '77 Bedford Hill, Balham, London SW12 9HD',
+    name: 'The Bedford',
+    category: 'Pub',
+    description: 'Pints and pub grub on 3 floors with live music, comedy, cabaret, dance classes and TV sports',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipOZ6hZuq5bwHVIKLL8lv2bfll3-ckNJohPzhTNS=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipM5UdrILfvrIBWzbEeAm8mE6Y7mNJGGI3tdib0N=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipOc5c3_N4rVzQ0yedrXenqOVCmP6QC8AklDM0h3=s1920-k-no'
+    ]
+  },
+  thetrafalgar = {
+    address: '148-156 Tooting High St, Tooting, London SW17 0RT',
+    name: 'The Trafalgar',
+    category: 'Pub',
+    description: 'Convivial boozer with deep sofas, open fires and a classic pub menu offering NHS staff discounts.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipM6lDLxP_i5WLCLQkt8NOr_H3QjamxxwpBybBTp=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipNleyyisDX4iBtoIwfe67HAQXHv7cwuXWHUdIFM=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipPGSAYsyVEfDjeYC_R7OJNEc0iDEqJyFYKt8Q=s1920-k-no'
+    ]
+  },
+  the_rose_and_crown = {
+    address: '140 Tooting Bec Rd, London SW17 8BH',
+    name: 'The Rose & Crown',
+    category: 'Pub',
+    description: 'Festive local pub with a patio & big screen TVs serving inventive pizzas, craft beer & cocktails.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipOJ0gv-SiNeZoxwTtY-7jxjObY5wB10tkVomi8K=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPqST4V8aSPfTbPGo7L5fZVG78sluD6QweI-sR6=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipN2I4Y5wC-nqAyS3nTOIQ-DyjrygobRMI0l9sDq=s1920-k-no'
+            ]
+  },
+  the_ship = {
+    address: '41 Jews Row, Wandsworth, London SW18 1TB',
+    name: 'The Ship',
+    category: 'Pub',
+    description: '1786 gastropub with a wood-burning stove, riverside terrace and outdoor barbecue kitchen.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipNE5kc_EdrsllwsXmkLZGimhDxHubwGRNoHm3r6=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipMlMuJdaeobmD3b7QMc4XFUbVAHo3mGFN_hDB8m=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipOZTfjJjfIa3WFCzrs-z0_WMrduKyFdLiwPzywl=s1920-k-no'
+    ]
+  },
+  the_cats_back = {
+    address: '86-88 Point Pleasant, London SW18 1PP',
+    name: 'The Cat\'s Back',
+    category: 'Pub',
+    description: 'Dog-friendly Edwardian pub with a green-tiled facade and decked beer garden.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipOHCfyf2D6_M-GEi7cEPVZKKqWA28fwczEf_yOA=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipPn4odV-TH4YruBp2SULL0_ODF-guhIwZ7bGI_0=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipPjCkDtzOZbgn7t0OS0g6pYNJpFjkeaMaFlw1Tz=s1920-k-no'
+    ]
+  },
+  the_kings_arms = {
+    address: '94-96 Wandsworth High St, Wandsworth, London SW18 4LB',
+    name: 'The King\'s Arms',
+    category: 'Pub',
+    description: 'Bar with exposed brick, wood floors & garden seating, offering brunch-style dishes & craft drinks.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipPili_6GMyWnQOwfMUs7wpFsucECJhONVJZAExL=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipOKXcvqMYeD-7J6JkCaV6oqTKezUzn1pbYZSzF1=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipMArLqP3z0AumZ40JKwpqTQ12LDU_nIV29E1X-a=s1920-k-no'
+  ]
+  },
+  the_coat_and_badge = {
+    address: '8 Lacy Rd, Putney, London SW15 1NL',
+    name: 'The Coat & Badge',
+    category: 'Pub',
+    description: 'Large pub hidden behind laurel bushes with quirky, beach-lounge style decor and live TV sport.',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipNmD0tFe82Y478jSxvr9rb8rnLquO6pp-0GG3Er=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipNHmo-grh4ZYpr9gxnBLNVQ9fuwgwRGOADM8cYy=s1920-k-no',
+     'https://lh5.googleusercontent.com/p/AF1QipNKHtXvgO4I2et3e--9bYgcUnVKilec5517OgAn=s1920-k-no'
+    ]
+  },
+  #EAST
+  crate = {
+    address: "Unit 7 Queen's Yard, Hackney Wick, London E9 5EN",
+    name: "CRATE brewery",
+    category: "Bar",
+    description: "Bar in old factory with recycled decor and its own micro-brewery plus inventive pizzas and DJ sets.",
+    photos:['https://lh5.googleusercontent.com/p/AF1QipNL4GF971kT4cl_3FI-FiVykDgBJcPH0umvmO2Y=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMvu1uw8X2pCHMwZDiXt7lLMMqVkubWdok9SiIz=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipM5g1SoFNCKNImfW7uJ--3rGbolUXKK8ie3XIpT=s1920-k-no'
+    ]
+  },
+  well_and_bucket = {
+    address: '143 Bethnal Green Rd, London E2 7DG',
+    name: 'Well and Bucket',
+    category: 'Pub',
+    description: 'Adulterated portraits and shabby-chic original features fill this revamped bar and oyster house.',
+    photos:[ 'https://lh5.googleusercontent.com/p/AF1QipNhf4k23f2A_fqLaDFjJkvUqecd_iNWEPI9X0QG=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOVjlFs1-MwzXCZZ9snICenyZbxuGA3GVqMX5DN=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPZiygXli5rNukeKxqySznOl-IaPGKT-7chBSdB=s1920-k-no'
+    ]
+  },
+  old_fountain = {
+    address: '3 Baldwin St, Old Street, London EC1V 9NU',
+    name: 'The Old Fountain',
+    category: 'Pub',
+    description: 'Freehouse with a rotating selection of cask ales, a classic pub food menu and its own roof terrace.',
+    photos:[ 'https://lh5.googleusercontent.com/p/AF1QipNa7ocyPsbbTCq1bSkbRxE5s5nvNEkHksX035ad=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMhTwdgXonIe-QQ5SCQkgn-DacYeVgjKba4aBeX=s1920-k-no'
+    ]
+  },
+  chesham_arms = {
+    address: 'East London Public House, 15 Mehetabel Rd, London E9 6DU',
+    name: 'The Chesham Arms',
+    category: "Pub",
+    description: 'Cosy traditional pub with stripped floors and leafy beer garden, for real ales and a gastropub menu.',
+    photos:[ 'https://lh5.googleusercontent.com/p/AF1QipM3JWXSQZ30sYCys0Pjg4oWfpTAXsjdVJd2OGjc=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNIl95mip-Dt8yLoHGrz--oOv7mQomw2luNw-XZ=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMoGdKjX02RGJUnWdwsT1-AO0ObFnufP-_7hE_y=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPsNPCBKqoZz81iglzbloPxCOrOlH7Ys_Aemh4Z=s1920-k-no'
+    ]
+  },
+  adam_and_eve = {
+    address: '155 Homerton High St, Homerton, London E9 6AS',
+    name: 'The Adam and Eve',
+    category: 'Pub',
+    description: 'Carefully sourced ingredients elevate classic Brit grub at this pub with beer garden and pool table.',
+    photos:[ 'https://lh5.googleusercontent.com/p/AF1QipPz8J_OqYz0NOyyvC2pngxveQ5H3R-K4y9Eg0Vo=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNUzvcfzLCm05_JfoVrUc-zCHJAwxUeeIEzYfY_=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipN70C8VMFt_6J909pXYhlRM61InO9knsox8-_sO=s1920-k-no'
+    ]
+  },
+  crooked_billet = {
+    address: '84 Upper Clapton Rd, Clapton, London E5 9JP',
+    name: 'The Crooked Billet',
+    category: 'Pub',
+    description: 'Restored, bright joint serving local real ale and pub meals, with beer garden and ping-pong table.',
+    photos:[ 'https://lh5.googleusercontent.com/p/AF1QipNQvS0Y4Nf5GckPynFE3kwaOUKp1MCQEJNNK5gj=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMAZUTP5ZaHAmE45fx1PgVy9Ya1ccEb4i2NPAjt=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOTAQqeIvLFUUucGVZEhqcwWANLidFArWp56yTP=s1920-k-no'
+    ]
+  },
+  on_the_park = {
+    address: '19 Martello St, Hackney, London E8 3PE',
+    name: 'Pub On The Park',
+    category: 'Pub',
+    description: 'Airy traditional pub with sofas and standard lamps, park-side beer garden, boules and weekend DJs.',
+    photos:[ 'https://lh5.googleusercontent.com/p/AF1QipMSXBUPfTXo9e6NJcpl7I9zP4_bLitV_BLKrBPi=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMJtS2vtJ9VPTRsTRusKzRWdFX5CKqDQucHYmU7=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPNYh3aXwxfxLXmRdvI_YG7lNSW5GQob6G9XzYH=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPwl1R2KsGeXYZZ_7dntCSObbIDf8qa2l2DiIpf=s1920-k-no'
+    ]
+  },
+  crown_shuttle = {
+    address: '226 Shoreditch High St, Hackney, London E1 6PJ',
+    name: 'The Crown & Shuttle',
+    category: 'Bar',
+    description: 'Hip, bar with exposed brick and junkyard decor, craft beers and a large garden with food truck.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipOJWkD66oKeVP2l9Thq71NUKKrQTpVVhwaOcdGV=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPuS1Q_sh6t_A8osfc9YDdqlaV35ZHPbrWYOUb6=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOzvgwzXKUPEr8ugHxfqGnOkRwYCQnwvRfuGOmT=s1920-k-no'
+    ]
+  },
+  three_compasses = {
+    address: '99 Dalston Ln, Dalston, London E8 1NH',
+    name: 'The Three Compasses',
+    category: 'Pub',
+    description: 'Fashionable local with a beer terrace to the front and a regular list of live music and DJ nights.',
+    photos:[ 'https://lh5.googleusercontent.com/p/AF1QipO6EQ9IlOXmdtmQ2GMhTbsdIjWJ5Kc0RpI5e_Ky=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMlSRTCVARKD9HyREUPhHG-WcZFYElBPAkwhcnP=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipM7SLD0Pgyr0lfKgbESQNXzm4iycNs2S-ZuK0XM=s1920-k-no'
+    ]
+  },
+  royal_inn = {
+    address: '111 Lauriston Rd, London E9 7HJ',
+    name: 'The Royal Inn on the Park',
+    category: 'Pub',
+    description: 'Outside seating circles this pub with a classic menu, making it feel like part of the park itself.',
+    photos:[ 'https://lh5.googleusercontent.com/p/AF1QipN5j44y7oMNNxwGLmtMv_2WzN0IMDxBF7rw3qSF=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMjgIWCniwKJG9RHa93vO5by011_AO1mD3avI9W=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOiw_ZGcoiu7A_ug6w1YWxQcKAqu9xYhkHIb7D4=s1920-k-no'
+    ]
+  },
+  peoples_park = {
+    address: '360 Victoria Park Rd, London E9 7BT',
+    name: "The People's Park Tavern",
+    category: 'Pub',
+    description: 'Pub with large outside seating area situated between two green spaces',
+    photos:[ 'https://lh5.googleusercontent.com/p/AF1QipPaRzTfnLeoJCDfXkhg3fQ473aSzZ84yhz-681g=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPt8MemykRjSuwGgbTUkoiLPR-XQxMshMLdWrET=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMUNL5AFDJBGsS16In0LG5cnvq6rYrI25uJQnX0=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMNk9nGc9sihXQJK6dt9A0404sSUS__e3mJFw0r=s1920-k-no'
+    ]
+  },
+  print_house = {
+    address: '133 High St, London E15 2RB',
+    name: 'The Print House Bar & Kitchen',
+    category: 'Bar',
+    description: 'Relaxed, airy bar with an open kitchen and terrace, for wines, cocktails and a gastropub menu.',
+    photos:[ 'https://lh5.googleusercontent.com/p/AF1QipPtyqQs3AURWFc67J7UmehoRwf48nngidsRJoVI=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNFOAKyZUve4Dsbqu_6DyGwvCAQlSXnpePEGZGW=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPJ_LlIH2xtGdsu80k6tMAl5bmvT4ECcvsrKC8D=s1920-k-no'
+    ]
+  },
+  dundee = {
+    address: '339 Cambridge Heath Rd, London E2 9LH',
+    name: 'The Dundee Arms',
+    category: 'Pub',
+    description: 'Low-lit, traditional boozer with a courtyard and draught craft beers, hosting regular DJ sessions.',
+    photos:[ 'https://lh5.googleusercontent.com/p/AF1QipMAU7qdHtEUvX7UIb5yOn734AHDUmINKnrpLzgE=s1920-k-no'
+    ]
+  },
+  syklight = {
+    address: "Tobacco Dock, Pennington St entrance, St Katharine's & Wapping, London E1W 2SF",
+    name: 'Skylight Rooftop',
+    category: 'Bar',
+    description: 'Events venue with large outdoor rooftop.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipNfnUsN8Pkyf0ui4729uWf1zS7x-WUGsGnQdiqs=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNgoz3NFaixF5HdV5dfiiTR7qIQszGrG906JmiE=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNm4QAW_SHIzx8EryqnJ_jDXP8UPboEjFdFStUM=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNOnpG9OAgv9Dmz4XXsqe5gk0h9AbM2SRalZ1QY=s1920-k-no'
+    ]
+  },
+  rusty_bike = {
+    address: '588 Mile End Rd, Mile End, London E3 4PH',
+    name: 'The Rusty Bike',
+    category: 'Pub',
+    description: 'Modern bar with outdoor terrace specialising in Thai food & selection of global beers.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMnPE9SOst6i3A51sebDgFIkBuzXDPLEkQ5gF0R=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipO8Jwpuxbq96F8kp0_0L5CwLa3frMXKW2ByVUnZ=s1920-k-no'
+    ]
   }
 ]
 
-venue_array.each do | venue |
-  puts "generating #{venue[:name]}"
-  new_venue = Venue.new
-  new_venue.address = venue[:address]
-  new_venue.name = venue[:name]
-  new_venue.category = venue[:category]
-  new_venue.description = venue[:description]
-  venue[:photos].each_with_index do | photo, index |
-    file = URI.open(photo)
-    title = venue[:name].gsub(/\s/, "")
-    new_venue.photos.attach(io: file, filename: "#{title}-image-#{index + 1}.jpg", content_type: 'image/jpg')
-  end
-  new_venue.user = User.first
-  new_venue.save!
+# address:
+# name:
+# category:
+# description:
+# photos:[
+# ]
+
+venue_array.each_slice(10) do | slice |
+  GenerateVenueJob.perform_now(slice)
 end
+
+# venue_array.each do |venue|
+#   new_venue = Venue.create(address: venue[:address], name: venue[:name], category: venue[:category], description: venue[:description], user: User.first)
+#   puts "generating #{venue[:name]}"
+#   venue[:photos].each_with_index do |photo, index|
+#     file = URI.open(photo)
+#     title = venue[:name].gsub(/\s/, "")
+#     new_venue.photos.attach(io: file, filename: "#{title}-image-#{index + 1}.jpg", content_type: 'image/jpg')
+#   end
+#   new_venue.save!
+#   puts "generated, pausing..."
+#   sleep(1)
+# end
 

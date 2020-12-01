@@ -36,6 +36,10 @@ gem 'geocoder'
 # api for converting image urls to jpg format
 gem 'convert_api'
 
+#job queueing
+gem 'sidekiq'
+gem 'sidekiq-failures', '~> 1.0'
+
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
