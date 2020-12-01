@@ -1,6 +1,18 @@
+<% if current_user && current_user.bookings.any? %>
+  <% notify = false %>
+  <% current_user.bookings.each do |booking| %>
+    <% if booking.confirmed && !booking.seen %>
+     <% notify = true %>
+    <% end %>    
+  <% end %>
+<% end %>
+
 <div class="navbar navbar-expand-sm navbar-dark navbar-lewagon">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-bars"></i>
+    <% if notify %>
+      <div class="notifier-toggler"></div>
+    <% end %>    
   </button>
   <div class="logo">
     <%= link_to root_path, class: "navbar-brand" do %>
@@ -18,6 +30,9 @@
         </li>
         <li class="nav-item">
           <%= link_to "Bookings", bookings_path, class: "nav-link" %>
+           <% if notify %>
+            <div class="notifier-menu-item"></div>            
+          <% end %>    
         </li>
         <li class="nav-item">
           <%= link_to "Reviews", "#", class: "nav-link" %>
