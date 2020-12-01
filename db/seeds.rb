@@ -646,19 +646,6 @@ venue_array = [
   }
 ]
 
-venue_array.each do | venue |
-  puts "generating #{venue[:name]}"
-  new_venue = Venue.new
-  new_venue.address = venue[:address]
-  new_venue.name = venue[:name]
-  new_venue.category = venue[:category]
-  new_venue.description = venue[:description]
-  venue[:photos].each_with_index do | photo, index |
-    file = URI.open(photo)
-    title = venue[:name].gsub(/\s/, "")
-    new_venue.photos.attach(io: file, filename: "#{title}-image-#{index + 1}.jpg", content_type: 'image/jpg')
-  end
-  new_venue.user = User.first
-  new_venue.save!
+venue_array.each_slice(10) do | slice |
+  GenerateVenueJob.perform_now(slice)
 end
-
