@@ -3,13 +3,6 @@
     <div class="profile-info">
      <h1 class="name"><%= @user.first_name %> <%= @user.last_name %></h1>
      <h2 class="address"><%= @user.address.capitalize! %></h2>
-     <% if @user.reviews.present? %>
-      <h2 class="reviews"> <%= @user.reviews %> </h2>
-      <% else %>
-      <h2 class="reviews"> My reviews: </h2>
-     <% end %>
-     <div class="reviews-box">
-      </div>
      <% if @user.favourite_beer.present? %>
       <h2 class="favourite_beer"> My favourite beer is <%= @user.favourite_beer.capitalize! %> </h2>
      <% end %>
@@ -19,4 +12,39 @@
     </div>
   </div>
   <h5 class="link-to-profile"><%= link_to "Edit my profile", "devise/registrations#edit" %></h5>
+
+  <div class="reviews">
+    <h3>My bookings to be reviewed</h3>
+    <% if @user.bookings.count == 0 %>
+      <p>Nothing to review!</p>
+    <% else %>
+        <% @user.bookings.each  do |booking| %>
+          <!-- Showing only past bookings -->
+          <% if booking.confirmed && booking.start < Date.today %>
+            <!-- Finding a previous review for the venue-->
+            <% review = @user_reviews.find { |r| r.venue_id == booking.venue_id } %>
+            <!-- If reviewed previously, then we update the review -->
+            <% if review %>
+              <p>- <%= booking.venue.name %> | <%= booking.start.strftime("%d/%m/%y") %></p>
+              <button class="show-review btn">Update your previous review</button>
+            <!-- If not reviewed previously, we create a new review -->
+            <% else %>
+              <% review = Review.new %>
+              <p>- <%= booking.venue.name %> | <%= booking.start.strftime("%d/%m/%y") %></p>
+              <button class="show-review btn">Leave a new review</button>
+            <% end %>
+            <div id="review-form" >
+              <%= render partial: "review_form", locals: { booking: booking, review: review } %>
+            </div>
+          <% end %>
+        <% end %>
+    <% end %>
+  </div>
 </div>
+
+style="display: none;"
+
+
+
+
+
