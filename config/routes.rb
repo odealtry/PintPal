@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get '/profile', to: 'pages#profile', as: :profile
   post '/bookings/:id', to: 'bookings#accept_booking', as: :accept_booking
   resources :bookings, only: [:index] do
-    resources :reviews, only: [:new, :create, :edit, :update]
+    resources :reviews, only: [:show, :new, :create, :edit, :update]
   end
   resources :venues, only: :show do
     resources :bookings, except: [:index] do

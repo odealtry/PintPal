@@ -26,14 +26,14 @@
             <!-- If reviewed previously, then we update the review -->
             <% if review %>
               <p>- <%= booking.venue.name %> | <%= booking.start.strftime("%d/%m/%y") %></p>
-              <button class="show-review btn">Update your previous review</button>
+              <button class="show-review btn" data-booking_id='<%= booking.id %>'>Update your previous review</button>
             <!-- If not reviewed previously, we create a new review -->
             <% else %>
               <% review = Review.new %>
               <p>- <%= booking.venue.name %> | <%= booking.start.strftime("%d/%m/%y") %></p>
-              <button class="show-review btn">Leave a new review</button>
+              <button class="show-review btn" data-booking_id='<%= booking.id %>'>Leave a new review</button>
             <% end %>
-            <div id="review-form" >
+            <div id="review-form" style="display: none;" data-booking_id='<%= booking.id %>'>
               <%= render partial: "review_form", locals: { booking: booking, review: review } %>
             </div>
           <% end %>
@@ -41,8 +41,6 @@
     <% end %>
   </div>
 </div>
-
-style="display: none;"
 
 
 
