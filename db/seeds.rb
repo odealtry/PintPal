@@ -525,6 +525,8 @@ venue_array = [
     photos: ['https://lh5.googleusercontent.com/p/AF1QipMQEENZQgC8Ri4TT_n3ttuptU73JIVCcpycAnrV=s1920-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipNy7lV9Y6Ds9D7zJRC6h14KcFa6qXusj5DaV00t=s1920-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipNtSc3gNngZRAWyMhy5lcrZBvFbmgz5MoW2b-JI=s1920-k-no-pi-10-ya51.266457-ro0-fo100'
+    ]
+  },
   the_prince = {
     address: "14 Lillie Rd, Hammersmith, London SW6 1TT, United Kingdom",
     name: "The Prince",
