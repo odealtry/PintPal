@@ -1,41 +1,47 @@
-<div class="navbar navbar-expand-sm navbar-dark navbar-lewagon">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-bars"></i>
-  </button>
-
-  <div class="logo">
-    <%= link_to root_path, class: "navbar-brand" do %>
-       <%= image_tag 'logo.png' %>
-    <% end %>
-  </div>
+<% if current_page?(root_path)%>
+  <div class="navbar navbar-expand-sm navbar-dark navbar-lewagon">
+<% else %>
+  <div class="navbar navbar-expand-sm navbar-dark navbar-lewagon" style="background-color: #101010; z-index: 1000;">
+<% end %>
 
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
-      <% if user_signed_in? %>
-        <li class="nav-item">
-          <%= link_to "Home", root_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Shortlist", shortlist_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Bookings", bookings_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Reviews", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Profile", profile_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link" %>
-        </li>
-      <% else %>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </li>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="logo">
+      <%= link_to root_path, class: "navbar-brand" do %>
+         <%= image_tag 'logo.png' %>
       <% end %>
-    </ul>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <% if user_signed_in? %>
+          <li class="nav-item">
+            <%= link_to "Home", root_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Shortlist", shortlist_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Bookings", bookings_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Reviews", "#", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Profile", profile_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
   </div>
-</div>
