@@ -1,3 +1,20 @@
+<% if current_page?(root_path)%>
+  <div class="navbar navbar-expand-sm navbar-dark navbar-lewagon">
+<% else %>
+  <div class="navbar navbar-expand-sm navbar-dark navbar-lewagon" style="background-color: #101010; z-index: 1000;">
+<% end %>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <i class="fas fa-bars"></i>
+</button>
+
+<div class="logo">
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag 'logo.png' %>
+  <% end %>
+</div>
+
+
 <% if current_user && current_user.bookings.any? %>
   <% notify = false %>
   <% current_user.bookings.each do |booking| %>
@@ -19,6 +36,7 @@
        <%= image_tag 'logo.png' %>
     <% end %>
   </div>
+
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <% if user_signed_in? %>
