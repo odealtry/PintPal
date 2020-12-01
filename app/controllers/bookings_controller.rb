@@ -51,6 +51,8 @@ class BookingsController < ApplicationController
     # For now our admin user is linked to all the bookings
     # @venue_bookings = bookings.select { |booking| booking.venue == @venue.first }
     @venue_bookings = Booking.all
+
+    all_seen
   end
 
   def accept_booking   
@@ -60,6 +62,13 @@ class BookingsController < ApplicationController
   end
 
   private
+
+  def all_seen
+    current_user.bookings.each do |booking|
+      booking.seen = true
+      booking.save
+    end
+  end
 
   def booking_params
     params.require(:booking).permit(:start, :length, :party_size)
