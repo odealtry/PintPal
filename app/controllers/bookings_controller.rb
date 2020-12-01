@@ -53,7 +53,6 @@ class BookingsController < ApplicationController
     # For now our admin user is linked to all the bookings
     # @venue_bookings = bookings.select { |booking| booking.venue == @venue.first }
     @venue_bookings = Booking.all
-
     all_seen
   end
 
