@@ -11,8 +11,8 @@ class GenerateVenueJob < ApplicationJob
         new_venue.photos.attach(io: file, filename: "#{title}-image-#{index + 1}.jpg", content_type: 'image/jpg')
       end
       new_venue.save!
-      sleep(1)
       puts "generated, pausing..."
+      sleep(1)
     end
   end
 end
