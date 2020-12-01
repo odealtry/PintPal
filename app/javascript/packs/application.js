@@ -100,7 +100,10 @@ const splashScreen = () => {
 // When a venue owner accepts a booking, show an alert icon on the navbar
 const addAlert = () => {
   const acceptButton = document.querySelector(".accept-booking");
-  acceptButton.addEventListener("click", () => {
-    console.log("button clicked");
-  })
+  const notifierToggler = document.querySelector(".notifier-toggler")
+  if (acceptButton) {
+    acceptButton.addEventListener("click", () => {
+      notifierToggler.classList.toggle("invisible");
+    })
+  }
 };
