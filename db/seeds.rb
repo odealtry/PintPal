@@ -928,9 +928,9 @@ venue_array = [
 # photos:[
 # ]
 
-# venue_array.each_slice(10) do | slice |
-#   GenerateVenueJob.perform_now(slice)
-# end
+venue_array.each_slice(10) do | slice |
+  GenerateVenueJob.perform_now(slice)
+end
 
 venue_array.each do |venue|
   new_venue = Venue.create(address: venue[:address], name: venue[:name], category: venue[:category], description: venue[:description], user: User.first)
