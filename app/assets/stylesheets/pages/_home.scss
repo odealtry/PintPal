@@ -103,6 +103,18 @@
 }
 
 .mapboxgl-ctrl-geocoder--input {
-  padding: 6px 35px;
+  padding: 6px 35px 6px 50px;
 }
 
+.mapboxgl-ctrl-top-right {
+  position: absolute;
+  right: 328px;
+  z-index: 1002;
+  top: 656px;
+}
+
+// .mapbox-gl-marker {
+//   g {
+//     fill: navy;
+//   }
+// }

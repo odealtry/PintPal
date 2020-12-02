@@ -31,6 +31,8 @@ class BookingsController < ApplicationController
 
   def update
     if @booking.update(booking_params)
+      @booking.confirmed = false
+      @booking.save
       redirect_to venue_booking_path(@venue, @booking)
     else
       render :edit
