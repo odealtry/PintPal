@@ -3,7 +3,7 @@
   <% current_user.bookings.each do |booking| %>
     <% if booking.confirmed && !booking.seen %>
      <% notify = true %>
-    <% end %>    
+    <% end %>
   <% end %>
 <% end %>
 
@@ -17,7 +17,7 @@
   <i class="fas fa-bars"></i>
   <% if notify %>
       <div class="notifier-toggler"></div>
-    <% end %>   
+    <% end %>
 </button>
 <div class="logo">
   <%= link_to root_path, class: "navbar-brand" do %>
@@ -36,11 +36,8 @@
         <li class="nav-item">
           <%= link_to "Bookings", bookings_path, class: "nav-link" %>
           <% if notify %>
-            <div class="notifier-menu-item"></div>            
-          <% end %>    
-        </li>
-        <li class="nav-item">
-          <%= link_to "Reviews", "#", class: "nav-link" %>
+            <div class="notifier-menu-item"></div>
+          <% end %>
         </li>
         <li class="nav-item">
           <%= link_to "Profile", profile_path, class: "nav-link" %>
