@@ -1,4 +1,4 @@
-.splash {
+.splash, .fire-splash {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-.splash.display-none {
+.splash.display-none, .fire-splash.display-none {
   display: flex;
   opacity: 0;
   flex-direction: column;

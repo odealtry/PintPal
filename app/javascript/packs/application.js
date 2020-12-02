@@ -75,6 +75,7 @@ document.addEventListener('turbolinks:load', () => {
   const splashScreen = () => {
     const splash = document.querySelector('.splash');
     const navbar = document.querySelector('.navbar');
+    const fireSplash = document.querySelector('.fire-splash');
     let splashed = false;
     if (document.cookie !== "") {
       splashed = document.cookie
@@ -90,6 +91,15 @@ document.addEventListener('turbolinks:load', () => {
   if (splash) {
     if (splashed) {
       splash.classList.add('invisible');
+
+      // navbar.classList.toggle("invisible");
+      setTimeout(() => {
+        fireSplash.classList.add('display-none');
+      }, 1500);
+      setTimeout(() => {
+        // navbar.classList.toggle("invisible");
+      }, 1000);
+
     } else {
       navbar.classList.toggle("invisible");
       setTimeout(() => {
