@@ -1,6 +1,26 @@
 <%= simple_form_for [booking, review] do |f| %>
-    <%= f.input :outdoor_rating, collection: 1..3 %>
-    <%= f.input :heat_rating, collection: 1..3 %>
-    <%= f.input :pricing_rating, collection: 1..3 %>
+    <%= f.input :heat_rating,
+            as: :radio_buttons,
+            collection_wrapper_tag: 'div',
+            collection_wrapper_class: 'category-wrapper',
+            item_wrapper_class: 'category-item',
+            input_html: {class: 'category-selector'},
+            collection: 1..5 %>
+
+    <%= f.input :pricing_rating,
+            as: :radio_buttons,
+            collection_wrapper_tag: 'div',
+            collection_wrapper_class: 'category-wrapper',
+            item_wrapper_class: 'category-item',
+            input_html: {class: 'category-selector'},
+            collection: 1..5 %>
+
+    <%= f.input :overall_rating,
+            as: :radio_buttons,
+            collection_wrapper_tag: 'div',
+            collection_wrapper_class: 'category-wrapper',
+            item_wrapper_class: 'category-item',
+            input_html: {class: 'category-selector'},
+            collection: 1..5 %>
     <%= f.submit "Send", class:"btn"  %>
 <% end %>
