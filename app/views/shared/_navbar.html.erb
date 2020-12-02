@@ -7,18 +7,23 @@
   <% end %>
 <% end %>
 
-<div class="navbar navbar-expand-sm navbar-dark navbar-lewagon">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-bars"></i>
-    <% if notify %>
+<% if current_page?(root_path)%>
+  <div class="navbar navbar-expand-sm navbar-dark navbar-lewagon">
+<% else %>
+  <div class="navbar navbar-expand-sm navbar-dark navbar-lewagon" style="background-color: #101010; z-index: 1000;">
+<% end %>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <i class="fas fa-bars"></i>
+  <% if notify %>
       <div class="notifier-toggler"></div>
-    <% end %>    
-  </button>
-  <div class="logo">
-    <%= link_to root_path, class: "navbar-brand" do %>
-       <%= image_tag 'logo.png' %>
-    <% end %>
-  </div>
+    <% end %>   
+</button>
+<div class="logo">
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag 'logo.png' %>
+  <% end %>
+</div>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <% if user_signed_in? %>
@@ -30,7 +35,7 @@
         </li>
         <li class="nav-item">
           <%= link_to "Bookings", bookings_path, class: "nav-link" %>
-           <% if notify %>
+          <% if notify %>
             <div class="notifier-menu-item"></div>            
           <% end %>    
         </li>

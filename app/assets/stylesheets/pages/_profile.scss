@@ -1,8 +1,8 @@
 .container {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
   padding: 20px;
-  width: 350px;
-  margin-left: 7%;
-  display: inline-block;
   border: 1px solid white;
   border-radius: 4px;
 }
@@ -44,4 +44,14 @@
 
 .info-and-image {
   display: flex;
+}
+
+
+.grey-color {
+  color: $grey;
+}
+
+.line {
+  border-bottom: 1px solid white;
+  margin: 25px 0;
 }
