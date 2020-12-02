@@ -1,9 +1,9 @@
 <div class="container">
   <%# If current_user has a venue, assume they are a venue owner %>
-  <% if @venue.empty? %> 
+  <% if @venue.empty? %>
     <h3 class="text-center m-3"><%= current_user.first_name %>'s Bookings</h3>
   <% else %>
-    <h3 class="text-center m-3">Bookings</h3>    
+    <h3 class="text-center m-3">Bookings</h3>
   <% end %>
 
   <div class="shortlist-container">
@@ -11,18 +11,18 @@
     <% unless @venue.empty? %>
        <% @venue_bookings.each do |booking| %>
         <%= render partial: "/shared/owner_list_card", locals: { booking: booking } %>
-      <% end %>      
+      <% end %>
     <% else %>
       <%# Otherwise, show a list of accepted bookings for the user %>
       <% if @user_bookings.empty? %>
         <h5 class="m-5">No bookings</h5>
         <p><%= link_to "Find a venue", root_path, class: "btn" %></p>
-        <p><%= link_to "View shortlist", shortlist_path, class: "btn" %></p>
       <% else %>
         <% @user_bookings.each do |booking| %>
           <%= render partial: "/shared/list_card", locals: { booking: booking } %>
         <% end %>
       <% end %>
     <% end %>
+    <p><%= link_to "Back to shortlist", shortlist_path, class: "btn" %></p>
   </div>
 </div>
