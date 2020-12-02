@@ -22,6 +22,7 @@
 
 .header-title {
   width: 100%;
+  // position: relative;
 }
 
 .content {
@@ -43,7 +44,7 @@
   padding: 0 1rem;
   padding-top: 1rem;
   overflow: scroll;
-  height: 70vh;
+  height: 50vh;
   border: 1px solid $white;
   // max-height: calc(100vh - 70px - 65px - 71px);
 }
@@ -55,6 +56,7 @@
   // margin: 10px;
   border: 1px solid $white;
   height: 70px;
+  position: relative;
 
   .form-group {
     margin-bottom: 30px;
@@ -62,9 +64,9 @@
 }
 
 .my-button {
-  position: fixed;
-  bottom: 42px;
-  right: 42px;
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
   width: 40px;
   border: none;
   background: $white;
@@ -77,9 +79,9 @@
 }
 
 #close {
-  position: fixed;
-  top: 81px;
-  right: 35px;
+  position: relative;
+  top: 48px;
+  right: -355px;
   font-size: 25px;
   a {
     color: $white;
