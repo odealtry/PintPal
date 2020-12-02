@@ -20,6 +20,10 @@ class ReviewsController < ApplicationController
   def edit
   end
 
+  def index
+    @venue = Venue.find(params[:venue_id])
+  end
+
   def update
     @review.updated = true
     @review.update(review_params)
