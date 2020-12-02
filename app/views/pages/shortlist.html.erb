@@ -3,16 +3,15 @@
   <div class="shortlist-container">
     <% if @user_bookings.empty? %>
       <h5 class="m-5">Nothing here</h5>
-        <p><%= link_to "Find a venue", root_path, class: "btn" %></p>
+        <%= link_to "Find a venue", root_path, class: "btn" %>
+        <br>
         <p class="white-p">OR</p>
-        <p><%= link_to "Your bookings", bookings_path, class: "btn" %></p>
+        <%= link_to "Your bookings", bookings_path, class: "btn" %>
     <% else %>
       <% @user_bookings.each do |booking| %>
         <%= render partial: "shared/list_card", locals: { booking: booking } %>
       <% end %>
     <% end %>
-    <%= link_to "Back to map", root_path, class: "btn m-3" %>
-    <%= link_to "My bookings", bookings_path, class: "btn m-3" %>
   </div>
   <br>
 </div>
