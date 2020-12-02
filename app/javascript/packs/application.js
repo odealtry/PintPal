@@ -112,3 +112,7 @@ document.addEventListener('turbolinks:load', () => {
   }
   document.cookie = "splashed=true";
 };
+
+if ($(".blueflash")) {
+  $(".blueflash").fadeOut(4000);
+}
