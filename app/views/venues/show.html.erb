@@ -33,9 +33,13 @@
     <h6 class="mt-2 text-center"> <%= link_to "Back to map", root_path, class: "btn" %></h6> <br>
     <h5 class="mt-2 text-center" id="venue-address"> <%= @venue.address%></h5>
 
-    <h5>Latest reviews</h5>
-    <% @venue.reviews.last(3).each do |review| %>
-      <%= render partial: "shared/review_card", locals: {review: review} %>
+    <% if @venue.reviews.any? %>
+      <h5 class="text-center mt-3">Latest reviews</h5>
+      <% @venue.reviews.last(3).each do |review| %>
+        <%= render partial: "shared/review_card", locals: {review: review} %>
+      <% end %>
     <% end %>
-    
+    <% if @venue.reviews.count > 3 %>
+      <%= link_to "See more", venue_reviews_path(@venue), class: "btn mt-3" %>
+    <% end %>
 </div>

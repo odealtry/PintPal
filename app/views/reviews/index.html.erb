@@ -1,0 +1,7 @@
+<div class="container">
+  <h1 class="text-center">Reviews for</h1>
+  <h3 class="text-center mb-3"><%= @venue.name %></h3>
+  <% @venue.reviews.each do |review| %>
+    <%= render partial: "shared/review_card", locals: {review: review} %>
+  <% end %>
+</div>
