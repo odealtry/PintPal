@@ -21,6 +21,10 @@
         <% @user_bookings.each do |booking| %>
           <%= render partial: "/shared/list_card", locals: { booking: booking } %>
         <% end %>
+        <p class="mt-3">Your past bookings:</p>
+        <% @past_bookings.each do |booking| %>
+          <%= render partial: "/shared/list_card", locals: { booking: booking } %>
+        <% end %>
       <% end %>
     <% end %>
     <p><%= link_to "View shortlist", shortlist_path, class: "btn mt-3" %></p>
