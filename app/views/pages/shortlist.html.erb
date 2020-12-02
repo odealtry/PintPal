@@ -1,12 +1,12 @@
 <div class="container">
-  <h3 class="text-center m-3"><%= @user.first_name %>'s shortlist</h3>
+  <h3 class="text-center m-3"><%= @user.first_name.capitalize %>'s shortlist</h3>
   <div class="shortlist-container">
     <% if @user_bookings.empty? %>
       <h5 class="m-5">Nothing here</h5>
-        <%= link_to "Find a venue", root_path, class: "btn" %>
+        <%= link_to "Find a venue", root_path, class:"btn" %>
         <br>
         <p class="white-p">OR</p>
-        <%= link_to "Your bookings", bookings_path, class: "btn" %>
+        <%= link_to "Your bookings", bookings_path, class:"btn" %>
     <% else %>
       <% @user_bookings.each do |booking| %>
         <% unless booking.start.to_i < @now.to_i %>

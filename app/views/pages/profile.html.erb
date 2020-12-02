@@ -1,7 +1,7 @@
 <div class="container">
   <div class="info-and-image">
     <div class="profile-info">
-     <h1 class="name"><%= @user.first_name %> <%= @user.last_name %></h1>
+     <h1 class="name"><%= @user.first_name.capitalize %> <%= @user.last_name.capitalize %></h1>
      <% if @user.favourite_beer.present? %>
       <h4 class="favourite_beer"> My favourite beer is <%= @user.favourite_beer.capitalize %> </h4>
      <% end %>
@@ -10,11 +10,11 @@
       <% if @user.photo.attached? %>
         <%= cl_image_tag @user.photo.key, class: "avatar-large-bordered" %>
       <% else %>
-        <%= image_tag "avatar-1.png", class: "avatar-large-bordered" %>
+        <%= image_tag "avatar-1.png", class:"avatar-large-bordered" %>
       <% end %>
     </div>
   </div>
-
+  <br>
   <h5 class="link-to-profile"><%= link_to "Edit my profile", "users/edit", class:"btn", style: 'color:#FFFFFF'%></h5>
   <div class="line"></div>
   <div class="reviews">
