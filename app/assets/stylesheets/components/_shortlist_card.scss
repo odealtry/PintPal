@@ -1,7 +1,7 @@
 .shortlist-card {
   display: flex;
   width: 300px;
-  height: 100px;
+  height: 120px;
   margin: 10px;
   padding: 5px;
   box-shadow: 1px 1px 3px lightgrey;
@@ -21,7 +21,7 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  align-items: center;
+  align-items: left;
   justify-content: center;
 }
 
@@ -55,6 +55,7 @@
 
 .shortlist-card-image-box {
   margin-right: 10px;
+  margin-top: 10px;
 }
 
 .chat-button {
