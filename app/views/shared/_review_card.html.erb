@@ -1,6 +1,6 @@
 <div class="review-card">
-  <p>Review by <strong><%= review.user.first_name %></strong></p>   
-  <p>Overall: <%= "⭐" * review.outdoor_rating %></p>     
-  <p>Heat: <%= "🔥" * review.heat_rating %></p>     
+  <p>Review by <strong><%= review.user.first_name %></strong></p>
+  <p>Overall: <%= "⭐" * review.overall_rating %></p>
+  <p>Heat: <%= "🔥" * review.heat_rating %></p>
   <p>Price: <%=  (icon('fas', 'pound-sign') + " ") * review.pricing_rating %></p>
 </div>
