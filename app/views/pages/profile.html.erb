@@ -10,7 +10,7 @@
       <% if @user.photo.attached? %>
         <%= cl_image_tag @user.photo.key, class:"profile-image" %>
       <% else %>
-        <%= image_tag 'https://picsum.photos/200/200', class:"avatar-large-bordered" %>
+        <%= image_tag "avatar-1.png", class: "profile-image" %>
       <% end %>
     </div>
   </div>
