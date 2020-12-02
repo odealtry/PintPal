@@ -12,6 +12,7 @@ class ReviewsController < ApplicationController
     @review.venue = booking.venue
     @review.updated = true
     @review.save
+    booking.update(to_be_reviewed: false)
 
     redirect_to profile_path
   end
@@ -22,6 +23,8 @@ class ReviewsController < ApplicationController
   def update
     @review.updated = true
     @review.update(review_params)
+    booking = Booking.find(params["booking_id"])
+    booking.update(to_be_reviewed: false)
     redirect_to profile_path
   end
 

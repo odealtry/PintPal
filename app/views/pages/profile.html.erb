@@ -2,9 +2,8 @@
   <div class="info-and-image">
     <div class="profile-info">
      <h1 class="name"><%= @user.first_name %> <%= @user.last_name %></h1>
-     <h2 class="address"><%= @user.address.capitalize! %></h2>
      <% if @user.favourite_beer.present? %>
-      <h2 class="favourite_beer"> My favourite beer is <%= @user.favourite_beer.capitalize %> </h2>
+      <h4 class="favourite_beer"> My favourite beer is <%= @user.favourite_beer.capitalize %> </h4>
      <% end %>
     </div>
     <div class="profile-image">
@@ -19,17 +18,18 @@
   <h5 class="link-to-profile"><%= link_to "Edit my profile", "users/edit", class:"btn", style: 'color:#FFFFFF'%></h5>
   <div class="line"></div>
   <div class="reviews">
-    <h5>Bookings to be reviewed:</h5>
-    <% if @user.bookings.count == 0 || @user.bookings.where(confirmed: true).count == 0 %>
+    <h4>Bookings to be reviewed:</h4>
+    <% if @user.bookings.where(to_be_reviewed: true, confirmed: true).count == 0 %>
       <p>Nothing to review!</p>
+      <p><%= link_to "Find a venue", root_path, class: "btn" %></p>
     <% else %>
         <% @user.bookings.each  do |booking| %>
           <!-- Showing only past bookings -->
-          <% if booking.confirmed && booking.start < Date.today %>
+          <% if booking.confirmed && booking.start < Date.today && booking.to_be_reviewed %>
             <!-- Finding a previous review for the venue-->
             <% review = @user_reviews.find { |r| r.venue_id == booking.venue_id } %>
             <!-- If reviewed previously, then we update the review -->
-            <% if review && review.updated == false %>
+            <% if review %>
               <p class="grey-color"><i class="far fa-comment-dots"></i> <%= booking.venue.name %> | <%= booking.start.strftime("%d/%m/%y") %></p>
               <button class="show-review btn-reviews" data-booking_id='<%= booking.id %>'>Update your previous review</button>
             <!-- If not reviewed previously, we create a new review -->
