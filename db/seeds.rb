@@ -11,8 +11,8 @@ puts "creating admin"
 admin = User.new
 admin.email = "admin@email.com"
 admin.password = "pintpal"
-admin.first_name = "admin"
-admin.last_name = "admin"
+admin.first_name = "David"
+admin.last_name = "Smith"
 admin.date_of_birth = Date.today - 10000
 admin.address = "180 Ashley Gardens, Emery Hill Street, SW1P 1PD"
 admin.save!

@@ -37,8 +37,9 @@ import { initSweetalert } from '../plugins/init_sweetalert';
 import { initChatroomCable } from '../channels/chatroom_channel';
 // import { initChat } from '../components/init_chat';
 import { addBackgroundToNavbar } from '../components/navbar';
-import { changePlaceholder } from '../components/navbar';
+// import { changePlaceholder } from '../components/navbar';
 import { initReviewForm } from '../components/review_form';
+import { dynamicMapHeight } from '../components/map';
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
@@ -68,18 +69,22 @@ document.addEventListener('turbolinks:load', () => {
     }
   });
   addBackgroundToNavbar();
-  changePlaceholder();
+  // changePlaceholder();
 });
 
-const splashScreen = () => {
-  const splash = document.querySelector('.splash');
-  const navbar = document.querySelector('.navbar');
-  let splashed = false;
-  if (document.cookie !== "") {
-    splashed = document.cookie
-      .split('; ')
-      .find(row => row.startsWith('splashed'))
-      .split('=')[1];
+  const splashScreen = () => {
+    const splash = document.querySelector('.splash');
+    const navbar = document.querySelector('.navbar');
+    let splashed = false;
+    if (document.cookie !== "") {
+      splashed = document.cookie
+        .split('; ')
+        .find(row => row.startsWith('splashed'))
+        .split('=')[1];
+    }
+
+  if ((document.getElementById('map') !== null) && (window.innerWidth < 768)) {
+    dynamicMapHeight();
   }
 
   if (splash) {

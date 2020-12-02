@@ -8,9 +8,9 @@
     </div>
     <div class="profile-image">
       <% if @user.photo.attached? %>
-        <%= cl_image_tag @user.photo.key, class:"profile-image" %>
+        <%= cl_image_tag @user.photo.key, class:"avatar-large-bordered" %>
       <% else %>
-        <%= image_tag "avatar-1.png", class: "profile-image" %>
+        <%= image_tag "avatar-1.png", class: "avatar-large-bordered" %>
       <% end %>
     </div>
   </div>

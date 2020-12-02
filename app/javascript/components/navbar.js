@@ -10,10 +10,10 @@ const addBackgroundToNavbar = () => {
   });
 };
 
-const changePlaceholder = () => {
-  const input = document.querySelector(".mapboxgl-ctrl-geocoder--input")
-  input.placeholder = "Search for a location or venue";
-};
+// const changePlaceholder = () => {
+//   const input = document.querySelector(".mapboxgl-ctrl-geocoder--input")
+//   input.placeholder = "Search for a location or venue";
+// };
 
 export { addBackgroundToNavbar };
-export { changePlaceholder }
+// export { changePlaceholder }
