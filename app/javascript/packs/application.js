@@ -91,7 +91,6 @@ document.addEventListener('turbolinks:load', () => {
   if (splash) {
     if (splashed) {
       splash.classList.add('invisible');
-
       navbar.classList.toggle("invisible");
       setTimeout(() => {
         fireSplash.classList.add('display-none');
@@ -99,8 +98,8 @@ document.addEventListener('turbolinks:load', () => {
       setTimeout(() => {
         navbar.classList.toggle("invisible");
       }, 2500);
-
     } else {
+      fireSplash.classList.add('invisible');
       navbar.classList.toggle("invisible");
       setTimeout(() => {
         splash.classList.add('display-none');
