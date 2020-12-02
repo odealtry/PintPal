@@ -16,7 +16,6 @@ class BookingsController < ApplicationController
     if @booking.save
       chatroom.save
       review = Review.where(venue: @venue)
-      review.update(updated: false)
 
       redirect_to shortlist_path(@booking.user)
     else
@@ -58,7 +57,7 @@ class BookingsController < ApplicationController
 
   def accept_booking
     @booking.confirmed = true
-    @booking.save    
+    @booking.save
     redirect_to venue_booking_path(@booking.venue, @booking)
   end
 
