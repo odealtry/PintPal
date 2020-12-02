@@ -9,7 +9,9 @@
         <%= link_to "Your bookings", bookings_path, class: "btn" %>
     <% else %>
       <% @user_bookings.each do |booking| %>
-        <%= render partial: "shared/list_card", locals: { booking: booking } %>
+        <% unless booking.start.to_i < @now.to_i %>
+          <%= render partial: "shared/list_card", locals: { booking: booking } %>          
+        <% end %>        
       <% end %>
     <% end %>
   </div>
