@@ -8,7 +8,11 @@ class VenuesController < ApplicationController
     reviews.each do |review|
       rating_sum += review.overall_rating
     end
-    @venue_overall_rating = rating_sum / reviews.count
+    if reviews.count == 0
+      @venue_overall_rating
+    else  
+      @venue_overall_rating = rating_sum / reviews.count
+    end
   end
 
   private
