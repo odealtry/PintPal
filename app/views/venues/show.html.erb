@@ -27,7 +27,7 @@
     <h6 class="mt-2 text-center"> <%= link_to "Back to map", root_path, class: "btn" %></h6> <br>
     <h5 class="mt-2 text-center" id="venue-address"> <%= @venue.address%></h5>
 
-    <h5>Reviews</h5>
+    <h5>Latest reviews</h5>
     <% @venue.reviews.last(3).each do |review| %>
       <%= render partial: "shared/review_card", locals: {review: review} %>
     <% end %>
