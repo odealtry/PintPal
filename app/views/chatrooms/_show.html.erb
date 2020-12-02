@@ -26,13 +26,21 @@
                   </i>
                   <span><%= message.content %></span>
                 </div>
-                <img class="avatar-large-bordered" src="https://cf.ltkcdn.net/socialnetworking/images/orig/168795-400x400-Female-Avatar-2-lg.jpg" height="70px" alt="">
+                <% if message.user.photo.attached? %>
+                  <%= cl_image_tag message.user.photo.key, class: "avatar-large-bordered" %>
+                <% else %>
+                  <%= image_tag "avatar-1.png", class: "avatar-large-bordered" %>
+                <% end %>
               </div>
             </div>
           <% else %>
             <div class="message-container" id="message-<%= message.id %>">
               <div class="content pl-2 pt-2 pb-2">
-                <img class="avatar-large-bordered" src="https://cf.ltkcdn.net/socialnetworking/images/orig/168795-400x400-Female-Avatar-2-lg.jpg" height="70px" alt="">
+                <% if message.user.photo.attached? %>
+                  <%= cl_image_tag message.user.photo.key, class: "avatar-large-bordered" %>
+                <% else %>
+                  <%= image_tag "avatar-1.png", class: "avatar-large-bordered" %>
+                <% end %>
                 <div class="pl-2">
                   <i class="author">
                     <span><%= message.user.first_name %></span><br>
