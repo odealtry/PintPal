@@ -1,21 +1,23 @@
 <div class="shortlist-card">
   <div class="shortlist-card-image-box">
     <% if booking.venue.photos.any? %>
-      <%= cl_image_tag booking.venue.photos[1].key, height: 90, width: 90, crop: :fill %>
+      <%= link_to venue_path(booking.venue) do %>
+        <%= cl_image_tag booking.venue.photos[1].key, height: 90, width: 90, crop: :fill %>
+      <% end %>
     <% end %>
   </div>
   <div class="shortlist-card-text-container">
-    <p><%= booking.venue.name %></p>
-    <p><%= booking.start.strftime("%H:%M %d/%m/%y") %>
+    <%= link_to booking.venue.name, venue_path(booking.venue)%>
+    <p><%= booking.start.strftime("%H:%M")%> - <%=booking.start.strftime("%d/%m/%y")%>
     <%= booking.length %> hour(s)</p>
     <div class="shortlist-card-button-container">
       <%= link_to "View", venue_booking_path(booking.venue, booking), class: "btn w-50 mt-1" %>
       <% if booking.confirmed %>
         <div class="shortlist-card-status accepted-i"><%= icon('far', 'check-circle') %></div>
       <% elsif booking.confirmed == nil %>
-        <div class="shortlist-card-status pending-i"><%= icon('far', 'question-circle') %></div>        
+        <div class="shortlist-card-status pending-i"><%= icon('far', 'question-circle') %></div>
       <% else %>
-      <div class="shortlist-card-status rejected-i"><%= icon('far', 'times-circle') %></div>      
+      <div class="shortlist-card-status rejected-i"><%= icon('far', 'times-circle') %></div>
      <% end %>
      <div class="chat-button">
       <%  %>
