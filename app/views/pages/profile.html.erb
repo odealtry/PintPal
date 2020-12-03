@@ -36,17 +36,19 @@
             <!-- Finding a previous review for the venue-->
             <% review = @user_reviews.find { |r| r.venue_id == booking.venue_id } %>
             <!-- If reviewed previously, then we update the review -->
-            <% if review %>
-              <p class="grey-color border p-2 small"><%= booking.venue.name %><br><%= booking.start.strftime("%d/%m/%y") %></p>
-              <button class="show-review btn-reviews" data-booking_id='<%= booking.id %>'>Update your previous review</button>
-            <!-- If not reviewed previously, we create a new review -->
-            <% elsif review.nil? %>
-              <% review = Review.new %>
-              <p class="grey-color border p-2 small"><%= booking.venue.name %><br><%= booking.start.strftime("%d/%m/%y") %></p>
-              <button class="show-review btn-reviews" data-booking_id='<%= booking.id %>'>Leave a review</button>
-            <% end %>
-            <div id="review-form" style="display: none;" data-booking_id='<%= booking.id %>'>
-              <%= render partial: "review_form", locals: { booking: booking, review: review } %>
+            <div class="border p-3">
+              <% if review %>
+                  <p class="grey-color"><%= booking.venue.name %><br><%= booking.start.strftime("%d/%m/%y") %></p>
+                  <button class="show-review btn-reviews" data-booking_id='<%= booking.id %>'>Update your previous review</button>
+                  <!-- If not reviewed previously, we create a new review -->
+              <% elsif review.nil? %>
+                  <% review = Review.new %>
+                  <p class="grey-color"><%= booking.venue.name %><br><%= booking.start.strftime("%d/%m/%y") %></p>
+                  <button class="show-review btn-reviews text-center"" data-booking_id='<%= booking.id %>'>Leave a review</button>
+              <% end %>
+              <div id="review-form" style="display: none;" data-booking_id='<%= booking.id %>'>
+                <%= render partial: "review_form", locals: { booking: booking, review: review } %>
+              </div>
             </div>
           <% end %>
         <% end %>

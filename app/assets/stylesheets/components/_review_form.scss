@@ -4,59 +4,76 @@
   flex-wrap: wrap;
 }
 
-// .category-item {
-//   flex: 0 0 30%;
-// }
-
 .category-selector {
   position: absolute;
   transform: scale(0);
 }
 
 .category-selector + label {
-  display: block;
+  display: flex;
   cursor: pointer;
-  box-sizing: border-box;
-  // width: 50%;
-  font-size: 20px;
-  text-align: center;
-  padding: 10px 10px 30px 10px;
-  color: $grey !important;
-  // border: 1px solid #EAEAEA;
-  // border-radius: 4px;
-  // background-color: white;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: asset_url('fire.png');
+  background-size: 45px;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 84px;
+  opacity: 0.2;
+  color: white !important;
 }
 
 .category-selector:checked + label {
-  color: $white !important;
+  color: white !important;
+  opacity: 1;
 }
 
 
-#snippet_category_ruby + label {
-  color: #FD1015;
+.category-selector-pound {
+  position: absolute;
+  transform: scale(0);
 }
 
-#snippet_category_ruby:checked + label {
-  background-color: #FD1015;
-  border-color: #FD1015;
+.category-selector-pound + label {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: asset_url('pound.png');
+  background-size: 45px;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 75px;
+  opacity: 0.2;
+  color: white !important;
 }
 
-
-#snippet_category_javascript + label {
-  color: #FFC65A;
+.category-selector-pound:checked + label {
+  color: white !important;
+  opacity: 1;
 }
 
-#snippet_category_javascript:checked + label {
-  background-color: #FFC65A;
-  border-color: #FFC65A;
+.category-selector-star {
+  position: absolute;
+  transform: scale(0);
 }
 
-
-#snippet_category_css + label {
-  color: #62DDF5;
+.category-selector-star + label {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: asset_url('star.png');
+  background-size: 45px;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 72px;
+  opacity: 0.2;
+  color: white !important;
 }
 
-#snippet_category_css:checked + label {
-  background-color: #62DDF5;
-  border-color: #62DDF5;
+.category-selector-star:checked + label {
+  color: white !important;
+  opacity: 1;
 }
+
