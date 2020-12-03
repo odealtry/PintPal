@@ -33,7 +33,6 @@
 .shortlist-card-button-container {
   display: flex;
   width: 100%;
-  align-items: center;
 }
 
 .shortlist-card-status {
@@ -45,29 +44,17 @@
 .shortlist-card-status.accepted-i {
   font-size: 35px;
   color: green;
-  margin-bottom: 15px;
 }
 
 .shortlist-card-status.pending-i {
   font-size: 35px;
   color: orange;
-  margin-bottom: 15px;
 }
 
 .shortlist-card-status.rejected-i {
   font-size: 35px;
   color: red;
-  margin-bottom: 15px;
 }
-// .shortlist-card-pending {
-//   background-color: orange;
-//   padding: 20px;
-// }
-
-// .shortlist-card-accepted {
-//   background-color: lightgreen;
-//   padding: 20px
-// }
 
 .shortlist-card-image-box {
   margin-right: 10px;
