@@ -1,16 +1,22 @@
 .review-card {
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
   width: 100%;
   padding: 5px;
-  box-shadow: 1px 1px 3px lightgrey;
-  background-color:#ffffff;
-  color: black;
+  border: 1px solid white;
+  // background-color: $black;
+  color: white;
   border-radius: 3px;
 }
 
 .review-card p {
-  margin: 0;
+  margin: 0 0 0 10px;
   padding: 0;
+}
+
+.image-review {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
