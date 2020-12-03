@@ -33,24 +33,27 @@
 .shortlist-card-button-container {
   display: flex;
   width: 100%;
-  align-items: center;
 }
 
 .shortlist-card-status {
-  border-radius: 50%;
   width: 35px;
   height: 35px;
   margin-left: 25px;
 }
 
-.shortlist-card-pending {
-  background-color: orange;
-  padding: 20px;
+.shortlist-card-status.accepted-i {
+  font-size: 35px;
+  color: green;
 }
 
-.shortlist-card-accepted {
-  background-color: lightgreen;
-  padding: 20px
+.shortlist-card-status.pending-i {
+  font-size: 35px;
+  color: orange;
+}
+
+.shortlist-card-status.rejected-i {
+  font-size: 35px;
+  color: red;
 }
 
 .shortlist-card-image-box {

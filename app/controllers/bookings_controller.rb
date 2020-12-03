@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
   before_action :set_venue, only: [:new, :create, :edit, :update, :show, :destroy]
-  before_action :set_booking, only: [:show, :edit, :update, :destroy, :accept_booking]
+  before_action :set_booking, only: [:show, :edit, :update, :destroy, :accept, :reject]
   def new
     @booking = Booking.new
     @bookings = Booking.all
@@ -60,9 +60,13 @@ class BookingsController < ApplicationController
     all_seen
   end
 
-  def accept_booking
-    @booking.confirmed = true
-    @booking.save
+  def accept
+    @booking.toggle!(:confirmed)
+    redirect_to venue_booking_path(@booking.venue, @booking)
+  end
+
+  def reject    
+    @booking.toggle!(:confirmed)
     redirect_to venue_booking_path(@booking.venue, @booking)
   end
 

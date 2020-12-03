@@ -7,14 +7,16 @@
    for <%= @booking.length %> hours.</p>
    <% if @booking.confirmed %>
      <p class="white-p">You have confirmed this booking</p>
-   <% else %>
+   <% elsif @booking.confirmed == nil %>
       <p>You have not confirmed this booking yet.</p>
+   <% else %>
+      <p>You have rejected this booking.</p>
    <% end %>
 
-   <% unless @booking.confirmed %>      
+   <% if @booking.confirmed %>      
+      <%= link_to "Reject booking", reject_booking_path(@booking), method: :post, class: "btn m-2 accept-booking" %>
+   <% else %>
       <%= link_to "Accept booking", accept_booking_path(@booking), method: :post, class: "btn m-2 accept-booking" %>
    <% end %>
-   <%= link_to "Cancel booking", venue_booking_path(@venue, @booking),
-              method: :delete, data: { confirm: "Are you sure?" },class: "btn m-2" %>
-   <%# <button class="btn m-2">Chat with customer</button> %>
+
     <%= link_to "All bookings", bookings_path, class: "btn m-2" %>

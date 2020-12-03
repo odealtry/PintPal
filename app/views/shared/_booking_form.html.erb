@@ -3,9 +3,8 @@
     <%= f.input :length, collection: 1..4, label: "Duration (hours)" %>
     <%= f.input :party_size, collection: 1..6 %>
     <% if @booking.new_record? %>
-      <%= f.submit "Request booking", class: "btn" %>
+      <%= f.submit "Request booking", class: "btn mt-3" %>
     <% else %>
       <%= f.submit "Update booking", class: "btn" %>
     <% end %>
   <% end %>
-  <br>

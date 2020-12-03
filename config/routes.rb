@@ -9,8 +9,11 @@ Rails.application.routes.draw do
   get '/shortlist', to: 'pages#shortlist', as: :shortlist
   get '/profile', to: 'pages#profile', as: :profile
   get '/map', to: 'pages#map', as: :map
-  post '/bookings/:id', to: 'bookings#accept_booking', as: :accept_booking
   resources :bookings, only: [:index] do
+    member do
+      post :accept
+      post :reject
+    end
     resources :reviews, only: [:show, :new, :create, :edit, :update]
   end
   resources :venues, only: :show do
