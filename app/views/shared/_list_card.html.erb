@@ -11,9 +11,11 @@
     <div class="shortlist-card-button-container">
       <%= link_to "View", venue_booking_path(booking.venue, booking), class: "btn w-50" %>
       <% if booking.confirmed %>
-        <div class="shortlist-card-status shortlist-card-accepted"></div>
+        <div class="shortlist-card-status accepted-i"><%= icon('far', 'check-circle') %></div>
+      <% elsif booking.confirmed == nil %>
+        <div class="shortlist-card-status pending-i"><%= icon('far', 'question-circle') %></div>        
       <% else %>
-        <div class="shortlist-card-status shortlist-card-pending"></div>
+      <div class="shortlist-card-status rejected-i"><%= icon('far', 'times-circle') %></div>      
      <% end %>
      <div class="chat-button">
       <%  %>
