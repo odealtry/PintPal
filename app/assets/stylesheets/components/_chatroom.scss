@@ -1,6 +1,6 @@
 .chatroom {
   width: 90%;
-  margin: 0 auto;
+  margin: 40px auto;
   // border: 1px solid $white;
   height: calc(100vh - 70px);
   // height:
@@ -9,12 +9,12 @@
   // justify-content: space-between;
   border-top: 1px solid $gray-200;
 
-  h1 {
+  h2 {
     padding: 0.75rem 1rem;
     // border-bottom: 1px solid $gray-200;
     border: 1px solid $white;
     margin-bottom: 0;
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
     color: $white;
   }
@@ -66,7 +66,7 @@
 .my-button {
   position: absolute;
   bottom: 17px;
-  right: 25px;
+  right: 20px;
   width: 40px;
   border: none;
   background: $white;
@@ -79,12 +79,13 @@
 }
 
 #close {
-  position: relative;
-  top: 48px;
-  right: -312px;
-  font-size: 25px;
+  position: absolute;
+  top: 125px;
+  right: 35px;
+  // right: px;
+  font-size: 15px;
   a {
-    color: $white;
+    color: white;
   }
 }
 
