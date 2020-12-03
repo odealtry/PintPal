@@ -17,8 +17,8 @@
       <% if @user_bookings.empty? %>
         <h5 class="m-5">No bookings</h5>
         <p><%= link_to "Find a venue", root_path, class: "btn" %></p>
-      <% else %>       
-        
+      <% else %>
+
         <% if @current_bookings.any? %>
           <h5 class="mt-3">Current bookings</h5>
           <% @current_bookings.each do |booking| %>
@@ -35,8 +35,7 @@
 
       <% end %>
     <% end %>
-    <br>
-    <%= link_to "Back to shortlist", shortlist_path, class: "btn" %>
+    <%= link_to "Back to shortlist", shortlist_path, class:"btn" %>
   </div>
 </div>
 </div>
