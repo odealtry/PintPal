@@ -16,7 +16,7 @@
       <%# Otherwise, show a list of accepted bookings for the user %>
       <% if @user_bookings.empty? %>
         <h5 class="m-5">No bookings</h5>
-        <p><%= link_to "Find a venue", root_path, class: "btn" %></p>
+        <%= link_to "Find a venue", root_path, class: "btn" %>
       <% else %>
 
         <% if @current_bookings.any? %>
@@ -35,6 +35,7 @@
 
       <% end %>
     <% end %>
+    <br>
     <%= link_to "Back to shortlist", shortlist_path, class:"btn" %>
   </div>
 </div>
