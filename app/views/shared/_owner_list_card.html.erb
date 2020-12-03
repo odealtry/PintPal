@@ -2,4 +2,9 @@
   <%= booking.start.strftime("%H:%M %d/%m/%y") %>
   <%= booking.length %> hour(s)
   <%= link_to "View", venue_booking_path(booking.venue, booking), class: "btn" %>
+  <div class="chat-button">
+  <%= link_to venue_booking_chatroom_path(booking.venue, booking, booking.chatroom) do %>
+      <i class="fas fa-comments"></i>
+  <% end %>
+</div>
 </div>
