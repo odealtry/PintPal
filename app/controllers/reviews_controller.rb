@@ -13,7 +13,7 @@ class ReviewsController < ApplicationController
     @review.venue = booking.venue
     @review.updated = true
     @review.save
-
+    flash[:alert] = "Thanks for your review"
     redirect_to profile_path
   end
 
