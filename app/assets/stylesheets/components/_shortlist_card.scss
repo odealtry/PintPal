@@ -5,9 +5,10 @@
   margin: 10px;
   padding: 5px;
   box-shadow: 1px 1px 3px lightgrey;
-  background-color:#ffffff;
-  color: black;
+  background-color: black;
+  color: white;
   border-radius: 3px;
+  border: 1px solid white;
 }
 
 .shortlist-card-img {
@@ -68,7 +69,7 @@
 }
 
 .chat-button a {
-  color: $navy;
+  color: $grey;
 }
 
 .chat-button a:hover {
