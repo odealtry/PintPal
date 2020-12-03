@@ -1,7 +1,16 @@
 <div class="review-card">
-  <p>Review by <strong><%= review.user.first_name %></strong> on <%= review.created_at.strftime("%d/%m/%y") %></p>   
-  <p>Overall: <%= "⭐" * review.overall_rating %></p>     
-  <p>Heat: <%= "🔥" * review.heat_rating %></p>     
-  <p>Price: <%=  (icon('fas', 'pound-sign') + " ") * review.pricing_rating %></p>
+  <div class="image-review">
+    <% if review.user.photo.attached? %>
+      <%= cl_image_tag review.user.photo.key, class: "avatar-extra-large-bordered" %>
+    <% else %>
+      <%= image_tag "avatar-1.png", class: "avatar-extra-large-bordered" %>
+    <% end %>
+  </div>
+  <div class="info">
+    <p>Review by <strong><%= review.user.first_name %></strong><br>on <%= review.created_at.strftime("%d/%m/%y") %></p>
+    <p>Overall: <%= "⭐" * review.overall_rating %></p>
+    <p>Heat: <%= "🔥" * review.heat_rating %></p>
+    <p>Price: <%=  (icon('fas', 'pound-sign') + " ") * review.pricing_rating %></p>
+  </div>
 </div>
 
