@@ -3,15 +3,15 @@
   <div class="shortlist-container">
     <% if @future_bookings.empty? %>
       <h5 class="m-5">Nothing here</h5>
-        <%= link_to "Find a venue", root_path, class:"btn" %>
+        <%= link_to "Find a venue", map_path, class:"btn" %>
         <br>
         <p class="white-p">OR</p>
         <%= link_to "Your bookings", bookings_path, class:"btn" %>
     <% else %>
       <% @user_bookings.each do |booking| %>
         <% unless booking.start.to_i < @now.to_i %>
-          <%= render partial: "shared/list_card", locals: { booking: booking } %>          
-        <% end %>        
+          <%= render partial: "shared/list_card", locals: { booking: booking } %>
+        <% end %>
       <% end %>
     <% end %>
   </div>
