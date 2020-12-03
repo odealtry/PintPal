@@ -7,18 +7,20 @@
   <% end %>
 
   <div class="chatroom">
-    <div id="close">
-      <% if @booking.confirmed %>
-        <%= link_to bookings_path do %>
-          <i class="far fa-times-circle"></i>
+    <div class="chatroom-title">
+      <h2><strong><%= "Chatting with #{recipient}" %></strong></h2>
+      <div id="close">
+        <% if @booking.confirmed %>
+          <%= link_to bookings_path do %>
+            <i class="far fa-times-circle"></i>
+          <% end %>
+        <% else %>
+          <%= link_to shortlist_path do %>
+            <i class="far fa-times-circle"></i>
+          <% end %>
         <% end %>
-      <% else %>
-        <%= link_to shortlist_path do %>
-          <i class="far fa-times-circle"></i>
-        <% end %>
-      <% end %>
+      </div>
     </div>
-    <h2><strong><%= "Chatting with #{recipient}" %></strong></h2>
     <div id="messages" data-chatroom-id="<%= @chatroom.id %>">
       <% @chatroom.messages.each do |message| %>
         <% if message.user.id != @venue_user.id %>
