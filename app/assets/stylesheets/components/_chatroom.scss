@@ -1,13 +1,13 @@
 .chatroom {
   width: 90%;
-  margin: 40px auto;
+  margin: 0px auto;
   // border: 1px solid $white;
   height: calc(100vh - 70px);
   // height:
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
-  border-top: 1px solid $gray-200;
+  justify-content: center;
+  // border-top: 1px solid $gray-200;
 
   h2 {
     padding: 0.75rem 1rem;
@@ -80,7 +80,7 @@
 
 #close {
   position: absolute;
-  top: 125px;
+  top: 155px;
   right: 35px;
   // right: px;
   font-size: 15px;
