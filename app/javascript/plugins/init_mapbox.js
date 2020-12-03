@@ -34,14 +34,14 @@ const fitMapToMarkers = (map, markers) => {
     map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 });
   };
 
-const userLocationButton = (map) => { map.addControl(
-  new mapboxgl.GeolocateControl({
-      positionOptions: {
-          enableHighAccuracy: true
-      },
-      trackUserLocation: true
-  })
-)};
+// const userLocationButton = (map) => { map.addControl(
+//   new mapboxgl.GeolocateControl({
+//       positionOptions: {
+//           enableHighAccuracy: true
+//       },
+//       trackUserLocation: true
+//   })
+// )};
 
   const initMapbox = () => {
     const mapElement = document.getElementById('map');
@@ -51,7 +51,7 @@ const userLocationButton = (map) => { map.addControl(
       addMarkersToMap(map, markers);
       fitMapToMarkers(map, markers);
       map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken, mapboxgl: mapboxgl }), "bottom-right");
-      userLocationButton(map);
+      // userLocationButton(map);
     }
   };
 
