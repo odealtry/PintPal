@@ -7,7 +7,7 @@
   <% end %>
 <% end %>
 
-<% if current_page?(root_path)%>
+<% if current_page?(root_path) || current_page?(map_path) %>
   <div class="navbar navbar-expand-sm navbar-dark navbar-lewagon">
 <% else %>
   <div class="navbar navbar-expand-sm navbar-dark navbar-lewagon" style="background-color: #101010; z-index: 1000;">
