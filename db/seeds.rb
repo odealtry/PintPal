@@ -931,6 +931,21 @@ venue_array.each_slice(10) do | slice |
   GenerateVenueJob.perform_now(slice)
 end
 
+
+venue.all.each do |venue|
+  user = User.second
+  user2 = User.third
+  user3 = User.forth
+  review = Review.new(overall_rating: rand(1..5), heating_rating: rand(1..5), pricing_rating: rand(1..5))
+  review2 = Review.new(overall_rating: rand(1..5), heating_rating: rand(1..5), pricing_rating: rand(1..5))
+  review3 = Review.new(overall_rating: rand(1..5), heating_rating: rand(1..5), pricing_rating: rand(1..5))
+  review.user = user
+  review2.user = user2
+  review3.user = user3
+  review.save
+  review.save2
+  review.save3
+end
 # venue_array.each do |venue|
 #   new_venue = Venue.create(address: venue[:address], name: venue[:name], category: venue[:category], description: venue[:description], user: User.first)
 #   puts "generating #{venue[:name]}"
