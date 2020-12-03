@@ -50,8 +50,10 @@ class BookingsController < ApplicationController
     bookings = Booking.all
     time_now = Time.zone.now.to_i
     @user_bookings = bookings.select { |booking| booking.user_id == current_user.id && booking.confirmed }
+    @current_bookings = @user_bookings.select { |booking| booking.start.to_i > time_now }
     @past_bookings = @user_bookings.select { |booking| booking.start.to_i < time_now }
     @venue = Venue.where(user_id: current_user.id)
+
     # For now our admin user is linked to all the bookings
     # @venue_bookings = bookings.select { |booking| booking.venue == @venue.first }
     @venue_bookings = Booking.all

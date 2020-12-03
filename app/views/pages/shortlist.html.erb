@@ -1,7 +1,7 @@
 <div class="container">
   <h3 class="text-center m-3"><%= @user.first_name %>'s shortlist</h3>
   <div class="shortlist-container">
-    <% if @user_bookings.empty? %>
+    <% if @future_bookings.empty? %>
       <h5 class="m-5">Nothing here</h5>
         <%= link_to "Find a venue", root_path, class: "btn" %>
         <br>

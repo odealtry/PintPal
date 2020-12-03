@@ -17,16 +17,25 @@
       <% if @user_bookings.empty? %>
         <h5 class="m-5">No bookings</h5>
         <p><%= link_to "Find a venue", root_path, class: "btn" %></p>
-      <% else %>
-        <% @user_bookings.each do |booking| %>
-          <%= render partial: "/shared/list_card", locals: { booking: booking } %>
+      <% else %>       
+        
+        <% if @current_bookings.any? %>
+          <h5 class="mt-3">Current bookings</h5>
+          <% @current_bookings.each do |booking| %>
+            <%= render partial: "/shared/list_card", locals: { booking: booking } %>
+          <% end %>
+        <% else %>
+          <h5 class="m-5">No current bookings</h5>
         <% end %>
-        <p class="mt-3">Your past bookings:</p>
+
+        <h5 class="mt-3">Your past bookings:</h5>
         <% @past_bookings.each do |booking| %>
           <%= render partial: "/shared/list_card", locals: { booking: booking } %>
         <% end %>
+
       <% end %>
     <% end %>
     <p><%= link_to "View shortlist", shortlist_path, class: "btn mt-3" %></p>
   </div>
 </div>
+

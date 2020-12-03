@@ -22,10 +22,12 @@ class PagesController < ApplicationController
 
   def shortlist
     @user = current_user
+    time_now = Time.zone.now
     @user_bookings = Booking.all.where(user_id: current_user)
+    @future_bookings = @user_bookings.select { |booking | booking.start > time_now }
     # @shortlist = @user_bookings.select { |booking| booking.confirmed == false }
   end
-
+  
   def profile
     @user = current_user
     @user_profile = User.all.where(user_id: current_user)
