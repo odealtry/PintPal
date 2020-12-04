@@ -33,6 +33,7 @@
 
 .shortlist-card-button-container {
   display: flex;
+  justify-content: space-around;
   width: 100%;
 }
 
@@ -79,4 +80,8 @@
 
 .chat-button a:hover {
   color: $grey;
+}
+
+.btn-booking-card {
+  height: 40px;
 }
