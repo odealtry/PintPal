@@ -9,9 +9,9 @@
   <div class="shortlist-card-text-container">
     <%= link_to booking.venue.name, venue_path(booking.venue)%>
     <p><%= booking.start.strftime("%H:%M")%> - <%=booking.start.strftime("%d/%m/%y")%>
-    <%= booking.length %> hour(s)</p>
+    <%= booking.length %> hr(s)</p>
     <div class="shortlist-card-button-container">
-      <%= link_to "View", venue_booking_path(booking.venue, booking), class: "btn w-50 mt-1" %>
+      <%= link_to "View", venue_booking_path(booking.venue, booking), class: "btn btn-booking-card w-50 mt-1" %>
       <% if booking.confirmed %>
         <div class="shortlist-card-status accepted-i"><%= icon('far', 'check-circle') %></div>
       <% elsif booking.confirmed == nil %>
