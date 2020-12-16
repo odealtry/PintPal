@@ -118,3 +118,10 @@
 //     fill: navy;
 //   }
 // }
+
+@media(min-width: 640px) {
+  .mapboxgl-ctrl-geocoder--icon-search {
+    top: 9px;
+  }
+
+}
