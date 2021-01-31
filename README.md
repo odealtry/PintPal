@@ -2,7 +2,7 @@
 
 🔥Find a hassle-free pint at a heated venue🔥
 
-An interactive map of all London's pubs, bars and restaurants that have outdoor heating
+An interactive map of all London's pubs, bars and restaurants with outdoor heating
 
 Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
 
