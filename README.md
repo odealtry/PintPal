@@ -1,4 +1,4 @@
-🍻**PintPal**🍻
+<p align="center">🍻**PintPal**🍻</p>
 
 🔥Find a hassle-free pint at a heated venue🔥
 
