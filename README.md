@@ -1,9 +1,9 @@
-<h2 align="center">🍻**PintPal**🍻</h2>
+🍻**PintPal**🍻
 
-<h3 align="center">🔥Find a hassle-free pint at a heated venue🔥</h3
+🔥Find a hassle-free pint at a heated venue🔥
 
-<p align="center">An interactive map of all London's pubs, bars and restaurants that have outdoor heating</p>
+An interactive map of all London's pubs, bars and restaurants that have outdoor heating
 
-<p align="center">Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.</p>
+Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
 
-<p align="center">Made in 9 days with [Juan Garcia](https://github.com/juagarca), [John Tweeddale](https://github.com/jtdevuk), and [Beth Armstrong](https://github.com/betharms)</p>
+Made in 9 days with [Juan Garcia](https://github.com/juagarca), [John Tweeddale](https://github.com/jtdevuk), and [Beth Armstrong](https://github.com/betharms)
