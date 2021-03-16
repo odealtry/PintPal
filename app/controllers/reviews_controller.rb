@@ -7,8 +7,8 @@ class ReviewsController < ApplicationController
 
   def create
     @review = Review.new(review_params)
-    booking = Booking.find(params["booking_id"])
-    booking.update(to_be_reviewed: false)
+    # booking = Booking.find(params["booking_id"])
+    # booking.update(to_be_reviewed: false)
     @review.user = booking.user
     @review.venue = booking.venue
     @review.updated = true
