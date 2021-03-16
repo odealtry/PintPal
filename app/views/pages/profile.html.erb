@@ -17,6 +17,16 @@
   <br>
   <h5 class="link-to-profile"><%= link_to "Edit my profile", "users/edit", class:"btn", style: 'color:#FFFFFF'%></h5>
   <div class="line"></div>
+  <div class="reviews">
+    <% if @user.reviews.first != nil  %>
+      <h4>Venues that you've reviewed</h4>
+      <% @user.reviews.each do |review| %>
+        <p class="grey-color"><%= review.venue.name %><br></p>
+      <% end %>
+    <% else %>
+      <small>Once you've reviewed a venue, your review will appear here</small>
+    <% end %>
+  </div>
   <!-- <div class="reviews"> -->
     <!-- <h4>Bookings to be reviewed:</h4> -->
     <!-- <#% if @user.bookings.count == 0 %> -->
