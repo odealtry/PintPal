@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/shortlist', to: 'pages#shortlist', as: :shortlist
   get '/profile', to: 'pages#profile', as: :profile
   get '/map', to: 'pages#map', as: :map
+  resources :reviews
   resources :bookings, only: [:index] do
     member do
       post :accept

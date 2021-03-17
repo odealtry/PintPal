@@ -9,10 +9,10 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
     # booking = Booking.find(params["booking_id"])
     # booking.update(to_be_reviewed: false)
-    @review.user = booking.user
-    @review.venue = booking.venue
+    @review.user = current_user
+    @review.venue = Venue.find(params[:review][:venue])
     @review.updated = true
-    @review.save
+    @review.save!
     flash[:alert] = "Thanks for your review"
     redirect_to profile_path
   end
