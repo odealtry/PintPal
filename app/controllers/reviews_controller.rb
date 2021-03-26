@@ -33,6 +33,7 @@ class ReviewsController < ApplicationController
   end
 
   private
+
   def review_params
     params.require(:review).permit(:overall_rating, :heat_rating, :pricing_rating)
   end
