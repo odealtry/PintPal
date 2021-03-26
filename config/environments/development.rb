@@ -62,6 +62,5 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   # allowing access to ngrok so that localhost can be viewed on phone
-  config.hosts = nil
   config.hosts << /[a-z0-9]+\.ngrok\.io/
 end
