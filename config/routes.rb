@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/shortlist', to: 'pages#shortlist', as: :shortlist
   get '/profile', to: 'pages#profile', as: :profile
   get '/map', to: 'pages#map', as: :map
+  resources :reviews
   resources :bookings, only: [:index] do
     member do
       post :accept
@@ -17,7 +18,7 @@ Rails.application.routes.draw do
     resources :reviews, only: [:show, :new, :create, :edit, :update]
   end
   resources :venues, only: :show do
-    resources :reviews, only: :index
+    resources :reviews, only: [:index, :new]
     resources :bookings, except: [:index] do
       resources :chatrooms, only: [:show] do
         resources :messages, only: :create

@@ -7,12 +7,12 @@ class ReviewsController < ApplicationController
 
   def create
     @review = Review.new(review_params)
-    booking = Booking.find(params["booking_id"])
-    booking.update(to_be_reviewed: false)
-    @review.user = booking.user
-    @review.venue = booking.venue
+    # booking = Booking.find(params["booking_id"])
+    # booking.update(to_be_reviewed: false)
+    @review.user = current_user
+    @review.venue = Venue.find(params[:review][:venue])
     @review.updated = true
-    @review.save
+    @review.save!
     flash[:alert] = "Thanks for your review"
     redirect_to profile_path
   end
@@ -33,6 +33,7 @@ class ReviewsController < ApplicationController
   end
 
   private
+
   def review_params
     params.require(:review).permit(:overall_rating, :heat_rating, :pricing_rating)
   end

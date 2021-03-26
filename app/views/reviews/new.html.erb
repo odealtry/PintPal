@@ -1,0 +1,34 @@
+<% venue = Venue.find(params[:booking_id]) %>
+<% @id = venue.id %>
+
+<%= simple_form_for @review do |f| %>
+  <%= f.input :heat_rating,
+              as: :radio_buttons,
+              label: "How was the heating?",
+              collection_wrapper_tag: 'div',
+              collection_wrapper_class: 'category-wrapper',
+              item_wrapper_class: 'category-item',
+              input_html: {class: 'category-selector'},
+              collection: 1..5 %>
+
+      <%= f.input :pricing_rating,
+              as: :radio_buttons,
+              label: "How expensive was it?",
+              collection_wrapper_tag: 'div',
+              collection_wrapper_class: 'category-wrapper',
+              item_wrapper_class: 'category-item',
+              input_html: {class: 'category-selector-pound'},
+              collection: 1..5 %>
+
+      <%= f.input :overall_rating,
+              as: :radio_buttons,
+              label: "Overall experience?",
+              collection_wrapper_tag: 'div',
+              collection_wrapper_class: 'category-wrapper',
+              item_wrapper_class: 'category-item',
+              input_html: {class: 'category-selector-star'},
+              collection: 1..5 %>
+
+      <%= f.hidden_field :venue, value: @id %>
+      <%= f.submit "Send", class:"btn-reviews"  %>
+  <% end %>
