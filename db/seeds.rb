@@ -1118,6 +1118,71 @@ venue_array = [
             'https://lh5.googleusercontent.com/p/AF1QipPqXAY5_rV6naCpL1tL_ILoWFw4JD3PARLl7oQ8=s901-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipPMmQKIazgqVMHs_G1I-rmGHPixN8ut37tr_5Ea=s1354-k-no'
     ]
+   },
+   pig_and_whistle = {
+    address: '481 Merton Rd, Southfields, London SW18 5LD',
+    name: 'The Pig and Whistle',
+    category: 'Pub',
+    description: 'An old-time neighbourhood pub with a modern-vintage makeover and shed seating in garden.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipNXNjWtGAZFshougcNuhAsF8vsQ4TgAUQQ2EL3e=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNVeLPt3A4jLcH3wz3LJsAO7LaGfSbgv21_1gAf=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOMlpAk-oX7RhLA5Y9ffgT0qVB6tyNThMpD7vyp=s773-k-no'
+    ]
+   },
+   halfway_house = {
+    address: '521 Garratt Ln, Earlsfield, London SW18 4SR',
+    name: 'The Halfway House',
+    category: 'Pub',
+    description: 'Comfortable bar with chunky wooden tables and modern wallpaper, conservatory and fireside dining.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipPlWM8u3Yd4iwCKPqBHrMzmOrjJpEpHHkBn9bQS=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNuZ3FsYqocAs7FQg5C5g9X7NoinCWGu_a_eHfQ=s928-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOxWd5ptJfdEW0mkAQCbQonoZjci6WYg8SjwBMF=s1354-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNz7VZSHMDlEzbWeitSWzd4_CkQkV0xH1zG_MsP=s812-k-no'
+    ]
+   },
+   leather_bottle = {
+    address: '538 Garratt Ln, Earlsfield, London SW17 0NY',
+    name: 'The Leather Bottle',
+    category: 'Pub',
+    description: '300 year-old pub with bright, traditional decor, plus a huge beer garden with beach huts and games.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMyZTZp6qzKztmWzXc3bqUSDW9rPDCzMp_dxScm=s875-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMyrDpl7ApHgSHx2rcvyyGY-qidrM7TZG74LTm0=s870-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPexhwvroNGBapPvT5ogfcmX3P7AnXbnQ-pFh-a=s870-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPXYO2Mxxl4EOCPY1lZbT4ojQldSnmh37wPRKa3=s870-k-no'
+    ]
+   },
+   boathouse = {
+    address: '32 Brewhouse Ln, Putney, London SW15 2JX',
+    name: 'The Boathouse',
+    category: 'Modern 3-floor pub overlooking a riverside wharf, specialising in fish, with Friday lobster menu.'
+    description: 'Modern 3-floor pub overlooking a riverside wharf, specialising in fish, with Friday lobster menu.'
+    photos:['https://lh5.googleusercontent.com/p/AF1QipOgQGkIc6ACEqoLc-spfWC_uejryzjpfGnvDaHr=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMJ0yVw8jVXa4tzl3GVztoraRPPBIE3Jhzrhsci=s980-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipN-wVPBzd4ky9kG4d4wEA4AlvcuAwLq9dR8eSKE=s901-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPuWnVh6gRqP-XboTwcSYwQHGTv84Wkxue58QDb=s901-k-no'
+    ]
+   },
+   old_brewery = {
+    address: 'The Pepys Building, The Old Royal Naval College, Greenwich Peninsula, London SE10 9LW',
+    name: 'The Old Brewery',
+    category: 'Pub',
+    description: 'Gastropub serving seasonal British food & local craft beers with dining room & outdoor terrace.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipP1Txw7oUONAuoxBXhbHDucDCocC57kKn5ZgJ1B=s812-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPRGb6dDHTCj_Oop4pqo_Wz7OfxSUmM1WVdObNx=s778-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNxD5DsAzLjBrmz0cDEEsfrTTgeKDbuSjXvUpNE=s1354-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipN2nm0djbCFrhX8HSiUHt3kU7PatTIxaGLPKrMy=s812-k-no'
+    ]
+   },
+   mercato_metropolitano = {
+    address: '42 Newington Causeway, London SE1 6DR',
+    name: 'Mercato Metropolitano',
+    category: 'Bar',
+    description: 'Massive, airy market offering a range of street fare from Italian to Vietnamese, plus cocktails.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipO6wtPhNfWf1QXivtc4J3BeOj1d-IHXmhPMWWKY=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMM7d7IwmXsMxqFbDDGQBWywApRAhjj1afZPpEA=s901-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMIPGUL8FD8Mig-hFxlkPOJ0sEMA1dU4mH18iJn=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOPlydyEwfUGtrcsAS8fbKAe1DeqJCnIX0CSjKl=s773-k-no'
+    ]
    }
 ]
 
