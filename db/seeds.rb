@@ -646,6 +646,109 @@ venue_array = [
       'https://lh5.googleusercontent.com/p/AF1QipOJy5YEp2QkChbG5MEIeDTqP2V7sdUGPBAemMhm=w512-h480-p-k-no'
     ]
   },
+  tabard = {
+    address: '2 Bath Rd, Chiswick, London W4 1LW',
+    name: 'Tabard',
+    category: 'Pub',
+    description: 'Warm, easygoing pub with sofas & tables dishing out hearty British eats plus beer, wine & cocktails.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMzCd0pYyUMj5d3LAQjalYmIvUo7O6DEIjsHP_d=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNYky29zPH1TISMAhSiPqqPPuQBjIGIkUz4Xq_b=s812-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPVOD7l-RmDJMIa_7T0uMcbYmJW7NV4yOpvmbrf=s1016-k-no'
+    ]
+  },
+  the_mitre = {
+    address: '40 Holland Park Ave, Notting Hill, London W11 3QY',
+    name: 'The Mitre',
+    category: 'Pub',
+    description: 'Large red brick pub with outside terrace for brasserie-style dining and Sunday roasts.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipO5JaEDS8rF1DVxnuPKuU-NyidXTGAXc-KFQdcA=s812-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMhXQRGr_WsF_Ax_8ci4301abUicsLm1yv0iEwM=s1031-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOJuEpgfzt1Nhof7q6nl75_z5i2bfgei5ta8PGW=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMc72KXKkp7zKuhuGK45Glfso-kprHds0wv1589=s1031-k-no'
+    ]
+  },
+  angelsea_arms = {
+    address: '35 Wingate Rd, Hammersmith, London W6 0UR',
+    name: 'The Angelsea Arms',
+    category: 'Pub',
+    description: 'Casual brick-walled gastropub using market-sourced produce in an ever-changing British menu.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipNDsCTM7BzfhJGvDjI0tOJ3AxpDTumbRWQ5H4EZ=s901-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipM90mMBPRnLU1AmODQxduwlDfTOE21lqpxvBK1k=s676-k-no'
+    ]
+  },
+  pergola = {
+    address: '4 Kingdom St, London W2 6PY',
+    name: 'Pergola Paddington',
+    category: 'Bar',
+    description: 'Expansive, bright spot with forest decor & 4 restaurants serving burgers, kebabs, sushi & dumplings.'
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMaVDsfkTufNrFeZg1vJuAtsT6Y8_XoFW2ttzzG=s1354-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipM_rB59-JIOfQNvcrD0kMq-w52G1rg0MK1t4pEm=s870-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMrfqx2FkQe0SutLLnQkV4CtAbKy7n20L7EOnG9=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNrYuT8xjioBH_WXwDJACY5V1B46NGEImZxHIG4=s1016-k-no'
+    ]
+  },
+  aragon_house = {
+    address: "247 New King's Rd, Fulham, London SW6 4XG",
+    name: 'Aragon House',
+    category: 'Restaurant',
+    description: 'Upmarket inn and cocktail bar with beer garden.'
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMbMZ7TkU5EY6HTVFn_pZYB3NeHfAiFJhHgMMcT=s1016-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNV9AZFsefoK2suERCKSniVM6xFVZBWfVpqfeVz=s1354-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOCqmcQEJVWpkkD2gMDV1lhEG31Et8f4pRVWUtg=s901-k-no'
+    ]
+  },
+  bridge_house = {
+    address: '13 Westbourne Terrace Rd, London W2 6NG',
+    name: 'The Bridge House',
+    category: 'Pub',
+    description: 'Theatrical pub with pub and brunch menus, Tuesday wine club, Sunday roasts and board games.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMcWb3cL3X6Unl9tmRJ7AtMbCjJynzA5Sd3CY0P=s1016-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipN-R5zodZ-TfVl9u43Q9YLT1CQahT51zb5xpCsf=s1354-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipP4SSCN2UKjUcOJLmRnrQQgfb0iXB9ms4dxgA7g=s773-k-no'
+    ]
+  },
+  fulham_mitre = {
+    address: '81 Dawes Rd, Fulham, London SW6 7DU',
+    name: 'The Fulham Mitre',
+    category: 'Pub',
+    description: 'Airy pub with skylights, mismatched tables and a leafy garden, for real ales and a gastropub menu.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipNR6YxAEda2WQ75ynoWEYsgFA4nifhtslux6ZM=s825-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipM_gP8PhBOYW4OGt0xNAyQGucq4nyshBaMymdiK=s1031-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNZxNpxRmDf4TfH7mMbOFLTRZ_VBWgm8bdEraY=s875-k-no'
+    ]
+  },
+  builders_arms = {
+    address: '13 Britten St, Chelsea, London SW3 3TY',
+    name: 'The Builders Arms',
+    category: 'Pub',
+    description: "Colourful fabrics, prints, objet d'art & quirky fittings give this British gastropub a warm feel.",
+    photos:['https://lh5.googleusercontent.com/p/AF1QipPSEkGiowMe-14mfZwDGWhE7zZhOKWfMK_rOugS=s550-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOWDa6_WXmh9OwfU8opRtqp02pSk798xxiM_8yK=s615-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMtzRiSo7wEO9UPvuUDHoInCdtpRxelI-8qsZOL=s901-k-no'
+    ]
+  },
+  the_waterway = {
+    address: '54 Formosa St, London W9 2JU',
+    name: 'The Waterway',
+    category: 'Pub',
+    description: 'Bistro-style gastropub with Modern European menu, terrace and large windows overlooking the canal.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMaJS4yYPNnwSyiXDT3DipTtx-NKugCGSuPXGX4=s875-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMmEe2pyXuy4vWTxXnWpXM8jO8Qc9pWduwVAw9z=s640-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNrf58OGcZpaunEtRxxuPwVwLJGxyUX20Xy5jxT=s812-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMzn0VMh0r4AuODjQxXzJN1eLAceKC8DF0d6tCF=s812-k-no'
+    ]
+  },
+  rutland_arms = {
+    address: '15 Lower Mall, Hammersmith, London W6 9DJ',
+    name: 'The Rutland Arms',
+    category: 'Pub',
+    description: 'Taylor Walker pub with upstairs lounge bar and outdoor picnic tables on a riverside walkway.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipODL0gmiDXINu2n8-B7leX_dn5LYBRoB4-iUrbE=s1031-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNBR4CQLbrN3SKRIsBSSJQSJSDuQkjCaF_2W0FK=s1016-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOQdF6NXDHG-jd1w1oNvQ6kiKwEQ7Y-FkUPQ1qD=s1031-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipN228JtJJbiBMogg2MtmTIfio8eQsZDNhtOXNRE=s1031-k-no'
+    ]
+  }
   # SOUTH
   theavalon = {
     address: '16 Balham Hill, Clapham South, London SW12 9EB',
@@ -1054,6 +1157,38 @@ venue_array = [
      'https://lh5.googleusercontent.com/p/AF1QipNKHtXvgO4I2et3e--9bYgcUnVKilec5517OgAn=s1920-k-no'
     ]
   },
+  the_northcote = {
+    address: '2 Northcote Rd, Battersea, London SW11 1NT',
+    name: 'The Northcote',
+    category: 'Pub',
+    description: 'Quirky pub with rustic wooden tables, chalkboard menus, TV sport and album covers on the walls.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipOSowuRA7tJGV4wwR_G8nwVu95lVLo8a-7i0sB3=s870-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNJekX_KgvhpnzhlI6EwohhWHySbcdOSo5uv0Za=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPhslinOqyWfo-KztI1ro1SDCGFyDq4D_yqY5DE=s1016-k-no'
+    ]
+  },
+  four_thieves = {
+    address: '51 Lavender Gardens, London SW11 1DJ',
+    name: 'The Four Thieves',
+    category: 'Pub',
+    description: 'Eccentric pub in a former music hall with a classic menu, house-brewed ales, comedians and DJs.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipM5gQz0zKcAUiq0BB6Trz5L4ZzMJ1jpQhr9XyUq=s1354-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPQE3xTGUGEilq4fJvHIbQFLFRSj46vIkSKiX3y=s1031-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMgUn9Crobj1hG4vGD2JlqOwdK_adGfh8jS43p9=s1016-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPpZ-tauEiG3SkrZDKw0rhu6MsL9WCZYphfYK-G=s901-k-no'
+    ]
+  },
+  clapham_tap = {
+    address: '128 Clapham Manor St, Clapham Town, London SW4 6ED',
+    name: 'The Clapham Tap',
+    category: 'Pub',
+    description: 'Cozy spot offering cocktails, draft beer and board games, plus a patio with darts and ping-pong.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMnSAwA9xK2vF-E-DJyZVtbksLCkERbg3I_-oO5=s901-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMBs7tYnK5T4WELzglz__8vPVH9M530dGSXe4YY=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMkQ_tlWp0ul_KIfptwCNpqpGr9sY8gBFsN5GqD=s1160-k-no-pi-20-ya102.465-ro0-fo100',
+            'https://lh5.googleusercontent.com/p/AF1QipPQ3uarTuEV0pdCs2d-Gazr15b0XGnEcqQPbAGL=s773-k-no'
+    ]
+  },
   #EAST
   crate = {
     address: "Unit 7 Queen's Yard, Hackney Wick, London E9 5EN",
@@ -1203,6 +1338,38 @@ venue_array = [
     description: 'Modern bar with outdoor terrace specialising in Thai food & selection of global beers.',
     photos:['https://lh5.googleusercontent.com/p/AF1QipMnPE9SOst6i3A51sebDgFIkBuzXDPLEkQ5gF0R=s1920-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipO8Jwpuxbq96F8kp0_0L5CwLa3frMXKW2ByVUnZ=s1920-k-no'
+    ]
+  },
+  strongroom = {
+    address: '120-124 Curtain Rd, Shoreditch, London EC2A 3SQ',
+    name: 'The Strongroom',
+    category: 'Pub',
+    description: 'Modern takes on a pub menu served in a split-level venue with outdoor seating, live bands and DJs.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMtStuedEfXZ9dGs1750G7sVKbO0f0u61k-SWcA=s812-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOnRKSSmujsEz8doKI-7Y5x727yLubU3NezoOUe=s1031-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMhVIfkHZYOCsPv-_efHJounGoYSK51FrOF3S3j=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMAB9IvOlgkNKuCwaSLLvPYufzX55antwVUShu6=s901-k-no'
+    ]
+  },
+  prince_george = {
+    address: '40 Parkholme Rd, Hackney, London E8 3AG',
+    name: 'The Prince George',
+    category: 'Pub',
+    description: 'Locals and students mingle in a shabby-chic, hip hostelry offering real ale and an eclectic jukebox.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMRKoMCDeldK0CSS8b4Si8a6JK3AGK2MCQWnjOe=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOdkHEcI9JpbJRmhjkW92g38RkukXBxCLDjKIAZ=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOvzvTSv2an6oKlnzZe5SB3yno__NtjpOdjNj91=s901-k-no'
+    ]
+  },
+  the_approach = {
+    address: '47 Approach Rd, London E2 9LY',
+    name: 'The Approach',
+    category: 'Pub',
+    description: 'Contemporary art gallery above a pub',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMWdHaqWeE8BduJLVd4aZiBRilpl7k6eFuQwPX2=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPm970YFzrLmQ__GtuNPRqPhoCuqNGD2GPsQnp9=s1354-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMjz8raAHy0N_wEyyqHIoQ_BzNrEeQtxrdRsz5Z=s1354-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipON4KqvSVHJIgBIhS9AzzpAGc33RqdHA8j4uBT3=s1354-k-no'
     ]
   },
 # BRUM
