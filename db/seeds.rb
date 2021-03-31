@@ -233,6 +233,16 @@ venue_array = [
               'https://lh5.googleusercontent.com/p/AF1QipNZQdS1_uS2vJbevZ7pEP5W1WQ52azBHpG1CJBQ=s1920-k-no'
     ]
   },
+  the_ship_holborn = {
+    address: '12 Gate St, Holborn, London WC2A 3HP',
+    name: 'The Ship',
+    category: 'Pub',
+    description: 'Mahogany-panelled 16th century pub with traditional real-ale bar and upstairs dining room.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipNtibQvoLZYCgvYmljUd-qAkP88mcLrjbymEHnJ=s869-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNv1ydRUMtlUc1Anp3IJ5OcFTtaXZehuLttySDk=s1016-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipO7_TxqE4qFkCq-MswNOZuFKV6fZ4Arqpyv0MS_=s1226-k-no'
+    ]
+  },
   #NORTH
   holly_bush = {
     address: "22 Holly Mount, Hampstead, London NW3 6SG, United Kingdom",
@@ -517,6 +527,23 @@ venue_array = [
             'https://lh5.googleusercontent.com/p/AF1QipNtSc3gNngZRAWyMhy5lcrZBvFbmgz5MoW2b-JI=s1920-k-no-pi-10-ya51.266457-ro0-fo100'
     ]
   },
+  woodman = {
+    address: '414 Archway Rd, Highgate, London N6 5UA',
+    name: 'The Woodman',
+    category: 'Pub',
+    description: 'Stylish gastropub with oil paintings and sofas serving seasonal British cuisine plus a garden.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipNWo2CfmzoP7kl3EaEgLTmMx5PJJOjlq0gzg_Qd=s870-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipM0jrpJQcQRHVlo4lIYbgVdQpN7NjhxUhp4NQb0=s1031-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNF0WRc0PPGBiLbT5mIipm9NyThc_Da-1ZPVTXo=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOXdc5GRp1jO0Sfxc_-hFBjCMPcprjO4K7xmByU=s901-k-no'
+    ]
+  }
+  address:
+  name:
+  category:
+  description:
+  photos:[
+  ]
   #WEST
   the_prince = {
     address: "14 Lillie Rd, Hammersmith, London SW6 1TT, United Kingdom",
@@ -810,13 +837,50 @@ venue_array = [
             'https://lh5.googleusercontent.com/p/AF1QipNScCO-kODq5Sp6ObjGmtxnD6ktP-SyJHU83XgH=s773-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipOcFXuowVfeymkiv3AczS8qBtkSOusKkN8R9vXD=s1030-k-no'
     ]
-  }
-  address:
-  name:
-  category:
-  description:
-  photos:[
-  ]
+  },
+  blue_anchor = {
+    address: '13 Lower Mall, Hammersmith, London W6 9DJ',
+    name: 'The Blue Anchor',
+    category: 'Pub',
+    description: 'Panelled 18th-century inn with river views, serving local real ales, steaks and sharing platters.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMMEtNo6DsI7aH_XzYXqGhjMzuOWfaHZH1I_7bo=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipN8rGOR_PGKWwLZlIYeoab-y1Am58AzmYbSsOGN=s812-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMOSBb9v0lF8Acilo7YmAIw7nvteZCMGd1PRCRV=s973-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipP_uNAaQ2ndpywP-bBP7-OUZu29LL8fdo_JoKg0=s1031-k-no'
+    ]
+  },
+  old_ship = {
+    address: '25 Upper Mall, Hammersmith, London W6 9TD',
+    name: 'The Old Ship',
+    category: 'Pub',
+    description: 'Three cask beers are constantly on rotation at this well-appointed pub with a long river frontage.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipOeCuB6sF6qGprwVFWiwMUb7JM-bN4x-TSExjeT=s870-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNo_e1ktWb1pbo8iBbThwqcn_fkxv-gO5ZzgFho=s1031-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPPDUWNpskjYyTqw-7Mr9-edaIst-rYSVb0PZCq=s870-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOUuKF1jO-kntoruAVJYdFS38XFNxyX7JV-Hg2W=s870-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOV-Ok4Xa3yrx4x_Ve1eCWqRUnXxAlbNbNcPEYv=s870-k-no'
+    ]
+  },
+  black_lion = {
+    address: '2 S Black Lion Ln, Hammersmith, London W6 9TJ',
+    name: 'The Black Lion',
+    category: 'Pub',
+    description: 'Low-ceilinged, tradtional pub with open fires, riverside beer garden and vintage skittle alley.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipO_txPBMpLvf_29z2364Ntam72Ab8lTBtNbjo8w=s901-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMWTPGakWFDV8I3887uT-Vq1mRJtXBg4j52ndP-=s1224-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNgAkOL9sME7bWOex-xTjIXVdAOvIynvPYgoVfk=s773-k-no'
+    ]
+  },
+  allis = {
+    address: "101 Wood Ln, Shepherd's Bush, London W12 7FR",
+    name: 'The Allis',
+    category: 'Pub',
+    description: 'Modern bar serving a good range of beers, wines and cocktails.'
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMk0GzfPtLyF5j7KrHOGpTpn-pQcLrZVdEDooyz=w1200-h1200-p-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOV_9xKXKUgBKcNsucS4tJO17c0Eae1xtHCj6gA=s1354-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipP3FBlWUfv8_hhNdgXbPoavUmhnQAKvpINiBcut=s773-k-no'
+    ]
+  },
   # SOUTH
   theavalon = {
     address: '16 Balham Hill, Clapham South, London SW12 9EB',
