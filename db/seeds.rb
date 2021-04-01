@@ -161,8 +161,8 @@ venue_array = [
     name: 'Anchor Bankside',
     category: 'Pub',
     description: '1615 Thameside pub serving food in bar and restaurant, with real ale and outdoor seating.',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipPiqPdeYtIxMjqJzLfaqe4_8PTt51Oj-RHvzV25=s1920-k-no',
-              'https://lh5.googleusercontent.com/p/AF1QipOtmuiiwr_3VJocdMrwtw7FlCLNalY8WdNXivcr=s1920-k-no-pi0-ya130.22643-ro0-fo100',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipMsCaXG8qGRIDBCZW1FU_bS2zibMZaI_7kKnJhD=s901-k-no',
+              'https://lh5.googleusercontent.com/p/AF1QipOOE3hGCwdp_GAcgKZLRAjadQUN-vyDSI3KRuVp=w203-h270-k-no',
               'https://lh5.googleusercontent.com/p/AF1QipMsCaXG8qGRIDBCZW1FU_bS2zibMZaI_7kKnJhD=s1920-k-no'
     ]
   },
@@ -311,10 +311,10 @@ venue_array = [
     name: 'The Colonel Fawcett',
     category: 'Pub',
     description: '19th-century gastropub with 30+ varieties of gin, hosting occasional music, comedy and club nights.',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipPYJ0bsTMuLdM76cS81viMqQydkZzjQiwvq3wrk=s1920-k-no',
-            'https://lh5.googleusercontent.com/p/AF1QipOoowKABWHUD-8dD8zZHtRSt05L8JSTWQgj1QvA=s1920-k-no',
-            'https://lh5.googleusercontent.com/p/AF1QipMJIhcGS2f92FbYeXn7XJwBej3NbRELZK3_pTHK=s1920-k-no',
-            'https://lh5.googleusercontent.com/p/AF1QipPOYvFDKeSlvohnXaJyWnhL-mCaFw9n8Memc2oT=s1920-k-no'
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipNrvmlsPy1uarZzM0hUzuLpWBfcm68yU9rWIMYR=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOzF5dfhYIL0hwpaeLoEXuOBbHXZdrhbd3MhtPl=s1016-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPWog0MuTITXwX3tJDohhc_M8Lun9SpdWIZJRsS=s876-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNAxIj0yEZsvi7fJAbcVuCTLW0La7fS3mWgOBgV=s812-k-no'
     ]
   },
   prince_albert = {
@@ -322,7 +322,9 @@ venue_array = [
     name: "The Prince Albert",
     category: "Pub",
     description: 'Gastropub dining with sustainably sourced ingredients in stripped-back contemporary pub and garden.',
-    photos: ['https://geo1.ggpht.com/cbk?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=IPADd5NOku0HtMrxL79HJA&w=588&h=290&thumb=2&yaw=217.81491&pitch=0'
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipMN0vjFFec2f90xIzZuO_b5X6o4NsCr3X5EWcy7=w1200-h1200-p-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMfi58YYPx3PKY1OR7zOmBisuH5GPKM03LP2pZX=s1016-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMrEAplKQx2ySTcNFi2kQ0s9lHdgJ6p83sGdoYW=s676-k-no'
     ]
   },
   edinboro = {
@@ -463,8 +465,9 @@ venue_array = [
     name: 'The WB Yeats',
     category: 'Pub',
     description: 'Classic British pub pairing pub grub with craft & cask ales in a comfy setting with music & games.',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipM73tKwVCJiRjXYqiKpn1LebbQWG_w8N0zYmkv7=s1920-k-no',
-            'https://lh5.googleusercontent.com/p/AF1QipOb9rfEKP3yzQq61TX-ZA3CXlx8QbX8_iwBCan-=s1920-k-no'
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipNQkzkhlE_a4O4Yk2euFYHjlTeRsI3K7KdjmH-P=s884-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipP4UYGvD8G7rK4aBuY7WE1NciUXfkAgQiHJbHNf=s1031-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOyKK3mrFKcnjq8JsEyCUNvxwdbQmtPSZMt9NQI=s1016-k-no'
     ]
   },
   landseer = {
@@ -483,8 +486,9 @@ venue_array = [
     name: 'The Highbury Barn Tavern',
     category: 'Pub',
     description: 'Bright, modern pub with a history going back to 1770, a British menu and Sunday lunches.',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipMfaBM6Ae3oBWc2ZBt0nRpFHbqd3zE8k8TOaU3x=s1920-k-no',
-            'https://lh5.googleusercontent.com/p/AF1QipMmtOfI4u5gJs9PxjFLx1wJIybm4CHbnY-EtEOt=s1920-k-no'
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipN3hGNBDUXP5G_dLQKkhb5b6t2Jo7ko4TaT43Sq=s1013-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPL0L2F3zztHuDPBRMzh0wpagN_RkxE8oCuMJ9T=s869-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipM5Gqw66RdTzolPDoLP8u3vjGeRMTudxE-Ch8r-=s869-k-no'
     ]
   },
   clissold = {
@@ -537,13 +541,29 @@ venue_array = [
             'https://lh5.googleusercontent.com/p/AF1QipNF0WRc0PPGBiLbT5mIipm9NyThc_Da-1ZPVTXo=s773-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipOXdc5GRp1jO0Sfxc_-hFBjCMPcprjO4K7xmByU=s901-k-no'
     ]
-  }
-  address:
-  name:
-  category:
-  description:
-  photos:[
-  ]
+  },
+  griffin = {
+    address: '1262 High Rd, Whetstone, London N20 9HH',
+    name: 'The Griffin',
+    category: 'Pub',
+    description: 'Sprawling pub with 6 screens for sports, pub grub, outside bars, large garden and covered terrace.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipPzw8zOnexs2dupLUf3uBA9ZapNzzHfEhLk_-m8=s901-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPcVCM2nJ5Bj-axu-xMNI2tGPOt7A8XxmDBkgYi=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOJAkArVKgnWzP_-HJ7tBy4vOqYvEZZtmpID0mB=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPlOtCPpDKdsaEWhpFBb2VutRzpt-o98iTuGy9F=s773-k-no'
+    ]
+  },
+  beehive = {
+    address: 'Stoneleigh Rd, Tottenham, London N17 9BQ',
+    name: 'The Beehive',
+    category: 'Pub',
+    description:
+    photos:['https://lh5.googleusercontent.com/p/AF1QipNFR29oG0obAczyUMf-_B_2s_uzKaRWd8279Xx1=s1031-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPB1DfY21By2oCSb9VjXQ3TCRX_BmH_jHA7-Q70=s870-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPvezBPmM9QuTVmchucfT3WF4kgUIvgMQm_GfvG=s870-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipM8IKxKTMV3hRjNLZ5YcqVchj0pXjjiKzGZY2T3=s773-k-no'
+    ]
+  },
   #WEST
   the_prince = {
     address: "14 Lillie Rd, Hammersmith, London SW6 1TT, United Kingdom",
@@ -590,7 +610,10 @@ venue_array = [
     name: 'High Road House',
     description: 'Occupying a Georgian townhouse, this stylish hotel and members club is a 4-minute walk from Turnham Green tube station, and 5 miles from Buckingham Palace.',
     category: 'Restaurant',
-    photos: [ 'https://lh5.googleusercontent.com/p/AF1QipNG4GSDXZ7-iwC93241qT7DUkmo4g7ytil_WY_X=w512-h480-p-k-no'
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipN8PvEnGBq4FJBk6uGPdNAAIgNQqn2HjmDpEcYH=s870-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPrmV5Qi4ojdz04DPLzA0sYovMzkm-cnHL1iH95=s812-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMw3NZ6zCK6FiOfeQLtCGeVbkww0uRHoTvXLtc_=s1041-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMtEZfUcnF8tl39EEJSnkMl4a6eRJwLMkVgCD_5=s1354-k-no'
     ]
   },
   the_carpenter = {
@@ -618,9 +641,9 @@ venue_array = [
     name: 'The Admiral Codrington',
     description: 'Gastropub with chunky tables in saloon and a modern dining area with retractable glass roof.',
     category: 'Restaurant',
-    photos: [ 'https://lh5.googleusercontent.com/p/AF1QipM21EMxed9B9cFDLRwTq8XTOe3CY7-WjCIjSkPT=w512-h480-p-k-no',
-      'https://lh5.googleusercontent.com/p/AF1QipPnwx_sGKwJzS4j8VccNiKWf40kCmPtSZbaTmps=w512-h480-p-k-no',
-      'https://lh5.googleusercontent.com/p/AF1QipOlXen3GC7aTUkJUYURY-e_NVQOP11LAKwbhl5L=w512-h480-p-k-no'
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipMH_JZ_kik5HaUzJjkp0IH0f2iXZcJwHPUKhR3m=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOSJ3hr81NdXquHByFOPVEjAKhirl-y3r01QBKZ=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPILBMarNGDvxxJZS3koxDQlceGbnuVRTvjtwsW=s901-k-no'
     ]
   },
   the_oak = {
@@ -658,9 +681,10 @@ venue_array = [
     name: 'Express Tavern',
     description: 'Refined, traditional pub with carved bar and leafy beer garden, for cask ales and comfort food menu.',
     category: 'Pub',
-    photos: [ 'https://lh5.googleusercontent.com/p/AF1QipNJc8mkTs7crBEE3Y3ujOhyRCJM1UzsX2mQHXpM=w512-h480-p-k-no',
-      'https://lh5.googleusercontent.com/p/AF1QipM-vlX_qmzCDOXwtWVlfZoACV8PZhy6zSSL04KV=w512-h480-p-k-no',
-      'https://lh5.googleusercontent.com/p/AF1QipNWAIvwBC1cRlM4yjJcZSDftngnMs7drZ9gaY3b=w512-h480-p-k-no'
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipNezfjyMRbtK9QYBA_vBCv97WAMzoYyT_Yq6b63=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipM-vlX_qmzCDOXwtWVlfZoACV8PZhy6zSSL04KV=s901-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipP6AHUSf6UYS2YWDdhrfdEAotjRSnQUq1GJH8x0=s870-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPWsWHyf9bKEazNWwlG5jaLkiJpeoKT8JGd0J-X=s1032-k-no'
     ]
   },
   the_windsor = {
@@ -1271,7 +1295,7 @@ venue_array = [
   },
   the_kings_arms = {
     address: '94-96 Wandsworth High St, Wandsworth, London SW18 4LB',
-    name: 'The King\'s Arms',
+    name: "The King's Arms",
     category: 'Pub',
     description: 'Bar with exposed brick, wood floors & garden seating, offering brunch-style dishes & craft drinks.',
     photos: ['https://lh5.googleusercontent.com/p/AF1QipPili_6GMyWnQOwfMUs7wpFsucECJhONVJZAExL=s1920-k-no',
@@ -1284,9 +1308,10 @@ venue_array = [
     name: 'The Coat & Badge',
     category: 'Pub',
     description: 'Large pub hidden behind laurel bushes with quirky, beach-lounge style decor and live TV sport.',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipNmD0tFe82Y478jSxvr9rb8rnLquO6pp-0GG3Er=s1920-k-no',
-     'https://lh5.googleusercontent.com/p/AF1QipNHmo-grh4ZYpr9gxnBLNVQ9fuwgwRGOADM8cYy=s1920-k-no',
-     'https://lh5.googleusercontent.com/p/AF1QipNKHtXvgO4I2et3e--9bYgcUnVKilec5517OgAn=s1920-k-no'
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipP2PMMUAvRjh9_nDMJONxPT1A5fMlIOjg-2b3ZH=s901-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPw97tFpFTYMeR4SFVp6LhHpAP_KVNqC-fXehaX=s870-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPS01JL959Iq6at-tm2FEs-SnGWqe_JmS-u1fS6=s1354-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipN0XnntMO1Mqoup-Klfpiqm46RIkJrVQBGoFpa7=s901-k-no'
     ]
   },
   the_northcote = {
@@ -1529,9 +1554,9 @@ venue_array = [
     name: 'The Adam and Eve',
     category: 'Pub',
     description: 'Carefully sourced ingredients elevate classic Brit grub at this pub with beer garden and pool table.',
-    photos:[ 'https://lh5.googleusercontent.com/p/AF1QipPz8J_OqYz0NOyyvC2pngxveQ5H3R-K4y9Eg0Vo=s1920-k-no',
-            'https://lh5.googleusercontent.com/p/AF1QipNUzvcfzLCm05_JfoVrUc-zCHJAwxUeeIEzYfY_=s1920-k-no',
-            'https://lh5.googleusercontent.com/p/AF1QipN70C8VMFt_6J909pXYhlRM61InO9knsox8-_sO=s1920-k-no'
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMPhouZskgTawVr_es7fgjOMs5PlQUAzaSmEawE=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPSXxuvBQ3kIiFdsnvnMIdLbW1yjPMKNJ5FgOcB=s901-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipO6RRA49h-6KTZw1FySSQZEt33RvUi7O1JkGjBM=s773-k-no'
     ]
   },
   crooked_billet = {
@@ -1611,7 +1636,8 @@ venue_array = [
     name: 'The Dundee Arms',
     category: 'Pub',
     description: 'Low-lit, traditional boozer with a courtyard and draught craft beers, hosting regular DJ sessions.',
-    photos:[ 'https://lh5.googleusercontent.com/p/AF1QipMAU7qdHtEUvX7UIb5yOn734AHDUmINKnrpLzgE=s1920-k-no'
+    photos:['https://lh5.googleusercontent.com/p/AF1QipMAU7qdHtEUvX7UIb5yOn734AHDUmINKnrpLzgE=s1920-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipN0RAuoIBqLJ-5Bht2CKKk5aWgveI66hmF7Hs8b=w304-h228-p-k-no'
     ]
   },
   skylight = {
