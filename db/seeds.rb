@@ -238,9 +238,9 @@ venue_array = [
     name: 'The Ship',
     category: 'Pub',
     description: 'Mahogany-panelled 16th century pub with traditional real-ale bar and upstairs dining room.',
-    photos:['https://lh5.googleusercontent.com/p/AF1QipNtibQvoLZYCgvYmljUd-qAkP88mcLrjbymEHnJ=s869-k-no',
-            'https://lh5.googleusercontent.com/p/AF1QipNv1ydRUMtlUc1Anp3IJ5OcFTtaXZehuLttySDk=s1016-k-no',
-            'https://lh5.googleusercontent.com/p/AF1QipO7_TxqE4qFkCq-MswNOZuFKV6fZ4Arqpyv0MS_=s1226-k-no'
+    photos:['https://lh5.googleusercontent.com/p/AF1QipO2NuoDavVY1Mc4OozceTP0WZNZaACQPiMsy2em=s1354-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPjYfFwmplxQ0pAnluHSHp4l8Z5SmHachXef6dr=s1030-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMucWIXDNHWwH8l8cKZsdcSQqZcJ-g-gftJylX1=s773-k-no'
     ]
   },
   #NORTH
@@ -911,9 +911,10 @@ venue_array = [
     name: 'The Avalon',
     category: 'Pub',
     description: 'Large gastropub with Victorian fixtures and terraced beer garden, serving classic British dishes.' ,
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipMxp64SzfMtSPiGe1e4ekQ17kMj7tn8na5VTNzi=s1920-k-no',
-        'https://lh5.googleusercontent.com/p/AF1QipPr_nfjGckCJJrus178ZVlQAqv8k5AQWhLwYhnY=s1920-k-no',
-        'https://lh5.googleusercontent.com/p/AF1QipPoYzdHLq8sJL0sl3JzbwJb130q-LUPae_DTze5=s1920-k-no'
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipP6wELI-nvRa3FT2fvw2Fzw9nMzRBWM1JlA9A_2=s812-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipP8ErkSs6Jk02uK4nWLaRYtE4afdoG9uPC0o-F3=s901-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipM2NuDnYNzolYumGt3HQyirI4hhTs8KE5lfojZN=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOlzVs53MXEszfnD_DWRtJw3Kh31MUv0dCvI-VA=s870-k-no'
     ]
   },
   nuns_head = {
@@ -1248,7 +1249,7 @@ venue_array = [
     name: 'The Bedford',
     category: 'Pub',
     description: 'Pints and pub grub on 3 floors with live music, comedy, cabaret, dance classes and TV sports',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipOZ6hZuq5bwHVIKLL8lv2bfll3-ckNJohPzhTNS=s1920-k-no',
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipMbZkq44MT9BDpd-ADR7f_84kqSoLt657UrFR6n=s1016-k-no',
      'https://lh5.googleusercontent.com/p/AF1QipM5UdrILfvrIBWzbEeAm8mE6Y7mNJGGI3tdib0N=s1920-k-no',
      'https://lh5.googleusercontent.com/p/AF1QipOc5c3_N4rVzQ0yedrXenqOVCmP6QC8AklDM0h3=s1920-k-no'
     ]
@@ -1268,10 +1269,11 @@ venue_array = [
     name: 'The Rose & Crown',
     category: 'Pub',
     description: 'Festive local pub with a patio & big screen TVs serving inventive pizzas, craft beer & cocktails.',
-    photos: ['https://lh5.googleusercontent.com/p/AF1QipOJ0gv-SiNeZoxwTtY-7jxjObY5wB10tkVomi8K=s1920-k-no',
-            'https://lh5.googleusercontent.com/p/AF1QipPqST4V8aSPfTbPGo7L5fZVG78sluD6QweI-sR6=s1920-k-no',
-            'https://lh5.googleusercontent.com/p/AF1QipN2I4Y5wC-nqAyS3nTOIQ-DyjrygobRMI0l9sDq=s1920-k-no'
-            ]
+    photos: ['https://lh5.googleusercontent.com/p/AF1QipMJLdasVO-45kJOA3NykeT7U9kaitStxdCh-3R9=s1031-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMWkgK0aXkT3_Dx2mWY8-dt0pRFB18B2mGKvR2M=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOCXy5WRIHR2UeJSJmXiNyt8EkHEm6icA8aYMre=s1016-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipP4TW2tBxN60VxavO7yur_R8HsvjqjWuoSS6l82=s1031-k-no'
+    ]
   },
   the_ship = {
     address: '41 Jews Row, Wandsworth, London SW18 1TB',
@@ -1302,8 +1304,8 @@ venue_array = [
             'https://lh5.googleusercontent.com/p/AF1QipO095MxXa1tL9UsVXHnhzjPRr2rFm_OxPJNgIBl=s1031-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipNu8x8fawcw4G1cznc_bYhswIw4L8XT37wC72op=s1031-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipOYOoKDG4Z0xIixxak9nbN_Z0DJNLKeWU7pF1RN=s1031-k-no',
-
-  ]
+            'https://lh5.googleusercontent.com/p/AF1QipMzZf_jzO3_MmW44FBSt3DQ06GcWEpRFCnywoUe=s1258-k-no'
+    ]
   },
   the_coat_and_badge = {
     address: '8 Lacy Rd, Putney, London SW15 1NL',
