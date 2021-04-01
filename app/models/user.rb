@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_many :reviews
   has_many :venues
   has_many :bookings, dependent: :destroy
-  validates :first_name, :last_name, :date_of_birth, :address, presence: true
+  validates :first_name, :last_name, presence: true
   has_many :messages
   has_one_attached :photo
   after_commit :set_default_avatar, on: :create
