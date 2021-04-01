@@ -11,8 +11,8 @@ puts "creating admin"
 admin = User.new
 admin.email = "admin@email.com"
 admin.password = "pintpal"
-admin.first_name = "David"
-admin.last_name = "Smith"
+admin.first_name = "Oscar"
+admin.last_name = "Dealtry"
 admin.date_of_birth = Date.today - 10000
 admin.address = "180 Ashley Gardens, Emery Hill Street, SW1P 1PD"
 admin.save!
@@ -557,7 +557,7 @@ venue_array = [
     address: 'Stoneleigh Rd, Tottenham, London N17 9BQ',
     name: 'The Beehive',
     category: 'Pub',
-    description:
+    description: 'Atmospheric pub with two bars and a large, paved outdoor garden.',
     photos:['https://lh5.googleusercontent.com/p/AF1QipNFR29oG0obAczyUMf-_B_2s_uzKaRWd8279Xx1=s1031-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipPB1DfY21By2oCSb9VjXQ3TCRX_BmH_jHA7-Q70=s870-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipPvezBPmM9QuTVmchucfT3WF4kgUIvgMQm_GfvG=s870-k-no',
@@ -731,7 +731,7 @@ venue_array = [
     address: '4 Kingdom St, London W2 6PY',
     name: 'Pergola Paddington',
     category: 'Bar',
-    description: 'Expansive, bright spot with forest decor & 4 restaurants serving burgers, kebabs, sushi & dumplings.'
+    description: 'Expansive, bright spot with forest decor & 4 restaurants serving burgers, kebabs, sushi & dumplings.',
     photos:['https://lh5.googleusercontent.com/p/AF1QipMaVDsfkTufNrFeZg1vJuAtsT6Y8_XoFW2ttzzG=s1354-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipM_rB59-JIOfQNvcrD0kMq-w52G1rg0MK1t4pEm=s870-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipMrfqx2FkQe0SutLLnQkV4CtAbKy7n20L7EOnG9=s773-k-no',
@@ -742,7 +742,7 @@ venue_array = [
     address: "247 New King's Rd, Fulham, London SW6 4XG",
     name: 'Aragon House',
     category: 'Restaurant',
-    description: 'Upmarket inn and cocktail bar with beer garden.'
+    description: 'Upmarket inn and cocktail bar with beer garden.',
     photos:['https://lh5.googleusercontent.com/p/AF1QipMbMZ7TkU5EY6HTVFn_pZYB3NeHfAiFJhHgMMcT=s1016-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipNV9AZFsefoK2suERCKSniVM6xFVZBWfVpqfeVz=s1354-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipOCqmcQEJVWpkkD2gMDV1lhEG31Et8f4pRVWUtg=s901-k-no'
@@ -899,7 +899,7 @@ venue_array = [
     address: "101 Wood Ln, Shepherd's Bush, London W12 7FR",
     name: 'The Allis',
     category: 'Pub',
-    description: 'Modern bar serving a good range of beers, wines and cocktails.'
+    description: 'Modern bar serving a good range of beers, wines and cocktails.',
     photos:['https://lh5.googleusercontent.com/p/AF1QipMk0GzfPtLyF5j7KrHOGpTpn-pQcLrZVdEDooyz=w1200-h1200-p-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipOV_9xKXKUgBKcNsucS4tJO17c0Eae1xtHCj6gA=s1354-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipP3FBlWUfv8_hhNdgXbPoavUmhnQAKvpINiBcut=s773-k-no'
@@ -941,7 +941,7 @@ venue_array = [
     address: '145 Mitcham Rd, Tooting, London SW17 9PE',
     name: 'The Goldfinch',
     category: 'Bar',
-    description: 'Cocktails bar mixing the modern with the traditional.'
+    description: 'Cocktail bar mixing the modern with the traditional.',
     photos:['https://lh5.googleusercontent.com/p/AF1QipNiiLW6BaeRy4XtkUTfa66KTIOEJedcUPqOqh0u=s1031-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipM6L5P-_YDgIUwvnKTSwryg0SZu12vXNw3xk7Zq=s1024-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipOZA5uFMoblzwyuhupW0dYX-pxY57NAtX_LC0s3=w203-h129-k-no'
@@ -1091,14 +1091,14 @@ venue_array = [
     address: '20 Bellevue Rd, London SW17 7EB',
     name: 'The Althorp',
     category: 'Pub',
-    description: 'Simple modern pub grub in an easygoing neighbourhood spot with quirky decor and views of the common.'
+    description: 'Simple modern pub grub in an easygoing neighbourhood spot with quirky decor and views of the common.',
     photos:['https://lh5.googleusercontent.com/p/AF1QipOJtHW-BujttXQ8IjbXyo7olqreGV0SHt4OTHJM=s1016-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipNcY1zekHBg19fR60RViU5RyJ_KsPmrETXaNvSH=s1016-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipPX5kSNdLLDJd-JBKHq6uhQxO8JpbcBgXq9CWaO=s812-k-no'
     ]
    },
   hope_and_anchor = {
-    address: '123 Acre Ln, Brixton, London SW2 5UA'
+    address: '123 Acre Ln, Brixton, London SW2 5UA',
     name: 'The Hope and Anchor',
     category: 'Pub',
     description: 'DJ bar with late weekend licence, flea-market furniture and garden twinkling with fairy lights.',
@@ -1153,8 +1153,8 @@ venue_array = [
    boathouse = {
     address: '32 Brewhouse Ln, Putney, London SW15 2JX',
     name: 'The Boathouse',
-    category: 'Modern 3-floor pub overlooking a riverside wharf, specialising in fish, with Friday lobster menu.'
-    description: 'Modern 3-floor pub overlooking a riverside wharf, specialising in fish, with Friday lobster menu.'
+    category: 'Modern 3-floor pub overlooking a riverside wharf, specialising in fish, with Friday lobster menu.',
+    description: 'Modern 3-floor pub overlooking a riverside wharf, specialising in fish, with Friday lobster menu.',
     photos:['https://lh5.googleusercontent.com/p/AF1QipOgQGkIc6ACEqoLc-spfWC_uejryzjpfGnvDaHr=s773-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipMJ0yVw8jVXa4tzl3GVztoraRPPBIE3Jhzrhsci=s980-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipN-wVPBzd4ky9kG4d4wEA4AlvcuAwLq9dR8eSKE=s901-k-no',
@@ -1461,7 +1461,7 @@ venue_array = [
     address: 'Station Approach, Bridge, London SE6 4RE',
     name: 'The Catford Bridge Tavern',
     category: 'Pub',
-    description: 'Large, traditional English pub with extensive, heated outdoor area offering both tables and benches.'
+    description: 'Large, traditional English pub with extensive, heated outdoor area offering both tables and benches.',
     photos:['https://lh5.googleusercontent.com/p/AF1QipPpsHM2CBNeg2HBYfpYpwTc4cMq5zL9RsoWkR5L=s869-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipOfHrckv36-T1nWoGwKEZg1CdZFjYQkcPUzgBO5=s869-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipPGy7_j1EIxpk-w6F1YM_UugdYa5L5Y_y1nreLZ=s869-k-no',
@@ -1713,7 +1713,7 @@ venue_array = [
     address: '30-31 Allison St, Birmingham B5 5TJ',
     name: "Hennesey's Bar",
     category: 'Bar',
-    description: 'Sizable contemporary bar with an extensive heated terrace and late-night DJ sessions.'
+    description: 'Sizable contemporary bar with an extensive heated terrace and late-night DJ sessions.',
     photos:['https://lh5.googleusercontent.com/p/AF1QipP3j-ndnw4p_qwDd8b4GNn9f6T971E3pIZAkvOP=s1031-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipO6QxktWEzd_vxD614tGs3Ii_to1zv_qdwOmtVS=s1354-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipMUJxHm9Q64Ksr0Z0dPRI4AmhYQmcCPvZo7ixj9=s1031-k-no',
@@ -1746,7 +1746,7 @@ venue_array = [
     address: 'Harborne Rd, Birmingham B15 3DH',
     name: 'The Physician',
     category: 'Pub',
-    description: 'Large, well-decorated pub with extensive beer garden and terrace seating.'
+    description: 'Large, well-decorated pub with extensive beer garden and terrace seating.',
     photos:['https://lh5.googleusercontent.com/p/AF1QipMdzE2JeD4THLA2BIyX7sEAkAZ8XP-cjGvb4lVF=s1184-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipNw51-aeXCl4OKj_lV7ohWgqVrX5NUekZAkZWtR=s901-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipNJDzebIRnf_eaUl1s8pf_jNpkr5nfNdr8w8uWA=s1031-k-no',
@@ -1788,12 +1788,12 @@ venue_array = [
   }
 ]
 
-address:
-name:
-category:
-description:
-photos:[
-]
+# address:
+# name:
+# category:
+# description:
+# photos:[
+# ]
 
 venue_array.each_slice(10) do | slice |
   GenerateVenueJob.perform_now(slice)
@@ -1814,16 +1814,18 @@ end
 #   review.save2
 #   review.save3
 # end
-# venue_array.each do |venue|
-#   new_venue = Venue.create(address: venue[:address], name: venue[:name], category: venue[:category], description: venue[:description], user: User.first)
-#   puts "generating #{venue[:name]}"
-#   venue[:photos].each_with_index do |photo, index|
-#     file = URI.open(photo)
-#     title = venue[:name].gsub(/\s/, "")
-#     new_venue.photos.attach(io: file, filename: "#{title}-image-#{index + 1}.jpg", content_type: 'image/jpg')
-#   end
-#   new_venue.save!
-#   puts "generated, pausing..."
-#   sleep(1)
-# end
+
+venue_array.each do |venue|
+  new_venue = Venue.create(address: venue[:address], name: venue[:name], category: venue[:category], description: venue[:description], user: User.first)
+  puts "generating #{venue[:name]}"
+  venue[:photos].each_with_index do |photo, index|
+    file = URI.open(photo)
+    title = venue[:name].gsub(/\s/, "")
+    new_venue.photos.attach(io: file, filename: "#{title}-image-#{index + 1}.jpg", content_type: 'image/jpg')
+  end
+  new_venue.user = admin
+  new_venue.save!
+  puts "generated, pausing..."
+  sleep(1)
+end
 
