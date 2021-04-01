@@ -1299,8 +1299,10 @@ venue_array = [
     category: 'Pub',
     description: 'Bar with exposed brick, wood floors & garden seating, offering brunch-style dishes & craft drinks.',
     photos: ['https://lh5.googleusercontent.com/p/AF1QipPili_6GMyWnQOwfMUs7wpFsucECJhONVJZAExL=s1920-k-no',
-     'https://lh5.googleusercontent.com/p/AF1QipOKXcvqMYeD-7J6JkCaV6oqTKezUzn1pbYZSzF1=s1920-k-no',
-     'https://lh5.googleusercontent.com/p/AF1QipMArLqP3z0AumZ40JKwpqTQ12LDU_nIV29E1X-a=s1920-k-no'
+            'https://lh5.googleusercontent.com/p/AF1QipO095MxXa1tL9UsVXHnhzjPRr2rFm_OxPJNgIBl=s1031-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipNu8x8fawcw4G1cznc_bYhswIw4L8XT37wC72op=s1031-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipOYOoKDG4Z0xIixxak9nbN_Z0DJNLKeWU7pF1RN=s1031-k-no',
+
   ]
   },
   the_coat_and_badge = {
