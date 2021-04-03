@@ -9,7 +9,7 @@ class User < ApplicationRecord
   validates :first_name, :last_name, presence: true
   has_many :messages
   has_one_attached :photo
-  after_commit :set_default_avatar, on: :create
+  # after_commit :set_default_avatar, on: :create
 
   private
   # def set_default_avatar
