@@ -21,5 +21,6 @@ class ApplicationController < ActionController::Base
 
   def after_update_path_for(user)
     map_path
+  end
 
 end
