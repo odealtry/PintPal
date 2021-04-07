@@ -110,4 +110,6 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
+
+  ENV["REDISCLOUD_URL"] = 'redis://default:s4hzvpMuMSITPS0pz3jyc77EUX2dl6zk@redis-17173.c242.eu-west-1-2.ec2.cloud.redislabs.com:17173'
 end
