@@ -10,6 +10,7 @@ class GenerateVenueJob < ApplicationJob
         title = venue[:name].gsub(/\s/, "")
         new_venue.photos.attach(io: file, filename: "#{title}-image-#{index + 1}.jpg", content_type: 'image/jpg')
       end
+      new_venue.user = User.first
       new_venue.save!
       puts "generated, pausing..."
       sleep(1)
