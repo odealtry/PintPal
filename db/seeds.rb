@@ -1153,7 +1153,7 @@ venue_array = [
    boathouse = {
     address: '32 Brewhouse Ln, Putney, London SW15 2JX',
     name: 'The Boathouse',
-    category: 'Modern 3-floor pub overlooking a riverside wharf, specialising in fish, with Friday lobster menu.',
+    category: 'Pub',
     description: 'Modern 3-floor pub overlooking a riverside wharf, specialising in fish, with Friday lobster menu.',
     photos:['https://lh5.googleusercontent.com/p/AF1QipOgQGkIc6ACEqoLc-spfWC_uejryzjpfGnvDaHr=s773-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipMJ0yVw8jVXa4tzl3GVztoraRPPBIE3Jhzrhsci=s980-k-no',
