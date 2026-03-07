@@ -1785,6 +1785,18 @@ venue_array = [
             'https://lh5.googleusercontent.com/p/AF1QipNYPtd5surVvdLeQOq7z9Jt5LKbsIeAcDp8-EOw=s901-k-no',
             'https://lh5.googleusercontent.com/p/AF1QipNdzPw0S9E6Y6XGs2Lyu_XjLCWktcCUkHk_6vxP=s773-k-no'
     ]
+  },
+  # BRISTOL
+  snobbys = {
+    address: '6 Chandos Rd, Redland, Bristol BS6 6PE',
+    name: "Snobby's",
+    category: 'Restaurant',
+    description: 'Restaurant and wine bar serving an eclectic assortment of Mediterranean inspired dishes.',
+    photos:['https://lh5.googleusercontent.com/p/AF1QipNAEZmLAPkuiR-zkMZbDeSuOTltXcQeNl1klKCN=s901-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipPT0_gInA1bQCTOrzm_sKHW_EkjYxafo-dLPnUp=s773-k-no',
+            'https://lh5.googleusercontent.com/p/AF1QipMtWsPGluroDAIeWXqBUazqjDG15eMiVyw9ChWs=s1160-k-no-pi-10-ya200.79-ro0-fo100',
+            'https://lh5.googleusercontent.com/p/AF1QipPuyBdKP684Ed1-p47TItIxhlvdm4DNXbBYjfro=s1160-k-no-pi0-ya67.83998-ro0-fo100'
+    ]
   }
 ]
 
@@ -1819,9 +1831,13 @@ venue_array.each do |venue|
   new_venue = Venue.create(address: venue[:address], name: venue[:name], category: venue[:category], description: venue[:description], user: User.first)
   puts "generating #{venue[:name]}"
   venue[:photos].each_with_index do |photo, index|
-    file = URI.open(photo)
-    title = venue[:name].gsub(/\s/, "")
-    new_venue.photos.attach(io: file, filename: "#{title}-image-#{index + 1}.jpg", content_type: 'image/jpg')
+    begin
+      file = URI.open(photo)
+      title = venue[:name].gsub(/\s/, "")
+      new_venue.photos.attach(io: file, filename: "#{title}-image-#{index + 1}.jpg", content_type: 'image/jpg')
+    rescue => e
+      puts "  Skipping photo #{index + 1} for #{venue[:name]}: #{e.message}"
+    end
   end
   new_venue.save!
   puts "generated, pausing..."

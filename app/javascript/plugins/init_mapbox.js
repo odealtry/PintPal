@@ -6,6 +6,8 @@ const buildMap = (mapElement) => {
   return new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/odealtry/ckhw4ydw3110j19pa4hz7swez',
+    center: [-0.1276, 51.5074],
+    zoom: 12,
   });
 };
 
@@ -29,6 +31,11 @@ const addMarkersToMap = (map, markers) => {
 }
 
 const fitMapToMarkers = (map, markers) => {
+    if (markers.length === 0) {
+      map.setCenter([-0.1276, 51.5074]);
+      map.setZoom(12);
+      return;
+    }
     const bounds = new mapboxgl.LngLatBounds();
     markers.forEach(marker => bounds.extend([ marker.lng, marker.lat ]));
     map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 });
@@ -48,9 +55,11 @@ const fitMapToMarkers = (map, markers) => {
     if (mapElement) {
       const map = buildMap(mapElement);
       const markers = JSON.parse(mapElement.dataset.markers);
-      addMarkersToMap(map, markers);
-      fitMapToMarkers(map, markers);
-      map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken, mapboxgl: mapboxgl }), "bottom-right");
+      map.on('load', () => {
+        addMarkersToMap(map, markers);
+        fitMapToMarkers(map, markers);
+        map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken, mapboxgl: mapboxgl }), "bottom-right");
+      });
       // userLocationButton(map);
     }
   };
